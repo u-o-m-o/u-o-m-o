@@ -21,6 +21,9 @@
 		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
 		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
 		<link rel='stylesheet' type='text/css' href='css/style.css' >
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 		
 	</head>
 	<body>
@@ -138,9 +141,6 @@
 			==================================================================-->
 			<section id='features' class='section features-section' style='padding-top:0 !important'>
 				<div class='container'>
-					<!-- <div class='phone-img' >
-						<img src='img/phone2.png' alt>
-					</div> --> 
 					<div class='row'>
 						<div class='col-md-8 col-md-offset-2'>
 							<div class='features-text' >
@@ -154,9 +154,6 @@
 					<div class='row features-row' >
 						<div class='col-md-4 col-sm-6' >
 							<div class='feature' >
-								<!-- <div class='icon' >
-									<i class='ion-ios-heart-outline'></i>
-								</div> --> 
 								<div class='content'>
 									<h4>Who is Demetra Hanna?</h4>
 									<p style="text-align:justify !important">
@@ -164,9 +161,7 @@
 									</p>
 									<div class='row' style='padding-top:5% !important'>
 										<div class='col-md-2'></div>
-										<div class='col-md-8'>
-											<button class='btn-minimal' type='submit' style='width:100%'>Continue Reading</button>
-										</div>	
+											<a href="#myModal" class="btn btn-lg btn-primary" data-toggle="modal">Launch Demo Modal</a>
 										<div class='col-md-2'></div>
 									</div>	
 								</div>
@@ -174,9 +169,6 @@
 						</div>
 						<div class='col-md-4 col-sm-6' >
 							<div class='feature' >
-								<!--<div class='icon' >
-									<i class='ion-ios-loop' ></i>
-								</div>-->
 								<div class='content'>
 									<h4>Case Study</h4>
 									<p style="text-align:justify !important">
@@ -185,7 +177,7 @@
 									<div class='row' style='padding-top:5% !important'>
 										<div class='col-md-2'></div>
 										<div class='col-md-8'>
-											<button class='btn-minimal' type='submit' style='width:100%'>Continue Reading</button>
+											<button class=btn-minimal data-toggle="modal" data-target="#Modal1.2" type='submit' style='width:100% '>Continue Reading</button>
 										</div>	
 										<div class='col-md-2'></div>
 									</div>
@@ -205,7 +197,7 @@
 									<div class='row' style='padding-top:5% !important'>
 										<div class='col-md-2'></div>
 										<div class='col-md-8'>
-											<button class='btn-minimal' type='submit' style='width:100%'>Continue Reading</button>
+											<button class='btn-minimal data-toggle="modal" data-target="#Modal1.3"' type='submit' style='width:100%'>Continue Reading</button>
 										</div>	
 										<div class='col-md-2'></div>
 									</div>
@@ -969,7 +961,32 @@
 		<script src='js/owl.carousel.min.js' ></script>
 		<script src='js/jquery.magnific-popup.min.js' ></script>
 		<script src='js/validator.min.js' ></script>
-		<script src='js/script.js' ></script>
+		<script src='js/script.js' ></script> 
+
+
+		<!--==================================================================
+			Modals
+		==================================================================-->
+
+		<div id="myModal" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Confirmation</h4>
+						</div>
+						<div class="modal-body">
+							<p>Do you want to save changes you made to document before closing?</p>
+							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>     
 		
 	</body>
 </html>
