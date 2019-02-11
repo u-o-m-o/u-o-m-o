@@ -161,7 +161,9 @@
 									</p>
 									<div class='row' style='padding-top:5% !important'>
 										<div class='col-md-2'></div>
-											<a href="#myModal" class="btn-minimal" data-toggle="modal">Launch Demo Modal</a>
+										<div class='col-md-8'>
+											<a href="#Modal1a" class="btn-minimal" data-toggle="modal">Read More..</a>
+										</div>	
 										<div class='col-md-2'></div>
 									</div>	
 								</div>
@@ -177,7 +179,7 @@
 									<div class='row' style='padding-top:5% !important'>
 										<div class='col-md-2'></div>
 										<div class='col-md-8'>
-											<button class=btn-minimal data-toggle="modal" data-target="#Modal1.2" type='submit' style='width:100% '>Continue Reading</button>
+											<a href="#Modal1b" class="btn-minimal" data-toggle="modal">Read More..</a>
 										</div>	
 										<div class='col-md-2'></div>
 									</div>
@@ -197,7 +199,7 @@
 									<div class='row' style='padding-top:5% !important'>
 										<div class='col-md-2'></div>
 										<div class='col-md-8'>
-											<button class='btn-minimal data-toggle="modal" data-target="#Modal1.3"' type='submit' style='width:100%'>Continue Reading</button>
+											<a href="#Modal1c" class="btn-minimal" data-toggle="modal">Read More..</a>
 										</div>	
 										<div class='col-md-2'></div>
 									</div>
@@ -968,7 +970,7 @@
 			Modals
 		==================================================================-->
 
-		<div id="myModal" class="modal fade">
+		<div id="Modal1a" class="modal fade">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
@@ -986,7 +988,47 @@
 					</div>
 				</div>
 			</div>
-		</div>     
+		</div> 
+		
+		<div id="Modal1b" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Confirmation</h4>
+						</div>
+						<div class="modal-body">
+							<p>Do you want to save changes you made to document before closing?</p>
+							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  
+
+		<div id="Modal1c" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Confirmation</h4>
+						</div>
+						<div class="modal-body">
+							<p>Do you want to save changes you made to document before closing?</p>
+							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  
 		
 	</body>
 </html>
