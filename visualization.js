@@ -24,13 +24,13 @@ $(document).ready(function() {
                         };
                         var opzionibarfeatures = {
                                             responsiveAnimationDuration: 1000,
-                                            "tooltips": {
-                                                "enabled": true,
-                                                "mode": 'single',
-                                                "callbacks": {
-                                                    "label": function(tooltipItems, data) {
-                                                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
-                                                    }
+                                            //"tooltips": {
+                                            //    "enabled": true,
+                                            //    "mode": 'single',
+                                            //    "callbacks": {
+                                            //        "label": function(tooltipItems, data) {
+                                            //            return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
+                                            //        }
                                                 }
                                             },
                                             legend: {
@@ -41,9 +41,9 @@ $(document).ready(function() {
                                                     "ticks": {
                                                         fontColor: "black",
                                                         "beginAtZero": true,
-                                                       // "callback": function(value, index, values) {
-                                                       //     return value + '%';
-                                                       // }
+                                                        "callback": function(value, index, values) {
+                                                            return value + '%';
+                                                        }
                                                     }
                                                 }],
                                             "xAxes": [{
