@@ -82,7 +82,7 @@ $(document).ready(function() {
                             percentualecompletezza.push(Math.round(arrayItem["percentualecompletezza"]))
                         });
                         var datibaratt = {
-                        labels: featureslabels,
+                        labels: socialname,
                         datasets: [
                             {
                                 "label": "Features",
