@@ -23,7 +23,6 @@ $(document).ready(function() {
                             ]
                         };
                         var opzionibarfeatures = {
-                                            maintainAspectRatio: false,
                                             responsiveAnimationDuration: 1000,
                                             "tooltips": {
                                                 "enabled": true,
