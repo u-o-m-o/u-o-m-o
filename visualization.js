@@ -41,7 +41,6 @@ $(document).ready(function() {
                                                     "ticks": {
                                                         fontColor: "black",
                                                         "beginAtZero": true,
-                                                        "max": 100,
                                                         "callback": function(value, index, values) {
                                                             return value + '%';
                                                         }
