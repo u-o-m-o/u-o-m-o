@@ -49,7 +49,13 @@ $(document).ready(function() {
                                             "xAxes": [{
                                                     "ticks": {
                                                         fontColor: "black"}
-                                                }]
+                                                }],
+                                            plugins: {
+                                              datalabels: {
+                                                 // hide datalabels for all datasets
+                                                 display: false
+                                                      }
+                                                    }
                                             }
                         };
 
