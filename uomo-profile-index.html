@@ -21,9 +21,12 @@
 		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
 		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
 		<link rel='stylesheet' type='text/css' href='css/style.css' >
+		<link rel='stylesheet' type='text/css' href='css/css2.css' >
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+	
 
 
 		
@@ -620,14 +623,14 @@
 		</div> 
 
 		<div id="Modal3b" class="modal fade">
-				<div class="modal-dialog">
+				<div class="modal-dialog" style="width:90%">
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 							<h4 class="modal-title">Confirmation</h4>
 						</div>
 						<div class="modal-body">
-							<iframe src="meetup.html" style="width:100%"></iframe> 	
+							<!--<iframe src="meetup.html" style="width:100%"></iframe> 	-->
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
@@ -638,24 +641,28 @@
 			</div>
 		</div> 
 
-		<div id="Modal3c" class="modal fade">
-				<div class="modal-dialog">
-					<div class="modal-content">
+		<div id="Modal3c" class="modal modal-big fade" style="display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%;">
+				<div class="modal-dialog-big modal-dialog" style="width:90%">
+					<div class="modal-content-big modal-content" style="max-height:100%; overflow-y: auto;">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title">Confirmation</h4>
+							<h4 class="modal-title" style="min-height:15px"></h4>
 						</div>
-						<div class="modal-body">
-							<iframe src="meetup.html" style="width:100%"></iframe> 	
+						<div class="modal-body" >
+							<div class="embed-responsive embed-responsive-16by9">
+									<iframe src="meetup.html"  allowfullscreen class="iframe"></iframe>
+							</div>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-							<button type="button" class="btn-minimal">Save changes</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div> 
+
+
+		
 		
 	</body>
 </html>

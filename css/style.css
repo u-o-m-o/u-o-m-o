@@ -272,6 +272,8 @@ a.btn-minimal{
 
 
 
+
+
 .intro-download-btns{
 }
 .intro-download-btns > .app-btn{
@@ -280,8 +282,6 @@ a.btn-minimal{
 .intro-download-btns > .app-btn:last-of-type{
 	margin-right:0;
 }
-
-
 
 
 
@@ -1101,6 +1101,8 @@ body.loaded #preloader{
 
 
 
+
+
 .owl-controls{
 	margin-top:20px;
 }
@@ -1235,10 +1237,12 @@ body.loaded #preloader{
 	.intro-section:after{
 		height:15px;
 	}
-	.menu-btn{
+	.menu-btn{ 
 		top:15px;
 		right:15px;
 	}
+	.modal-body {height:400px}   /*VALE ############################################################## */
+	iframe {max-width: 100%; max-height:100%}
 }
 @media (max-width:600px){
 	.menu-btn{
@@ -1269,4 +1273,6 @@ body.loaded #preloader{
 		margin:5px auto !important;
 		display:block;
 	}
+
+	
 }
