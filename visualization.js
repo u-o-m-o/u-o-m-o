@@ -15,7 +15,7 @@ $(document).ready(function() {
                         labels: featureslabels,
                         datasets: [
                             {
-                                "label": "Most Common Profile Features",
+                                "label": "Common Profile Feature",
                                 fontColor: "black",
                                 data: featuresdata,
                                 backgroundColor: "#808080"
@@ -41,9 +41,9 @@ $(document).ready(function() {
                                                     "ticks": {
                                                         fontColor: "black",
                                                         "beginAtZero": true,
-                                                        "callback": function(value, index, values) {
-                                                            return value + '%';
-                                                        }
+                                                       // "callback": function(value, index, values) {
+                                                       //     return value + '%';
+                                                       // }
                                                     }
                                                 }],
                                             "xAxes": [{
