@@ -132,6 +132,14 @@ $(document).ready(function() {
                                                 "options": opzionibaratt
                                             });
          //RADAR
+                    
+                    var datirad = {
+                        labels: socialname,
+                        datasets: [{
+                            "label": "Social Profile Completeness",
+                            data: percentualecompletezza
+                        }]
+                    };
                     var opzioniradar = {
                                                     responsiveAnimationDuration: 1000,
                                                     "tooltips": {
