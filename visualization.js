@@ -32,7 +32,7 @@ $(document).ready(function() {
                                             //            return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
                                             //        }
                                             //    }
-                                            },
+                                            //},
                                             legend: {
                                                 fontColor: "black"
                                             },
