@@ -66,7 +66,7 @@ $(document).ready(function() {
                     new Chart(barrafeatures,{
                                                 "type": "bar",
                                                 "data": datibar,
-                                                //"options": opzionibarfeatures
+                                                "options": opzionibarfeatures
                                             });
 
         }
