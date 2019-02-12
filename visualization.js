@@ -10,7 +10,7 @@ $(document).ready(function() {
                             featureslabels.push(arrayItem["nome_coso"])
                             featuresdata.push(Math.round(arrayItem["percentuale utilizzo"]))
                         });
-                        console.log(featuresdata);
+    //BARRA Attributi common
                         var datibar = {
                         labels: featureslabels,
                         datasets: [
@@ -22,7 +22,6 @@ $(document).ready(function() {
                                 },
                             ]
                         };
-
                         var opzionibarfeatures = {
                                             responsiveAnimationDuration: 1000,
                                             "tooltips": {
@@ -81,6 +80,7 @@ $(document).ready(function() {
                             attributi.push(arrayItem["attributi"])
                             percentualecompletezza.push(Math.round(arrayItem["percentualecompletezza"]))
                         });
+      //BARRA ATTRIBUTI (totali e unici)
                         var datibaratt = {
                         labels: socialname,
                         datasets: [
@@ -130,6 +130,38 @@ $(document).ready(function() {
                                                 "type": "horizontalBar",
                                                 "data": datibaratt,
                                                 "options": opzionibaratt
+                                            });
+         //RADAR
+                    var opzioniradar = {
+                                                    responsiveAnimationDuration: 1000,
+                                                    "tooltips": {
+                                                        "enabled": true,
+                                                        "mode": 'single',
+                                                        "callbacks": {
+                                                            "label": function(tooltipItems, data) {
+                                                                return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
+                                                            }
+                                                        }
+                                                    },
+                                                    "scale": {
+                                                        "ticks": {
+                                                            "beginAtZero": true,
+                                                            "max": 35,
+                                                             "callback": function(value, index, values) {
+                                                                            return value + '%';}
+                                                        }
+                                                    },
+                                                    legend: {
+                                                        display: true
+                                                    },
+                                                };
+
+                    
+                    var radarfeatures = document.getElementById("EleChartrad").getContext("2d");
+                    new Chart(radarfeatures, {
+                                                "type": 'radar',
+                                                "data": datirad,
+                                                "options": opzioniradar
                                             });
 
         }
