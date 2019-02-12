@@ -458,6 +458,10 @@
 		<script src='js/validator.min.js' ></script>
 		<script src='js/script.js' ></script> 
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="visualization.js"></script>
+
 
 		<!--==================================================================
 			Modals
@@ -476,7 +480,6 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-							<button type="button" class="btn-minimal">Save changes</button>
 						</div>
 					</div>
 				</div>
@@ -496,7 +499,6 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-							<button type="button" class="btn-minimal">Save changes</button>
 						</div>
 					</div>
 				</div>
@@ -511,8 +513,9 @@
 							<h4 class="modal-title">Confirmation</h4>
 						</div>
 						<div class="modal-body">
-							<p>Do you want to save changes you made to document before closing?</p>
-							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+							<canvas id="StatsChartbar" style="width: 200px;"></canvas>
+							<canvas id="FeaturesChartbar" style="width: 200px;"></canvas>
+							<canvas id="EleChartrad" style="width: 200px;"></canvas>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
@@ -536,7 +539,6 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-							<button type="button" class="btn-minimal">Save changes</button>
 						</div>
 					</div>
 				</div>
@@ -576,7 +578,6 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-							<button type="button" class="btn-minimal">Save changes</button>
 						</div>
 					</div>
 				</div>
@@ -596,7 +597,6 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-							<button type="button" class="btn-minimal">Save changes</button>
 						</div>
 					</div>
 				</div>
@@ -615,7 +615,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-							<button type="button" class="btn-minimal">Save changes</button>
+
 						</div>
 					</div>
 				</div>
@@ -634,7 +634,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-							<button type="button" class="btn-minimal">Save changes</button>
+
 						</div>
 					</div>
 				</div>
