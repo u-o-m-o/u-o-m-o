@@ -28,9 +28,6 @@ $(document).ready(function() {
                                                 "enabled": true,
                                                 "mode": 'single',
                                                 "callbacks": {
-                                                    datalabels: function(tooltipItems, data) {
-                                                                return "";
-                                                      },
                                                     "label": function(tooltipItems, data) {
                                                         return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
                                                     }
@@ -40,20 +37,25 @@ $(document).ready(function() {
                                                 fontColor: "black"
                                             },
                                             "scales": {
-                                                "yAxes": [{
-                                                    "ticks": {
-                                                        fontColor: "black",
-                                                        "beginAtZero": true,
-                                                        "callback": function(value, index, values) {
-                                                            return value + '%';
-                                                        }
-                                                    }
-                                                }],
-                                            "xAxes": [{
-                                                    "ticks": {
-                                                        fontColor: "black"}
-                                                }],
-                                            }
+                                                        "yAxes": [{
+                                                            "ticks": {
+                                                                fontColor: "black",
+                                                                "beginAtZero": true,
+                                                                "callback": function(value, index, values) {
+                                                                    return value + '%';
+                                                                }
+                                                            }
+                                                        }],
+                                                    "xAxes": [{
+                                                            "ticks": {
+                                                                fontColor: "black"}
+                                                        }],
+                                                    },
+                                plugins: {      
+                                    datalabels: {
+                                        display: false,
+                                    },
+                                }
                         };
 
 
