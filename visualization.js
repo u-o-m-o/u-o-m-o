@@ -24,15 +24,18 @@ $(document).ready(function() {
                         };
                         var opzionibarfeatures = {
                                             responsiveAnimationDuration: 1000,
-                                            //"tooltips": {
-                                            //    "enabled": true,
-                                            //    "mode": 'single',
-                                            //    "callbacks": {
-                                            //        "label": function(tooltipItems, data) {
-                                            //            return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
-                                            //        }
-                                            //    }
-                                            //},
+                                            "tooltips": {
+                                                "enabled": true,
+                                                "mode": 'single',
+                                                "callbacks": {
+                                                    datalabels: function(tooltipItems, data) {
+                                                                return "";
+                                                      },
+                                                    "label": function(tooltipItems, data) {
+                                                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
+                                                    }
+                                                }
+                                            },
                                             legend: {
                                                 fontColor: "black"
                                             },
@@ -50,13 +53,6 @@ $(document).ready(function() {
                                                     "ticks": {
                                                         fontColor: "black"}
                                                 }],
-                                            plugins: {
-                                              datalabels: {
-                                                        formatter: function(value){
-                                                                return "";
-                                                        }
-                                                      }
-                                                    }
                                             }
                         };
 
