@@ -94,7 +94,7 @@ $(document).ready(function() {
                                     "label": "Unique Features",
                                     fontColor: "black",
                                     data: attributiunici,
-                                    backgroundColor: "#808080"
+                                    backgroundColor: "#000000"
                                     },
                                 ]
                         };
@@ -104,11 +104,6 @@ $(document).ready(function() {
                                             "tooltips": {
                                                 "enabled": true,
                                                 "mode": 'single',
-                                                "callbacks": {
-                                                    "label": function(tooltipItems, data) {
-                                                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.xLabel + '%';
-                                                    }
-                                                }
                                             },
                                             legend: {
                                                 fontColor: "black"
@@ -118,10 +113,6 @@ $(document).ready(function() {
                                                     "ticks": {
                                                         fontColor: "black",
                                                         "beginAtZero": true,
-                                                        "max": 35,
-                                                        "callback": function(value, index, values) {
-                                                            return value + '%';
-                                                        }
                                                     }
                                                 }],
                                             "yAxes": [{
