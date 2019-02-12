@@ -52,8 +52,9 @@ $(document).ready(function() {
                                                 }],
                                             plugins: {
                                               datalabels: {
-                                                 // hide datalabels for all datasets
-                                                 display: false
+                                                        formatter: function(value){
+                                                                return "";
+                                                        }
                                                       }
                                                     }
                                             }
