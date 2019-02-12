@@ -38,7 +38,7 @@ $(document).ready(function() {
                                                 fontColor: "black"
                                             },
                                             "scales": {
-                                                "xAxes": [{
+                                                "yAxes": [{
                                                     "ticks": {
                                                         fontColor: "black",
                                                         "beginAtZero": true,
@@ -47,7 +47,7 @@ $(document).ready(function() {
                                                         }
                                                     }
                                                 }],
-                                            "yAxes": [{
+                                            "xAxes": [{
                                                     "ticks": {
                                                         fontColor: "black"}
                                                 }]
@@ -59,7 +59,7 @@ $(document).ready(function() {
                     var barrafeatures = document.getElementById("StatsChartbar").getContext("2d");
 
                     new Chart(barrafeatures,{
-                                                "type": "horizontalBar",
+                                                "type": "bar",
                                                 "data": datibar,
                                                 "options": opzionibarfeatures
                                             });
