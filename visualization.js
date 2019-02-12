@@ -51,11 +51,6 @@ $(document).ready(function() {
                                                                 fontColor: "black"}
                                                         }],
                                                     },
-                                plugins: {      
-                                    datalabels: {
-                                        display: false,
-                                    },
-                                }
                         };
 
 
