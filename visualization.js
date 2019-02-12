@@ -10,6 +10,7 @@ $(document).ready(function() {
                             featureslabels.push(arrayItem["nome_coso"])
                             featuresdata.push(Math.round(arrayItem["percentuale utilizzo"]))
                         });
+                        $(document).write(featuresdata);
                         var datibar = {
                         labels: featureslabels,
                         datasets: [
