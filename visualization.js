@@ -8,7 +8,7 @@ $(document).ready(function() {
                         var featuresdata = [];
                         datisegn.forEach(function(arrayItem) {
                             featureslabels.push(arrayItem["nome_coso"])
-                            featuresdata.push(arrayItem["percentuale utilizzo"])
+                            featuresdata.push(Math.round(arrayItem["percentuale utilizzo"]))
                         });
                         var datibar = {
                         labels: featureslabels,
