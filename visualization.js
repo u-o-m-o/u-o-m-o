@@ -31,7 +31,7 @@ $(document).ready(function() {
                                             //        "label": function(tooltipItems, data) {
                                             //            return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
                                             //        }
-                                                }
+                                            //    }
                                             },
                                             legend: {
                                                 fontColor: "black"
