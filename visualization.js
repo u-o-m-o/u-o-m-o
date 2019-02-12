@@ -85,13 +85,13 @@ $(document).ready(function() {
                         labels: socialname,
                         datasets: [
                             {
-                                "label": "Features",
+                                "label": "Profile Features",
                                 fontColor: "black",
                                 data: attributi,
                                 backgroundColor: "#808080"
                                 },
                                 {
-                                    "label": "Unique Features",
+                                    "label": "Unique Profile Features",
                                     fontColor: "black",
                                     data: attributiunici,
                                     backgroundColor: "#000000"
