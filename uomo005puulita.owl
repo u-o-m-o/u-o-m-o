@@ -1,0 +1,1989 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#"
+     xml:base="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24"
+     xmlns:schema="http://schema.org/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs1="rdfs:"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24">
+        <terms:rights xml:lang="en">https://creativecommons.org/licenses/by/4.0/</terms:rights>
+        <terms:issued xml:lang="en">11/02/2019</terms:issued>
+        <terms:modified xml:lang="en">13/02/2019</terms:modified>
+        <terms:hasVersion xml:lang="en">0.0.4</terms:hasVersion>
+        <terms:publisher xml:lang="en">https://github.com/uomodhdk</terms:publisher>
+        <terms:title xml:lang="en">UOMO User Oriented social Media Ontology</terms:title>
+        <terms:description xml:lang="en">UOMO (User Oriented social Media Ontology) is an ontology for describing the information about Social Media focusing on the User Perspective.</terms:description>
+    </owl:Ontology>
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#container_of -->
+
+    <rdf:Description rdf:about="http://rdfs.org/sioc/ns#container_of">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#has_container -->
+
+    <rdf:Description rdf:about="http://rdfs.org/sioc/ns#has_container">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates">
+        <rdfs:domain rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_displaying_order -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_displaying_order">
+        <rdfs:domain rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname">
+        <rdfs:domain rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of">
+        <rdfs:domain rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"/>
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of">
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTime">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Bio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Bio">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It is intended both as the type of University or school general study program</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">It is intended for every kind of educational certificates (School diploma or Proof)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#favorite_quotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#favorite_quotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:description>With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the &quot;Comments&quot; and &quot;Post&quot; containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)</terms:description>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>all but blocked users</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>followers</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>friends</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>friends of a friend</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>only user</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>public</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#political_orientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#political_orientation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#religion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#religion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#sexual_orientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#sexual_orientation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_label">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/family_name -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/family_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/firstName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/gender -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/nick -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/nick">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/surname -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/surname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#Container -->
+
+    <rdf:Description rdf:about="http://rdfs.org/sioc/ns#Container">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#UserAccount -->
+
+    <rdf:Description rdf:about="http://rdfs.org/sioc/ns#UserAccount">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://schema.org/Accommodation -->
+
+    <owl:Class rdf:about="http://schema.org/Accommodation">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/AdministrativeArea -->
+
+    <owl:Class rdf:about="http://schema.org/AdministrativeArea">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/CivicStructure -->
+
+    <owl:Class rdf:about="http://schema.org/CivicStructure">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Landform -->
+
+    <owl:Class rdf:about="http://schema.org/Landform">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/LandmarksOrHistoricalBuildings -->
+
+    <owl:Class rdf:about="http://schema.org/LandmarksOrHistoricalBuildings">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/LocalBusiness -->
+
+    <owl:Class rdf:about="http://schema.org/LocalBusiness">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+        <schema:sameAs rdf:resource="https://schema.org/Place"/>
+        <rdfs:comment>Entities that have a somewhat fixed, physical extension.</rdfs:comment>
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Residence -->
+
+    <owl:Class rdf:about="http://schema.org/Residence">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Thing -->
+
+    <owl:Class rdf:about="http://schema.org/Thing">
+        <schema:sameAs rdf:resource="https://schema.org/Thing"/>
+        <rdfs:comment>The most generic type of item.</rdfs:comment>
+        <rdfs:label>Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/TouristAttraction -->
+
+    <owl:Class rdf:about="http://schema.org/TouristAttraction">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/TouristDestination -->
+
+    <owl:Class rdf:about="http://schema.org/TouristDestination">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Address -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Address">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+        <terms:description xml:lang="en">The order is given through a generally unknown internal algorithm of the Social Media</terms:description>
+        <rdfs:label xml:lang="en">Algorithmic Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+        <rdfs:label xml:lang="en">Alphabetical Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <rdfs:comment xml:lang="en">Also History</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chronological Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"/>
+        <rdfs:label xml:lang="en">Color Palette</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Container">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:comment xml:lang="en">A container is intended as a section of a profile that contains other elements such has media, hyperlinks, tags</rdfs:comment>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in"/>
+                <owl:someValuesFrom rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container">
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">The order through which the items in a container are displayed</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"/>
+        <rdfs:label xml:lang="en">Displaying Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Email -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Email">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Fax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Fax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Follower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Follower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Following -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Following">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Form -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Form">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Friends -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Friends">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+        <rdfs:comment xml:lang="en">With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Interest_Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Interest_Container">
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Karma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Karma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_label"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container">
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:comment xml:lang="en">A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as &quot;following&quot;, &quot;followers&quot; etc...)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of"/>
+                <owl:someValuesFrom rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/nick"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">The identifier of a user in a Social Media</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"/>
+        <rdfs:label xml:lang="en">Account Name</rdfs:label>
+        <rdfs:label xml:lang="en">Nickname</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_followers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_followers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_following -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_following">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_likes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_likes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_posts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_posts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Organization">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Other_user_generated_content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Other_user_generated_content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Website -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Website">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_generated_content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_generated_content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+        <rdfs:label xml:lang="en">Popularity Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container"/>
+                <owl:someValuesFrom rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Relationships -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Relationships">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>all but blocked users</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>followers</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>friends</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>friends of a friend</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>only user</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>public</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Telephone_Number -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Telephone_Number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trainership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trainership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trophies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trophies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User_Profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User_Profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Views -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Views">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <terms:description xml:lang="en">UOMO (User Oriented social Media Ontology) is an ontology for describing the information about Social Media focusing on the User Perspective.</terms:description>
+    </owl:Thing>
+    
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
