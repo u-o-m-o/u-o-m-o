@@ -1,0 +1,1451 @@
+@prefix : <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24> .
+
+<http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24> rdf:type owl:Ontology ;
+                                                                           owl:imports <http://rdfs.org/sioc/ns#> ,
+                                                                                       <http://www.w3.org/2006/time#2016> ,
+                                                                                       <http://xmlns.com/foaf/0.1/> ;
+                                                                           <http://purl.org/dc/terms/description> "UOMO (User Oriented social Media Ontology) is an ontology for describing the information about Social Media focusing on the User Perspective."@en ;
+                                                                           <http://purl.org/dc/terms/hasVersion> "0.0.4"@en ;
+                                                                           <http://purl.org/dc/terms/issued> "11/02/2019"@en ;
+                                                                           <http://purl.org/dc/terms/modified> "13/02/2019"@en ;
+                                                                           <http://purl.org/dc/terms/publisher> "https://github.com/uomodhdk"@en ;
+                                                                           <http://purl.org/dc/terms/rights> "https://creativecommons.org/licenses/by/4.0/"@en ;
+                                                                           <http://purl.org/dc/terms/title> "UOMO User Oriented social Media Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:domain _:genid90 .
+
+
+###  http://purl.org/dc/terms/hasVersion
+<http://purl.org/dc/terms/hasVersion> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/additionalType
+<http://schema.org/additionalType> rdf:type owl:AnnotationProperty ;
+                                   <http://schema.org/domainIncludes> <http://schema.org/Thing> ;
+                                   <http://schema.org/rangeIncludes> <http://schema.org/URL> ;
+                                   <http://schema.org/sameAs> <https://schema.org/additionalType> ;
+                                   rdfs:comment "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally." ;
+                                   rdfs:label "additionalType" ;
+                                   rdfs:subPropertyOf rdf:type .
+
+
+###  http://schema.org/category
+<http://schema.org/category> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/description
+<http://schema.org/description> rdf:type owl:AnnotationProperty ;
+                                <http://schema.org/domainIncludes> <http://schema.org/Thing> ;
+                                <http://schema.org/rangeIncludes> <http://schema.org/Text> ;
+                                <http://schema.org/sameAs> <https://schema.org/description> ;
+                                rdfs:comment "A description of the item." ;
+                                rdfs:label "description" .
+
+
+###  http://schema.org/disambiguatingDescription
+<http://schema.org/disambiguatingDescription> rdf:type owl:AnnotationProperty ;
+                                              <http://schema.org/domainIncludes> <http://schema.org/Thing> ;
+                                              <http://schema.org/rangeIncludes> <http://schema.org/Text> ;
+                                              <http://schema.org/sameAs> <https://schema.org/disambiguatingDescription> ;
+                                              rdfs:comment "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation." ;
+                                              rdfs:label "disambiguatingDescription" ;
+                                              rdfs:subPropertyOf <http://schema.org/description> .
+
+
+###  http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/globalLocationNumber
+<http://schema.org/globalLocationNumber> rdf:type owl:AnnotationProperty ;
+                                         <http://purl.org/dc/terms/source> <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms> ;
+                                         <http://schema.org/domainIncludes> <http://schema.org/Organization> ,
+                                                                            <http://schema.org/Person> ,
+                                                                            <http://schema.org/Place> ;
+                                         <http://schema.org/rangeIncludes> <http://schema.org/Text> ;
+                                         <http://schema.org/sameAs> <https://schema.org/globalLocationNumber> ;
+                                         rdfs:comment "The <a href=\"http://www.gs1.org/gln\">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations." ;
+                                         rdfs:label "globalLocationNumber" ;
+                                         rdfs:subPropertyOf <http://schema.org/identifier> .
+
+
+###  http://schema.org/identifier
+<http://schema.org/identifier> rdf:type owl:AnnotationProperty ;
+                               <http://schema.org/domainIncludes> <http://schema.org/Thing> ;
+                               <http://schema.org/rangeIncludes> <http://schema.org/PropertyValue> ,
+                                                                 <http://schema.org/Text> ,
+                                                                 <http://schema.org/URL> ;
+                               <http://schema.org/sameAs> <https://schema.org/identifier> ;
+                               rdfs:comment "The identifier property represents any kind of identifier for any kind of <a class=\"localLink\" href=\"http://schema.org/Thing\">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href=\"/docs/datamodel.html#identifierBg\">background notes</a> for more details." ;
+                               rdfs:label "identifier" .
+
+
+###  http://schema.org/image
+<http://schema.org/image> rdf:type owl:AnnotationProperty ;
+                          <http://schema.org/domainIncludes> <http://schema.org/Thing> ;
+                          <http://schema.org/rangeIncludes> <http://schema.org/ImageObject> ,
+                                                            <http://schema.org/URL> ;
+                          <http://schema.org/sameAs> <https://schema.org/image> ;
+                          rdfs:comment "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>." ;
+                          rdfs:label "image" .
+
+
+###  http://schema.org/inverseOf
+<http://schema.org/inverseOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/isPartOf
+<http://schema.org/isPartOf> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/logo
+<http://schema.org/logo> rdf:type owl:AnnotationProperty ;
+                         <http://purl.org/dc/terms/source> <http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms> ;
+                         <http://schema.org/domainIncludes> <http://schema.org/Brand> ,
+                                                            <http://schema.org/Organization> ,
+                                                            <http://schema.org/Place> ,
+                                                            <http://schema.org/Product> ,
+                                                            <http://schema.org/Service> ;
+                         <http://schema.org/rangeIncludes> <http://schema.org/ImageObject> ,
+                                                           <http://schema.org/URL> ;
+                         <http://schema.org/sameAs> <https://schema.org/logo> ;
+                         rdfs:comment "An associated logo." ;
+                         rdfs:label "logo" ;
+                         rdfs:subPropertyOf <http://schema.org/image> .
+
+
+###  http://schema.org/name
+<http://schema.org/name> rdf:type owl:AnnotationProperty ;
+                         <http://schema.org/domainIncludes> <http://schema.org/Thing> ;
+                         <http://schema.org/rangeIncludes> <http://schema.org/Text> ;
+                         <http://schema.org/sameAs> <https://schema.org/name> ;
+                         rdfs:comment "The name of the item." ;
+                         rdfs:label "name" ;
+                         rdfs:subPropertyOf <rdfs:label> .
+
+
+###  http://schema.org/photo
+<http://schema.org/photo> rdf:type owl:AnnotationProperty ;
+                          <http://schema.org/domainIncludes> <http://schema.org/Place> ;
+                          <http://schema.org/rangeIncludes> <http://schema.org/ImageObject> ,
+                                                            <http://schema.org/Photograph> ;
+                          <http://schema.org/sameAs> <https://schema.org/photo> ;
+                          rdfs:comment "A photograph of this place." ;
+                          rdfs:label "photo" ;
+                          rdfs:subPropertyOf <http://schema.org/image> .
+
+
+###  http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/sameAs
+<http://schema.org/sameAs> rdf:type owl:AnnotationProperty ;
+                           <http://schema.org/domainIncludes> <http://schema.org/Thing> ;
+                           <http://schema.org/rangeIncludes> <http://schema.org/URL> ;
+                           <http://schema.org/sameAs> <https://schema.org/sameAs> ;
+                           rdfs:comment "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website." ;
+                           rdfs:label "sameAs" .
+
+
+###  http://schema.org/supersededBy
+<http://schema.org/supersededBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
+rdf:type rdf:type owl:AnnotationProperty .
+
+
+###  rdfs:label
+<rdfs:label> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://rdfs.org/sioc/ns#container_of
+<http://rdfs.org/sioc/ns#container_of> owl:equivalentProperty :is_container_of .
+
+
+###  http://rdfs.org/sioc/ns#has_container
+<http://rdfs.org/sioc/ns#has_container> owl:equivalentProperty :has_container .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains
+:contains rdf:type owl:ObjectProperty ;
+          rdfs:domain :Content_Container ;
+          rdfs:range :Content .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by
+:created_by rdf:type owl:ObjectProperty ;
+            owl:inverseOf :creates ;
+            rdfs:domain :Profile ;
+            rdfs:range <http://rdfs.org/sioc/ns#UserAccount> ,
+                       :User .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates
+:creates rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://rdfs.org/sioc/ns#UserAccount> ,
+                     :User ;
+         rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements
+:has_achievements rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :is_an_achievement_of ;
+                  rdfs:domain :Profile ;
+                  rdfs:range :Achievement .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info
+:has_biographical_info rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :is_a_biographical_info_of ;
+                       rdfs:domain :Profile ;
+                       rdfs:range :Biographical_info .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette
+:has_color_palette rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :is_color_palette_of ;
+                   rdfs:domain :Profile ;
+                   rdfs:range :Color_Palette .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info
+:has_contact_info rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :is_contact_info_of ;
+                  rdfs:domain :Profile ;
+                  rdfs:range :Contact_info .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container
+:has_container rdf:type owl:ObjectProperty ;
+               owl:inverseOf :is_container_of ;
+               rdfs:domain :Profile ;
+               rdfs:range <http://rdfs.org/sioc/ns#Container> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_displaying_order
+:has_displaying_order rdf:type owl:ObjectProperty ;
+                      rdfs:domain <http://rdfs.org/sioc/ns#Container> ;
+                      rdfs:range :Displaying_Order .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box
+:has_input_content_box rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :is_input_content_box_of ;
+                       rdfs:domain :Profile ;
+                       rdfs:range :Input_content_box .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date
+:has_inscription_date rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Profile ;
+                      rdfs:range :Inscription_Date .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media
+:has_main_media rdf:type owl:ObjectProperty ;
+                owl:inverseOf :is_main_media_of ;
+                rdfs:domain :Profile ;
+                rdfs:range :Main_Media .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media
+:has_media rdf:type owl:ObjectProperty ;
+           owl:inverseOf :is_media_of ;
+           rdfs:domain :Background ;
+           rdfs:range :Media .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname
+:has_nickname rdf:type owl:ObjectProperty ;
+              rdfs:domain <http://rdfs.org/sioc/ns#UserAccount> ;
+              rdfs:range [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_nickname ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Nickname
+                         ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place
+:has_place rdf:type owl:ObjectProperty ;
+           owl:inverseOf :is_place_of ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Actual_Place
+                                       :Birth
+                                       :Experience
+                                     )
+                       ] ;
+           rdfs:range <http://schema.org/Place> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats
+:has_stats rdf:type owl:ObjectProperty ;
+           owl:inverseOf :is_a_stat_of ;
+           rdfs:domain :Profile ;
+           rdfs:range :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of
+:is_a_biographical_info_of rdf:type owl:ObjectProperty ;
+                           rdfs:domain :Biographical_info ;
+                           rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of
+:is_a_stat_of rdf:type owl:ObjectProperty ;
+              rdfs:domain :Stats ;
+              rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of
+:is_an_achievement_of rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Achievement ;
+                      rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of
+:is_color_palette_of rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Color_Palette ;
+                     rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of
+:is_contact_info_of rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Contact_info ;
+                    rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in
+:is_contained_in rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Content ;
+                 rdfs:range :Content_Container .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of
+:is_container_of rdf:type owl:ObjectProperty ;
+                 rdfs:domain <http://rdfs.org/sioc/ns#Container> ;
+                 rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of
+:is_displaying_order_of rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at
+:is_held_at rdf:type owl:ObjectProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Educational_Experience
+                                        :Working_Experience
+                                      )
+                        ] ;
+            rdfs:range <http://xmlns.com/foaf/0.1/Organization> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of
+:is_input_content_box_of rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Input_content_box ;
+                         rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of
+:is_main_media_of rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Main_Media ;
+                  rdfs:range :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of
+:is_media_of rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :Media ;
+             rdfs:range :Background .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of
+:is_nickname_of rdf:type owl:ObjectProperty ;
+                rdfs:domain :Nickname ;
+                rdfs:range <http://rdfs.org/sioc/ns#UserAccount> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of
+:is_place_of rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://schema.org/Place> ;
+             rdfs:range [ rdf:type owl:Class ;
+                          owl:unionOf ( :Actual_Place
+                                        :Birth
+                                        :Experience
+                                      )
+                        ] .
+
+
+###  http://www.w3.org/2006/time#hasTime
+<http://www.w3.org/2006/time#hasTime> rdfs:domain [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :Birth
+                                                                  :Experience
+                                                                  :Inscription_Date
+                                                                  :Name_Day
+                                                                )
+                                                  ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Bio
+:Bio rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf <http://purl.org/dc/terms/description> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes
+:allowed_emotes rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Chat ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer
+:answer rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Trivia ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study
+:area_of_study rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Educational_Experience ;
+               rdfs:range xsd:string ;
+               rdfs:comment "It is intended both as the type of University or school general study program"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category
+:category rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Personal_Experience ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification
+:certification rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Educational_Experience ;
+               rdfs:range xsd:anyURI ;
+               rdfs:comment "It is intended for every kind of educational certificates (School diploma or Proof)"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color
+:color rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Color_Palette ;
+       rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation
+:evaluation rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Educational_Experience ;
+            rdfs:range [ rdf:type rdfs:Datatype ;
+                         owl:unionOf ( xsd:nonNegativeInteger
+                                       xsd:string
+                                     )
+                       ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities
+:extracurricular_activities rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Educational_Experience ;
+                            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#favorite_quotes
+:favorite_quotes rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :other_biographic_data .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field
+:field rdf:type owl:DatatypeProperty ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :Working_Experience
+                                   <http://xmlns.com/foaf/0.1/Organization>
+                                 )
+                   ] ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name
+:full_name rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :other_biographic_data .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf :other_biographic_data .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic
+:is_automatic rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Content ;
+              rdfs:range xsd:boolean ;
+              <http://purl.org/dc/terms/description> "With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the \"Comments\" and \"Post\" containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)" .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old
+:is_new_to_old rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Chronological_Order ;
+               rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to
+:is_visible_to rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Social_Media_Data ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "all but blocked users" ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "followers" ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "friends" ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "friends of a friend" ;
+                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                    rdf:first "only user" ;
+                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                               rdf:first "public" ;
+                                                                                               rdf:rest rdf:nil
+                                                                                             ]
+                                                                                  ]
+                                                                       ]
+                                                            ]
+                                                 ]
+                                      ]
+                          ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label
+:label rdf:type owl:DatatypeProperty ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :Skill
+                                   :Working_Experience
+                                 )
+                   ] ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language
+:language rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :other_biographic_data ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Biographical_info
+                                      :Language_Competency
+                                    )
+                      ] ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level
+:level rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Language_Competency ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link
+:link rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Hypertext ;
+      rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number
+:max_character_number rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Input_content_box ;
+                      rdfs:range xsd:nonNegativeInteger .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data
+:other_biographic_data rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Biographical_info ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#political_orientation
+:political_orientation rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf :other_biographic_data .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question
+:question rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Trivia ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#religion
+:religion rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :other_biographic_data .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#sexual_orientation
+:sexual_orientation rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :other_biographic_data .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon
+:social_media_icon rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Link_to_other_Social_Media ;
+                   rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_label
+:social_media_label rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Link_to_other_Social_Media ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Personal_Experience ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri
+:uri rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Profile ;
+     rdfs:range xsd:anyURI .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :Contact_info
+                                   :Stats
+                                 )
+                   ] ;
+       rdfs:range [ rdf:type rdfs:Datatype ;
+                    owl:unionOf ( xsd:nonNegativeInteger
+                                  xsd:string
+                                )
+                  ] .
+
+
+###  http://xmlns.com/foaf/0.1/age
+<http://xmlns.com/foaf/0.1/age> rdfs:subPropertyOf :other_biographic_data .
+
+
+###  http://xmlns.com/foaf/0.1/family_name
+<http://xmlns.com/foaf/0.1/family_name> rdfs:subPropertyOf :full_name .
+
+
+###  http://xmlns.com/foaf/0.1/firstName
+<http://xmlns.com/foaf/0.1/firstName> rdfs:subPropertyOf :full_name .
+
+
+###  http://xmlns.com/foaf/0.1/gender
+<http://xmlns.com/foaf/0.1/gender> rdfs:subPropertyOf :other_biographic_data .
+
+
+###  http://xmlns.com/foaf/0.1/nick
+<http://xmlns.com/foaf/0.1/nick> rdfs:domain :Nickname ;
+                                 rdfs:range rdfs:Literal .
+
+
+###  http://xmlns.com/foaf/0.1/surname
+<http://xmlns.com/foaf/0.1/surname> rdfs:subPropertyOf :full_name .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://rdfs.org/sioc/ns#Container
+<http://rdfs.org/sioc/ns#Container> rdfs:subClassOf :Social_Media_Data ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :is_container_of ;
+                                                      owl:someValuesFrom :Profile
+                                                    ] ;
+                                    owl:disjointWith :Content ,
+                                                     :Profile .
+
+
+###  http://rdfs.org/sioc/ns#UserAccount
+<http://rdfs.org/sioc/ns#UserAccount> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :creates ;
+                                                        owl:someValuesFrom :Profile
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :has_nickname ;
+                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:onClass :Nickname
+                                                      ] ;
+                                      owl:disjointWith :Profile .
+
+
+###  http://schema.org/Accommodation
+<http://schema.org/Accommodation> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/AdministrativeArea
+<http://schema.org/AdministrativeArea> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/CivicStructure
+<http://schema.org/CivicStructure> rdf:type owl:Class ;
+                                   rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/Landform
+<http://schema.org/Landform> rdf:type owl:Class ;
+                             rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/LandmarksOrHistoricalBuildings
+<http://schema.org/LandmarksOrHistoricalBuildings> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/LocalBusiness
+<http://schema.org/LocalBusiness> rdf:type owl:Class ;
+                                  rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/Place
+<http://schema.org/Place> rdf:type owl:Class ;
+                          rdfs:subClassOf <http://schema.org/Thing> ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :is_place_of ;
+                                            owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                 owl:unionOf ( :Actual_Place
+                                                                               :Birth
+                                                                               :Experience
+                                                                             )
+                                                               ]
+                                          ] ;
+                          owl:disjointWith :Actual_Place ,
+                                           :Birth ,
+                                           :Experience ;
+                          <http://schema.org/sameAs> <https://schema.org/Place> ;
+                          rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
+                          rdfs:label "Place" .
+
+
+###  http://schema.org/Residence
+<http://schema.org/Residence> rdf:type owl:Class ;
+                              rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/Thing
+<http://schema.org/Thing> rdf:type owl:Class ;
+                          <http://schema.org/sameAs> <https://schema.org/Thing> ;
+                          rdfs:comment "The most generic type of item." ;
+                          rdfs:label "Thing" .
+
+
+###  http://schema.org/TouristAttraction
+<http://schema.org/TouristAttraction> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://schema.org/TouristDestination
+<http://schema.org/TouristDestination> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://schema.org/Place> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement
+:Achievement rdf:type owl:Class ;
+             rdfs:subClassOf :Social_Media_Data ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :is_an_achievement_of ;
+                               owl:someValuesFrom :Profile
+                             ] ;
+             owl:disjointWith :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place
+:Actual_Place rdf:type owl:Class ;
+              rdfs:subClassOf :Biographical_info ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :has_place ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass <http://schema.org/Place>
+                              ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Address
+:Address rdf:type owl:Class ;
+         rdfs:subClassOf :Contact_info .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order
+:Algorithmic_Order rdf:type owl:Class ;
+                   rdfs:subClassOf :Displaying_Order ;
+                   <http://purl.org/dc/terms/description> "The order is given through a generally unknown internal algorithm of the Social Media"@en ;
+                   rdfs:label "Algorithmic Order"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order
+:Alphabetical_Order rdf:type owl:Class ;
+                    rdfs:subClassOf :Displaying_Order ;
+                    rdfs:label "Alphabetical Order"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background
+:Background rdf:type owl:Class ;
+            rdfs:subClassOf :Biographical_info ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_media ;
+                              owl:someValuesFrom :Media
+                            ] ;
+            owl:disjointWith :Media ;
+            rdfs:comment "Also History"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background_Media
+:Background_Media rdf:type owl:Class ;
+                  rdfs:subClassOf :Main_Media .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info
+:Biographical_info rdf:type owl:Class ;
+                   rdfs:subClassOf :Social_Media_Data ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :is_a_biographical_info_of ;
+                                     owl:someValuesFrom :Profile
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.w3.org/2006/time#hasTime> ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass <http://www.w3.org/2006/time#TemporalEntity>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :other_biographic_data ;
+                                     owl:someValuesFrom xsd:string
+                                   ] ;
+                   owl:disjointWith :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth
+:Birth rdf:type owl:Class ;
+       rdfs:subClassOf :Biographical_info ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :has_place ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass <http://schema.org/Place>
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty <http://www.w3.org/2006/time#hasTime> ;
+                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass <http://www.w3.org/2006/time#TemporalEntity>
+                       ] ;
+       owl:disjointWith <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat
+:Chat rdf:type owl:Class ;
+      rdfs:subClassOf :Input_content_box ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :allowed_emotes ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange xsd:string
+                      ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order
+:Chronological_Order rdf:type owl:Class ;
+                     rdfs:subClassOf :Displaying_Order ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :is_new_to_old ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:boolean
+                                     ] ;
+                     rdfs:label "Chronological Order"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette
+:Color_Palette rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :is_color_palette_of ;
+                                 owl:someValuesFrom :Profile
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :color ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onDataRange xsd:string
+                               ] ;
+               owl:disjointWith :Profile ;
+               <http://purl.org/dc/terms/description> "Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background."@en ;
+               rdfs:isDefinedBy <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> ;
+               rdfs:label "Color Palette"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info
+:Contact_info rdf:type owl:Class ;
+              rdfs:subClassOf :Social_Media_Data ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :is_contact_info_of ;
+                                owl:someValuesFrom :Profile
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :value ;
+                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                     owl:unionOf ( xsd:nonNegativeInteger
+                                                                   xsd:string
+                                                                 )
+                                                   ]
+                              ] ;
+              owl:disjointWith :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Container
+:Container rdf:type owl:Class ;
+           rdfs:subClassOf :Social_Media_Data ;
+           rdfs:comment "A container is intended as a section of a profile that contains other elements such has media, hyperlinks, tags"@en ;
+           owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content
+:Content rdf:type owl:Class ;
+         rdfs:subClassOf :Social_Media_Data ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :is_contained_in ;
+                           owl:someValuesFrom <http://rdfs.org/sioc/ns#Container>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :is_automatic ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:boolean
+                         ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container
+:Content_Container rdf:type owl:Class ;
+                   rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :contains ;
+                                     owl:someValuesFrom :Content
+                                   ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order
+:Displaying_Order rdf:type owl:Class ;
+                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :is_displaying_order_of ;
+                                    owl:someValuesFrom :Profile
+                                  ] ;
+                  owl:disjointWith :Profile ;
+                  <http://purl.org/dc/terms/description> "The order through which the items in a container are displayed"@en ;
+                  rdfs:isDefinedBy <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> ;
+                  rdfs:label "Displaying Order"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience
+:Educational_Experience rdf:type owl:Class ;
+                        rdfs:subClassOf :Experience ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :is_held_at ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onClass <http://xmlns.com/foaf/0.1/Organization>
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :area_of_study ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :extracurricular_activities ;
+                                          owl:someValuesFrom xsd:string
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :certification ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange xsd:anyURI
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :evaluation ;
+                                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                            owl:unionOf ( xsd:nonNegativeInteger
+                                                                          xsd:string
+                                                                        )
+                                                          ]
+                                        ] ;
+                        owl:disjointWith <http://xmlns.com/foaf/0.1/Organization> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Email
+:Email rdf:type owl:Class ;
+       rdfs:subClassOf :Contact_info .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience
+:Experience rdf:type owl:Class ;
+            rdfs:subClassOf :Background ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :has_place ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass <http://schema.org/Place>
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.w3.org/2006/time#hasTime> ;
+                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass <http://www.w3.org/2006/time#TemporalEntity>
+                            ] ;
+            owl:disjointWith <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Fax
+:Fax rdf:type owl:Class ;
+     rdfs:subClassOf :Contact_info .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Follower
+:Follower rdf:type owl:Class ;
+          rdfs:subClassOf :Network_Container .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Following
+:Following rdf:type owl:Class ;
+           rdfs:subClassOf :Network_Container .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Form
+:Form rdf:type owl:Class ;
+      rdfs:subClassOf :Input_content_box .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Friends
+:Friends rdf:type owl:Class ;
+         rdfs:subClassOf :Network_Container .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Group
+:Group rdf:type owl:Class ;
+       rdfs:subClassOf :Network_Container .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media
+:Highlighted_Media rdf:type owl:Class ;
+                   rdfs:subClassOf :Main_Media ;
+                   rdfs:comment "With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture."@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext
+:Hypertext rdf:type owl:Class ;
+           rdfs:subClassOf :Contact_info ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :link ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange xsd:anyURI
+                           ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box
+:Input_content_box rdf:type owl:Class ;
+                   rdfs:subClassOf :Social_Media_Data ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :is_input_content_box_of ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Profile
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :max_character_number ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange xsd:nonNegativeInteger
+                                   ] ;
+                   owl:disjointWith :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date
+:Inscription_Date rdf:type owl:Class ;
+                  rdfs:subClassOf :Social_Media_Data ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://www.w3.org/2006/time#hasTime> ;
+                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass <http://www.w3.org/2006/time#TemporalEntity>
+                                  ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Interest_Container
+:Interest_Container rdf:type owl:Class ;
+                    rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Karma
+:Karma rdf:type owl:Class ;
+       rdfs:subClassOf :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency
+:Language_Competency rdf:type owl:Class ;
+                     rdfs:subClassOf :Skill ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :language ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :level ;
+                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media
+:Link_to_other_Social_Media rdf:type owl:Class ;
+                            rdfs:subClassOf :Hypertext ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :social_media_icon ;
+                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:anyURI
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :social_media_label ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:string
+                                            ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media
+:Main_Media rdf:type owl:Class ;
+            rdfs:subClassOf :Media ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :is_main_media_of ;
+                              owl:someValuesFrom :Profile
+                            ] ;
+            owl:disjointWith :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media
+:Media rdf:type owl:Class ;
+       rdfs:subClassOf :Content ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :is_media_of ;
+                         owl:someValuesFrom :Background
+                       ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day
+:Name_Day rdf:type owl:Class ;
+          rdfs:subClassOf :Biographical_info .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container
+:Network_Container rdf:type owl:Class ;
+                   rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> ;
+                   rdfs:comment "A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as \"following\", \"followers\" etc...)"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname
+:Nickname rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :is_nickname_of ;
+                            owl:someValuesFrom <http://rdfs.org/sioc/ns#UserAccount>
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty <http://xmlns.com/foaf/0.1/nick> ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ;
+          owl:disjointWith :Profile ;
+          <http://purl.org/dc/terms/description> "The identifier of a user in a Social Media"@en ;
+          rdfs:isDefinedBy <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> ;
+          rdfs:label "Account Name"@en ,
+                     "Nickname"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_followers
+:Number_of_followers rdf:type owl:Class ;
+                     rdfs:subClassOf :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_following
+:Number_of_following rdf:type owl:Class ;
+                     rdfs:subClassOf :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_likes
+:Number_of_likes rdf:type owl:Class ;
+                 rdfs:subClassOf :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_posts
+:Number_of_posts rdf:type owl:Class ;
+                 rdfs:subClassOf :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Organization
+:Organization rdf:type owl:Class ;
+              owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Other_user_generated_content
+:Other_user_generated_content rdf:type owl:Class ;
+                              rdfs:subClassOf :Media .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience
+:Personal_Experience rdf:type owl:Class ;
+                     rdfs:subClassOf :Experience ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :category ;
+                                       owl:someValuesFrom xsd:string
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :title ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange xsd:string
+                                     ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Website
+:Personal_Website rdf:type owl:Class ;
+                  rdfs:subClassOf :Hypertext .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_generated_content
+:Personal_generated_content rdf:type owl:Class ;
+                            rdfs:subClassOf :Media .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order
+:Popularity_Order rdf:type owl:Class ;
+                  rdfs:subClassOf :Displaying_Order ;
+                  rdfs:label "Popularity Order"@en .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile
+:Profile rdf:type owl:Class ;
+         rdfs:subClassOf :Social_Media_Data ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_achievements ;
+                           owl:someValuesFrom :Achievement
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_biographical_info ;
+                           owl:someValuesFrom :Biographical_info
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_contact_info ;
+                           owl:someValuesFrom :Contact_info
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_container ;
+                           owl:someValuesFrom <http://rdfs.org/sioc/ns#Container>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_input_content_box ;
+                           owl:someValuesFrom :Input_content_box
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_main_media ;
+                           owl:someValuesFrom :Main_Media
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_stats ;
+                           owl:someValuesFrom :Stats
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :created_by ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass <http://rdfs.org/sioc/ns#UserAccount>
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_color_palette ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Color_Palette
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :has_inscription_date ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Inscription_Date
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :uri ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:anyURI
+                         ] ;
+         owl:disjointWith :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile_Media
+:Profile_Media rdf:type owl:Class ;
+               rdfs:subClassOf :Main_Media .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Relationships
+:Relationships rdf:type owl:Class ;
+               rdfs:subClassOf :Biographical_info .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill
+:Skill rdf:type owl:Class ;
+       rdfs:subClassOf :Background ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :label ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:string
+                       ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data
+:Social_Media_Data rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :is_visible_to ;
+                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                       owl:oneOf [ rdf:type rdf:List ;
+                                                                   rdf:first "all but blocked users" ;
+                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                              rdf:first "followers" ;
+                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                         rdf:first "friends" ;
+                                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                                    rdf:first "friends of a friend" ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first "only user" ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first "public" ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                                                  ]
+                                                                                       ]
+                                                                            ]
+                                                                 ]
+                                                     ]
+                                   ] ;
+                   rdfs:isDefinedBy <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stars
+:Stars rdf:type owl:Class ;
+       rdfs:subClassOf :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats
+:Stats rdf:type owl:Class ;
+       rdfs:subClassOf :Social_Media_Data ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :is_a_stat_of ;
+                         owl:someValuesFrom :Profile
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :value ;
+                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                              owl:unionOf ( xsd:nonNegativeInteger
+                                                            xsd:string
+                                                          )
+                                            ]
+                       ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Telephone_Number
+:Telephone_Number rdf:type owl:Class ;
+                  rdfs:subClassOf :Contact_info .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trainership
+:Trainership rdf:type owl:Class ;
+             rdfs:subClassOf :Working_Experience .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia
+:Trivia rdf:type owl:Class ;
+        rdfs:subClassOf :Biographical_info ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :answer ;
+                          owl:someValuesFrom xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :question ;
+                          owl:someValuesFrom xsd:string
+                        ] .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trophies
+:Trophies rdf:type owl:Class ;
+          rdfs:subClassOf :Achievement .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User
+:User rdf:type owl:Class ;
+      owl:deprecated "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User_Profile
+:User_Profile rdf:type owl:Class ;
+              rdfs:subClassOf :Profile .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Views
+:Views rdf:type owl:Class ;
+       rdfs:subClassOf :Stats .
+
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience
+:Working_Experience rdf:type owl:Class ;
+                    rdfs:subClassOf :Experience ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :is_held_at ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onClass <http://xmlns.com/foaf/0.1/Organization>
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :field ;
+                                      owl:someValuesFrom xsd:string
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :label ;
+                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                      owl:onDataRange xsd:string
+                                    ] ;
+                    owl:disjointWith <http://xmlns.com/foaf/0.1/Organization> .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :field ;
+                                                           owl:someValuesFrom xsd:string
+                                                         ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO
+<http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> rdf:type owl:NamedIndividual ,
+                                                                                                  owl:Thing ;
+                                                                                         <http://purl.org/dc/terms/description> "UOMO (User Oriented social Media Ontology) is an ontology for describing the information about Social Media focusing on the User Perspective."@en .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

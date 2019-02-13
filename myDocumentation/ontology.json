@@ -1,0 +1,2581 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid100",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"
+  } ]
+}, {
+  "@id" : "_:genid102",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette"
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date"
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid109"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid109",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "all but blocked users"
+    }, {
+      "@value" : "followers"
+    }, {
+      "@value" : "friends"
+    }, {
+      "@value" : "friends of a friend"
+    }, {
+      "@value" : "only user"
+    }, {
+      "@value" : "public"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid118"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid123",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at"
+  } ]
+}, {
+  "@id" : "_:genid124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid125",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label"
+  } ]
+}, {
+  "@id" : "_:genid126",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"
+    }, {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@value" : "all but blocked users"
+    }, {
+      "@value" : "followers"
+    }, {
+      "@value" : "friends"
+    }, {
+      "@value" : "friends of a friend"
+    }, {
+      "@value" : "only user"
+    }, {
+      "@value" : "public"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid47"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid65"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Container"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic"
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification"
+  } ]
+}, {
+  "@id" : "_:genid76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "_:genid77"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation"
+  } ]
+}, {
+  "@id" : "_:genid77",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2006/time#hasTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_label"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"
+    }, {
+      "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/nick"
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Container"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid90"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#Container",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid43"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#UserAccount",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid44"
+  }, {
+    "@id" : "_:genid45"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#container_of",
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of"
+  } ]
+}, {
+  "@id" : "http://rdfs.org/sioc/ns#has_container",
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container"
+  } ]
+}, {
+  "@id" : "http://schema.org/Accommodation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/AdministrativeArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/CivicStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/Landform",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/LandmarksOrHistoricalBuildings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/LocalBusiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Entities that have a somewhat fixed, physical extension."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Thing"
+  }, {
+    "@id" : "_:genid46"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"
+  } ]
+}, {
+  "@id" : "http://schema.org/Residence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/Thing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/Thing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The most generic type of item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Thing"
+  } ]
+}, {
+  "@id" : "http://schema.org/TouristAttraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/TouristDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Place"
+  } ]
+}, {
+  "@id" : "http://schema.org/additionalType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/additionalType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "additionalType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+  } ]
+}, {
+  "@id" : "http://schema.org/category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "description"
+  } ]
+}, {
+  "@id" : "http://schema.org/disambiguatingDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/disambiguatingDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "disambiguatingDescription"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://schema.org/description"
+  } ]
+}, {
+  "@id" : "http://schema.org/domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/globalLocationNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+  } ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Organization"
+  }, {
+    "@id" : "http://schema.org/Person"
+  }, {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/globalLocationNumber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The <a href=\"http://www.gs1.org/gln\">Global Location Number</a> (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "globalLocationNumber"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://schema.org/identifier"
+  } ]
+}, {
+  "@id" : "http://schema.org/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/PropertyValue"
+  }, {
+    "@id" : "http://schema.org/Text"
+  }, {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier property represents any kind of identifier for any kind of <a class=\"localLink\" href=\"http://schema.org/Thing\">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href=\"/docs/datamodel.html#identifierBg\">background notes</a> for more details."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "identifier"
+  } ]
+}, {
+  "@id" : "http://schema.org/image",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ImageObject"
+  }, {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/image"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "image"
+  } ]
+}, {
+  "@id" : "http://schema.org/inverseOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+  } ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Brand"
+  }, {
+    "@id" : "http://schema.org/Organization"
+  }, {
+    "@id" : "http://schema.org/Place"
+  }, {
+    "@id" : "http://schema.org/Product"
+  }, {
+    "@id" : "http://schema.org/Service"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ImageObject"
+  }, {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/logo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An associated logo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "logo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://schema.org/image"
+  } ]
+}, {
+  "@id" : "http://schema.org/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/Text"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of the item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "rdfs:label"
+  } ]
+}, {
+  "@id" : "http://schema.org/photo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/ImageObject"
+  }, {
+    "@id" : "http://schema.org/Photograph"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/photo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A photograph of this place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "photo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://schema.org/image"
+  } ]
+}, {
+  "@id" : "http://schema.org/rangeIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://schema.org/domainIncludes" : [ {
+    "@id" : "http://schema.org/Thing"
+  } ],
+  "http://schema.org/rangeIncludes" : [ {
+    "@id" : "http://schema.org/URL"
+  } ],
+  "http://schema.org/sameAs" : [ {
+    "@id" : "https://schema.org/sameAs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sameAs"
+  } ]
+}, {
+  "@id" : "http://schema.org/supersededBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "UOMO (User Oriented social Media Ontology) is an ontology for describing the information about Social Media focusing on the User Perspective."
+  } ],
+  "http://purl.org/dc/terms/hasVersion" : [ {
+    "@language" : "en",
+    "@value" : "0.0.4"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@language" : "en",
+    "@value" : "11/02/2019"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@language" : "en",
+    "@value" : "13/02/2019"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@language" : "en",
+    "@value" : "https://github.com/uomodhdk"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "UOMO User Oriented social Media Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#"
+  }, {
+    "@id" : "http://www.w3.org/2006/time#2016"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid51"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  }, {
+    "@id" : "_:genid52"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The order is given through a generally unknown internal algorithm of the Social Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Algorithmic Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alphabetical Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Also History"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  }, {
+    "@id" : "_:genid53"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background_Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Bio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/description"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid54"
+  }, {
+    "@id" : "_:genid55"
+  }, {
+    "@id" : "_:genid56"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  }, {
+    "@id" : "_:genid57"
+  }, {
+    "@id" : "_:genid58"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"
+  }, {
+    "@id" : "_:genid59"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chronological Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"
+  }, {
+    "@id" : "_:genid60"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Color Palette"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid61"
+  }, {
+    "@id" : "_:genid62"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid63"
+  }, {
+    "@id" : "_:genid64"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A container is intended as a section of a profile that contains other elements such has media, hyperlinks, tags"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid68"
+  }, {
+    "@id" : "_:genid69"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Container"
+  }, {
+    "@id" : "_:genid70"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The order through which the items in a container are displayed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Displaying Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid71"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"
+  }, {
+    "@id" : "_:genid72"
+  }, {
+    "@id" : "_:genid73"
+  }, {
+    "@id" : "_:genid74"
+  }, {
+    "@id" : "_:genid75"
+  }, {
+    "@id" : "_:genid76"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Email",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"
+  }, {
+    "@id" : "_:genid80"
+  }, {
+    "@id" : "_:genid81"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Fax",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Follower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Following",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Form",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Friends",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+  }, {
+    "@id" : "_:genid82"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid83"
+  }, {
+    "@id" : "_:genid84"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid85"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Interest_Container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Karma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill"
+  }, {
+    "@id" : "_:genid86"
+  }, {
+    "@id" : "_:genid87"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"
+  }, {
+    "@id" : "_:genid88"
+  }, {
+    "@id" : "_:genid89"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"
+  }, {
+    "@id" : "_:genid90"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"
+  }, {
+    "@id" : "_:genid91"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as \"following\", \"followers\" etc...)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The identifier of a user in a Social Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Account Name"
+  }, {
+    "@language" : "en",
+    "@value" : "Nickname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid92"
+  }, {
+    "@id" : "_:genid93"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_followers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_following",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_likes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_posts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Other_user_generated_content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"
+  }, {
+    "@id" : "_:genid94"
+  }, {
+    "@id" : "_:genid95"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Website",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_generated_content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Popularity Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid96"
+  }, {
+    "@id" : "_:genid97"
+  }, {
+    "@id" : "_:genid98"
+  }, {
+    "@id" : "_:genid99"
+  }, {
+    "@id" : "_:genid100"
+  }, {
+    "@id" : "_:genid101"
+  }, {
+    "@id" : "_:genid102"
+  }, {
+    "@id" : "_:genid103"
+  }, {
+    "@id" : "_:genid104"
+  }, {
+    "@id" : "_:genid105"
+  }, {
+    "@id" : "_:genid106"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile_Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Relationships",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"
+  }, {
+    "@id" : "_:genid107"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid108"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stars",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  }, {
+    "@id" : "_:genid116"
+  }, {
+    "@id" : "_:genid117"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Telephone_Number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trainership",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  }, {
+    "@id" : "_:genid121"
+  }, {
+    "@id" : "_:genid122"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trophies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "UOMO (User Oriented social Media Ontology) is an ontology for describing the information about Social Media focusing on the User Perspective."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User_Profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Views",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"
+  }, {
+    "@id" : "_:genid123"
+  }, {
+    "@id" : "_:genid124"
+  }, {
+    "@id" : "_:genid125"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It is intended both as the type of University or school general study program"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It is intended for every kind of educational certificates (School diploma or Proof)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
+  }, {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid18"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#favorite_quotes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid21"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#gender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Container"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_displaying_order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the \"Comments\" and \"Post\" containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#Container"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://schema.org/Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid24"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid34"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#political_orientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#religion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#sexual_orientation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid37"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#hasTime",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid126"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/age",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/family_name",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/firstName",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/gender",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/nick",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/surname",
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"
+  } ]
+}, {
+  "@id" : "rdfs:label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
