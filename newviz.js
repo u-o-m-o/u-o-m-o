@@ -195,13 +195,16 @@ $(document).on('click', '.carousel-control', function () {
 
     
 $(document).ready(function() {
-
+    var featureslabels = [];
+    var featuresdata = [];
+    var socialname = [];
+    var attributiunici = [];
+    var attributi = [];
+    var percentualecompletezza = [];
     $.ajax({
         dataType: "json",
         url: "features.json",
         success: function(datisegn) {
-                    var featureslabels = [];
-                    var featuresdata = [];
                     datisegn.forEach(function(arrayItem) {
                         featureslabels.push(arrayItem["nome_coso"])
                         featuresdata.push(arrayItem["percentuale utilizzo"])
@@ -212,10 +215,6 @@ $(document).ready(function() {
         dataType: "json",
         url: "attributisocial.json",
         success: function(datisegn) {
-                    var socialname = [];
-                    var attributiunici = [];
-                    var attributi = [];
-                    var percentualecompletezza = [];
                     datisegn.forEach(function(arrayItem) {
                         socialname.push(arrayItem["social"])
                         attributiunici.push(arrayItem["attributi unici"])
