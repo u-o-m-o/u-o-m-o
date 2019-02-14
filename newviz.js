@@ -213,17 +213,17 @@ $(document).ready(function() {
             })
             generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza)
 
-    function resetChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza) {
+    function resetChart() {
         //Reset chart data 
         $('canvas').remove();
-        $('.item1').prepend('<canvas id="bar-chart" style="width:100%; height:360px;"></canvas>');
-        $('.item2').prepend('<canvas id="line-chart" style="width:100%; height:360px;"></canvas>');
-        $('.item3').prepend('<canvas id="pie-chart" style="width:100%; height:360px;"></canvas>');
+        $('.item1').prepend('<canvas id="StatsChartbar" style="width: 200px;"></canvas>');
+        $('.item2').prepend('<canvas id="FeaturesChartbar" style="width: 200px;"></canvas>');
+        $('.item3').prepend('<canvas id="EleChartrad" style="width: 200px;"></canvas>');
     
         generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza);
     }
     
-    $(document).on('click', '.carousel-control', function (featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza) {
-        resetChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza);
+    $(document).on('click', '.carousel-control', function () {
+        resetChart();
     });
         })
