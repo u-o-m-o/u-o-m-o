@@ -5,7 +5,7 @@ function resetChart() {
     $('.item2').prepend('<canvas id="line-chart" style="width:100%; height:360px;"></canvas>');
     $('.item3').prepend('<canvas id="pie-chart" style="width:100%; height:360px;"></canvas>');
 
-    generateChart();
+    generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza);
 }
 
 $(document).on('click', '.carousel-control', function () {
@@ -23,7 +23,7 @@ $(document).on('click', '.carousel-control', function () {
 
 
 
-            function  generateChart() {
+            function  generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza) {
 
                         var datibar = {
                         labels: featureslabels,
@@ -223,5 +223,5 @@ $(document).ready(function() {
                     });
                 }
             })
-            generateChart()
+            generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza)
         })
