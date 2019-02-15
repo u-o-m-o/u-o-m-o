@@ -186,9 +186,9 @@ $(document).ready(function() {
     function resetChart() {
         //Reset chart data 
         $('canvas').remove();
-        $('.item1').prepend('<canvas id="StatsChartbar" style="width: 200px;"></canvas>');
-        $('.item2').prepend('<canvas id="FeaturesChartbar" style="width: 200px;"></canvas>');
-        $('.item3').prepend('<canvas id="EleChartrad" style="width: 200px;"></canvas>');
+        $('.item1').prepend('<div class="row"> <div class="col-sm-1"> </div> <div class="col-sm-10"> <canvas id="StatsChartbar" style="width: 200px;"></canvas> <h1>HIHIHIHI</h1> </div> <div class="col-sm-1"> </div> </div>');
+        $('.item2').prepend('<div class="row"> <div class="col-sm-1"> </div> <div class="col-sm-10"> <canvas id="FeaturesChartbar" style="width: 200px;"></canvas> <h1>HIHIHIHI</h1> </div> <div class="col-sm-1"> </div> </div>');
+        $('.item3').prepend('<div class="row"> <div class="col-sm-1"> </div> <div class="col-sm-10"> <canvas id="EleChartrad" style="width: 200px;"></canvas> <h1>HIHIHIHI</h1> </div> <div class="col-sm-1"> </div> </div>');
     
         generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza);
     }
