@@ -39,7 +39,9 @@
                                             }],
                                         "xAxes": [{
                                                 "ticks": {
-                                                    fontColor: "black"}
+                                                    fontColor: "black",
+                                                    autoSkip: false
+                                                    }
                                             }],
                                         },
             };
@@ -87,6 +89,7 @@
                                     "ticks": {
                                         fontColor: "black",
                                         "beginAtZero": true,
+                                        autoSkip: false
                                     }
                                 }],
                             "yAxes": [{
@@ -126,6 +129,9 @@
                                                     }
                                                 },
                                                 "scale": {
+                                                    pointLabels: {
+                                                        fontSize: 12
+                                                      },
                                                     "ticks": {
                                                         "beginAtZero": true,
                                                         "callback": function(value, index, values) {
