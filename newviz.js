@@ -1,167 +1,150 @@
      function  generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza) {
 
-                        var datibar = {
-                        labels: featureslabels,
-                        datasets: [
-                            {
-                                "label": "Most Common Profile Features",
-                                fontColor: "black",
-                                data: featuresdata,
-                                backgroundColor: "#808080"
-                                },
-                            ]
-                        };
 
-                        var opzionibarfeatures = {
-                                            responsiveAnimationDuration: 1000,
-                                            "tooltips": {
-                                                "enabled": true,
-                                                "mode": 'single',
-                                                "callbacks": {
-                                                    "label": function(tooltipItems, data) {
-                                                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.xLabel + '%';
+        //BARRA Attributi common
+        var datibar = {
+            labels: featureslabels,
+            datasets: [
+                {
+                    "label": "Common Profile Feature",
+                    fontColor: "black",
+                    data: featuresdata,
+                    backgroundColor: "#808080"
+                    },
+                ]
+            };
+            var opzionibarfeatures = {
+                                responsiveAnimationDuration: 1000,
+                                "tooltips": {
+                                    "enabled": true,
+                                    "mode": 'single',
+                                    "callbacks": {
+                                        "label": function(tooltipItems, data) {
+                                            return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
+                                        }
+                                    }
+                                },
+                                legend: {
+                                    fontColor: "black"
+                                },
+                                "scales": {
+                                            "yAxes": [{
+                                                "ticks": {
+                                                    fontColor: "black",
+                                                    "beginAtZero": true,
+                                                    "callback": function(value, index, values) {
+                                                        return value + '%';
                                                     }
                                                 }
-                                            },
-                                            legend: {
-                                                fontColor: "black"
-                                            },
-                                            "scales": {
-                                                "xAxes": [{
+                                            }],
+                                        "xAxes": [{
+                                                "ticks": {
+                                                    fontColor: "black"}
+                                            }],
+                                        },
+            };
+
+
+
+        var barrafeatures = document.getElementById("StatsChartbar").getContext("2d");
+
+        new Chart(barrafeatures,{
+                                    "type": "bar",
+                                    "data": datibar,
+                                    "options": opzionibarfeatures
+                                });
+
+    //BARRA ATTRIBUTI (totali e unici)
+    var datibaratt = {
+        labels: socialname,
+        datasets: [
+            {
+                "label": "Profile Features",
+                fontColor: "black",
+                data: attributi,
+                backgroundColor: "#808080"
+                },
+                {
+                    "label": "Unique Profile Features",
+                    fontColor: "black",
+                    data: attributiunici,
+                    backgroundColor: "#000000"
+                    },
+                ]
+        };
+
+        var opzionibaratt = {
+                            responsiveAnimationDuration: 1000,
+                            "tooltips": {
+                                "enabled": true,
+                                "mode": 'single',
+                            },
+                            legend: {
+                                fontColor: "black"
+                            },
+                            "scales": {
+                                "xAxes": [{
+                                    "ticks": {
+                                        fontColor: "black",
+                                        "beginAtZero": true,
+                                    }
+                                }],
+                            "yAxes": [{
+                                    "ticks": {
+                                        fontColor: "black"}
+                                }]
+                            }
+        };
+
+
+
+        var barratt = document.getElementById("FeaturesChartbar").getContext("2d");
+
+        new Chart(barratt,{
+                                    "type": "horizontalBar",
+                                    "data": datibaratt,
+                                    "options": opzionibaratt
+                                });
+            //RADAR
+                
+                var datirad = {
+                    labels: socialname,
+                    datasets: [{
+                        "label": "Social Profile Completeness",
+                        data: percentualecompletezza
+                    }]
+                };
+                var opzioniradar = {
+                                                responsiveAnimationDuration: 1000,
+                                                "tooltips": {
+                                                    "enabled": true,
+                                                    "mode": 'single',
+                                                    "callbacks": {
+                                                        "label": function(tooltipItems, data) {
+                                                            return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
+                                                        }
+                                                    }
+                                                },
+                                                "scale": {
                                                     "ticks": {
-                                                        fontColor: "black",
                                                         "beginAtZero": true,
-                                                        "max": 35,
                                                         "callback": function(value, index, values) {
-                                                            return value + '%';
-                                                        }
+                                                                        return value + '%';}
                                                     }
-                                                }],
-                                            "yAxes": [{
-                                                    "ticks": {
-                                                        fontColor: "black"}
-                                                }]
-                                            }
-                        };
+                                                },
+                                                legend: {
+                                                    display: true
+                                                },
+                                            };
 
-
-
-                    var barrafeatures = document.getElementById("StatsChartbar").getContext("2d");
-
-                    new Chart(barrafeatures,{
-                                                "type": "horizontalBar",
-                                                "data": datibar,
-                                                "options": opzionibarfeatures
-                                            });
-
-
-   
-                        var datibar = {
-                        labels: socialname,
-                        datasets: [
-                            {
-                                "label": "Features",
-                                fontColor: "black",
-                                data: attributi,
-                                backgroundColor: "#808080"
-                                },
-                                {
-                                    "label": "Unique Features",
-                                    fontColor: "black",
-                                    data: attributiunici,
-                                    backgroundColor: "#808080"
-                                    },
-                                ]
-                        };
-                        
-
-                        var opzionibarfeatures = {
-                                            responsiveAnimationDuration: 1000,
-                                            "tooltips": {
-                                                "enabled": true,
-                                                "mode": 'single',
-                                                "callbacks": {
-                                                    "label": function(tooltipItems, data) {
-                                                        return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.xLabel + '%';
-                                                    }
-                                                }
-                                            },
-                                            legend: {
-                                                fontColor: "black"
-                                            },
-                                            "scales": {
-                                                "xAxes": [{
-                                                    "ticks": {
-                                                        fontColor: "black",
-                                                        "beginAtZero": true,
-                                                        "max": 35,
-                                                        "callback": function(value, index, values) {
-                                                            return value + '%';
-                                                        }
-                                                    }
-                                                }],
-                                            "yAxes": [{
-                                                    "ticks": {
-                                                        fontColor: "black"}
-                                                }]
-                                            }
-                        };
-
-
-
-                    var barrafeatures = document.getElementById("FeaturesChartbar").getContext("2d");
-
-                    new Chart(barrafeatures,{
-                                                "type": "horizontalBar",
-                                                "data": datibar,
-                                                "options": opzionibarfeatures
-                                            });
-                    
-
-                    var datirad = {
-                        labels: socialname,
-                        datasets: [{
-                            "label": "Social Profile Completeness",
-                            data: percentualecompletezza
-                        }]
-                    };
-
-
-                    var opzioniradar = {
-                                                    responsiveAnimationDuration: 1000,
-                                                    "tooltips": {
-                                                        "enabled": true,
-                                                        "mode": 'single',
-                                                        "callbacks": {
-                                                            "label": function(tooltipItems, data) {
-                                                                return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
-                                                            }
-                                                        }
-                                                    },
-                                                    "scale": {
-                                                        "ticks": {
-                                                            "beginAtZero": true,
-                                                            "max": 35,
-                                                             "callback": function(value, index, values) {
-                                                                            return value + '%';}
-                                                        }
-                                                    },
-                                                    legend: {
-                                                        display: true
-                                                    },
-                                                };
-
-
-
-
-
-
-                    var radarfeatures = document.getElementById("EleChartrad").getContext("2d");
-                    new Chart(radarfeatures, {
-                                                "type": 'radar',
-                                                "data": datirad,
-                                                "options": opzioniradar
-                                            });
+                
+                var radarfeatures = document.getElementById("EleChartrad").getContext("2d");
+                new Chart(radarfeatures, {
+                                            "type": 'radar',
+                                            "data": datirad,
+                                            "options": opzioniradar
+                                        });
+                                
 
         
     }
