@@ -1,17 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-            function  generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza) {
+     function  generateChart(featureslabels,featuresdata,socialname,attributiunici,attributi,percentualecompletezza) {
 
                         var datibar = {
                         labels: featureslabels,
