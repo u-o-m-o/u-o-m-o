@@ -94,6 +94,7 @@
                                     }
                                 }],
                             "yAxes": [{
+                                    stacked: true,
                                     "ticks": {
                                         fontColor: "black"}
                                 }]
