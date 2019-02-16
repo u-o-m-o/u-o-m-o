@@ -20,7 +20,7 @@
  	
  <https://secure.meetupstatic.com/photos/member/a/e/d/1/member_284744753.jpeg>
  	a uomoprofile:Profile_Media ;
- 	is_main_media_of <https://www.meetup.com/members/273645503/> .
+ 	uomoprofile:is_main_media_of <https://www.meetup.com/members/273645503/> .
  	
 
 #InscriptionDate
@@ -112,7 +112,7 @@
  	uomoprofile:uri "https://www.meetup.com/members/273645503/"^^xsd:anyURI ;
  	uomoprofile:has_inscription_date :InscriptionDate ;
  	uomoprofile:has_main_media <https://secure.meetupstatic.com/photos/member/a/e/d/1/member_284744753.jpeg> ;
- 	uomoprofile:has_biographical_info :ActualPlace :FullName;
+ 	uomoprofile:has_biographical_info :ActualPlace, :FullName;
  	uomoprofile:created_by :user ;
  	uomoprofile:has_container :meetups, :interests ;
  	uomoprofile:has_contact_info :Facebook, :Twitter, :Tumblr, :Linkedin, :Flickr ;
