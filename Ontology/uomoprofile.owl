@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://uomodhdk.github.io/Ontology/uomoprofile.owl"
      xml:base="http://uomodhdk.github.io/Ontology/uomoprofile.owl"
-     xmlns:uomoprofile="http://uomodhdk.github.io/Ontology/uomoprofile.owl"
+     xmlns:uomoprofile="http://uomodhdk.github.io/Ontology/uomoprofile.owl#"
      xmlns:schema="http://schema.org/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
