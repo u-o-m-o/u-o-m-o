@@ -127,6 +127,6 @@
  	uomoprofile:has_input_content_box :chat ;
  	uomoprofile:has_container :videos, :clips, :events, :followers, :following, :panels ;
  	uomoprofile:has_stats :numberoffollwing, :numberoffollowers, :views ;
- 	uomoprofile:has_privacy uomo:Public ;
+ 	uomoprofile:has_privacy uomoprofile:Public ;
  	uomoprofile:shareable "true"^^xsd:boolean .
  	
