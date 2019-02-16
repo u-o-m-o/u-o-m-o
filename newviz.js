@@ -86,6 +86,7 @@
                             },
                             "scales": {
                                 "xAxes": [{
+                                     stacked: true,
                                     "ticks": {
                                         fontColor: "black",
                                         "beginAtZero": true,
@@ -130,7 +131,7 @@
                                                 },
                                                 "scale": {
                                                     pointLabels: {
-                                                        fontSize: 12
+                                                        fontSize: 16
                                                       },
                                                     "ticks": {
                                                         "beginAtZero": true,
