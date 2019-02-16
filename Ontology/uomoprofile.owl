@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://uomodhdk.github.io/Ontology/uomoprofile.owl"
      xml:base="http://uomodhdk.github.io/Ontology/uomoprofile.owl"
+     xmlns:uomoprofile="http://uomodhdk.github.io/Ontology/uomoprofile.owl#"
      xmlns:schema="http://schema.org/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -2360,9 +2361,9 @@
     
 
 
-    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO_Profile -->
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO_Profile -->
 
-    <owl:Thing rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO_Profile">
+    <owl:Thing rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO_Profile">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
         <terms:description xml:lang="en">UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User&apos;s Profile.</terms:description>
     </owl:Thing>
