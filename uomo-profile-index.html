@@ -26,7 +26,11 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 
-
+		<script> 
+			$(function(){
+				$("#includedContent").load("(tabella/table.html"); 
+			});
+		</script> 
 	
 
 
@@ -428,7 +432,7 @@
 						<h4 class="modal-title" style="min-height:15px"></h4>
 					</div>
 					<div class="modal-body" >
-						
+						<div id="includedContent"></div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
