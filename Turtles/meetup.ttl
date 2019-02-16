@@ -88,14 +88,14 @@
 
  :meetups
  	a uomoprofile:Network_Container ;
- 	uomoprofile:has_displaying_order <urideidisplayingalfabetici> .
+ 	uomoprofile:has_displaying_order uomoprofile:Alphabetical_Order_Normal .
 
  	
 #Interests
 
  :interests
  	a uomoprofile:Interest_Container ;
- 	uomoprofile:has_displaying_order <urideialgorithmic> .
+ 	uomoprofile:has_displaying_order uomoprofile:Algorithmic_Order_Normal .
 
 
 #FullName
