@@ -26,6 +26,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 
+
 	
 
 
@@ -394,6 +395,11 @@
         <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
         <!--<script src="visualization.js"></script>-->
 		<script src="newviz.js"></script>
+		<script> 
+			$(function(){
+			  $("#includedContent").load("tabella/sheet001.html"); 
+			});
+		</script> 
 
 		<!--==================================================================
 			Modals
@@ -418,24 +424,26 @@
 			</div>
 		</div> 
 		
-		<div id="Modal1b" class="modal fade">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-							<h4 class="modal-title">Confirmation</h4>
-						</div>
-						<div class="modal-body">
-							<p>Do you want to save changes you made to document before closing?</p>
-							<p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
-						</div>
+		<div id="Modal1b" class="modal modal-big fade" style="display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%;">
+			<div class="modal-dialog-big modal-dialog" style="width:90%;">
+				<div class="modal-content-big modal-content" style="max-height:100%; overflow-y: auto;">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" style="min-height:15px"></h4>
+					</div>
+					<div class="modal-body" >
+						<div id="includedContent"></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
-		</div>  
+		</div>
+	</div> 
+
+
+		
 
 		<div id="Modal1c" class="modal modal-big fade" style="display: none; height: 100%; left: 0; position: fixed; top: 0; width: 100%;">
 				<div class="modal-dialog-big modal-dialog" style="width:90%">
