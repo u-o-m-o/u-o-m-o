@@ -169,7 +169,7 @@ $(document).ready(function() {
     var percentualecompletezza = [];
     $.ajax({
         dataType: "json",
-        url: "features.json",
+        url: "json/features.json",
         success: function(datisegn) {
                     datisegn.forEach(function(arrayItem) {
                         featureslabels.push(arrayItem["nome_coso"])
@@ -179,7 +179,7 @@ $(document).ready(function() {
             })
     $.ajax({
         dataType: "json",
-        url: "newattributisocial.json",
+        url: "json/newattributisocial.json",
         success: function(datisegn) {
                     datisegn.forEach(function(arrayItem) {
                         socialname.push(arrayItem["Social"])
