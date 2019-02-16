@@ -11,85 +11,6 @@
 }, {
   "@id" : "_:genid100",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_input_content_box"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Input_content_box"
-  } ]
-}, {
-  "@id" : "_:genid101",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_main_media"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Main_Media"
-  } ]
-}, {
-  "@id" : "_:genid102",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_stats"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats"
-  } ]
-}, {
-  "@id" : "_:genid103",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#created_by"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid104",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Color_Palette"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_color_palette"
-  } ]
-}, {
-  "@id" : "_:genid105",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Inscription_Date"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_inscription_date"
-  } ]
-}, {
-  "@id" : "_:genid106",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#uri"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid107",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
@@ -101,47 +22,29 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid108",
+  "@id" : "_:genid101",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid109"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_visible_to"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_privacy"
   } ]
 }, {
-  "@id" : "_:genid109",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "all but blocked users"
-    }, {
-      "@value" : "followers"
-    }, {
-      "@value" : "friends"
-    }, {
-      "@value" : "friends of a friend"
-    }, {
-      "@value" : "only user"
-    }, {
-      "@value" : "public"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid116",
+  "@id" : "_:genid102",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#value"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid117"
+    "@id" : "_:genid103"
   } ]
 }, {
-  "@id" : "_:genid117",
+  "@id" : "_:genid103",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -151,19 +54,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Actual_Place"
-    }, {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Birth"
-    }, {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Experience"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid120",
+  "@id" : "_:genid106",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#answer"
@@ -172,7 +63,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid121",
+  "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#question"
@@ -181,7 +72,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid122",
+  "@id" : "_:genid108",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -194,7 +85,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_held_at"
   } ]
 }, {
-  "@id" : "_:genid123",
+  "@id" : "_:genid109",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#field"
@@ -203,7 +94,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid124",
+  "@id" : "_:genid110",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -216,13 +107,25 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#label"
   } ]
 }, {
-  "@id" : "_:genid125",
+  "@id" : "_:genid111",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#field"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Actual_Place"
+    }, {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Birth"
+    }, {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Experience"
+    } ]
   } ]
 }, {
   "@id" : "_:genid16",
@@ -270,24 +173,6 @@
   } ]
 }, {
   "@id" : "_:genid30",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@value" : "all but blocked users"
-    }, {
-      "@value" : "followers"
-    }, {
-      "@value" : "friends"
-    }, {
-      "@value" : "friends of a friend"
-    }, {
-      "@value" : "only user"
-    }, {
-      "@value" : "public"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -296,6 +181,26 @@
       "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Skill"
     }, {
       "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Working_Experience"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Biographical_info"
+    }, {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Language_Competency"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Highlighted_Media"
+    }, {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Personal_Experience"
     } ]
   } ]
 }, {
@@ -312,33 +217,66 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid41",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Biographical_info"
-    }, {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Language_Competency"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Highlighted_Media"
-    }, {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Personal_Experience"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid47",
+  "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Contact_info"
     }, {
       "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    }, {
+      "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#creates"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Nickname"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_nickname"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_place_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid49"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Actual_Place"
+    }, {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Birth"
+    }, {
+      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Experience"
     } ]
   } ]
 }, {
@@ -354,60 +292,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid50",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-    }, {
-      "@id" : "http://www.w3.org/2001/XMLSchema#string"
-    } ]
-  } ]
-}, {
   "@id" : "_:genid53",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#creates"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"
-  } ]
-}, {
-  "@id" : "_:genid54",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Nickname"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_nickname"
-  } ]
-}, {
-  "@id" : "_:genid55",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_place_of"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid56"
-  } ]
-}, {
-  "@id" : "_:genid56",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Actual_Place"
-    }, {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Birth"
-    }, {
-      "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Experience"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -420,7 +305,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_place"
   } ]
 }, {
-  "@id" : "_:genid61",
+  "@id" : "_:genid54",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_media"
@@ -429,7 +314,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Media"
   } ]
 }, {
-  "@id" : "_:genid62",
+  "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -442,7 +327,7 @@
     "@id" : "http://www.w3.org/2006/time#hasTime"
   } ]
 }, {
-  "@id" : "_:genid63",
+  "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#other_biographic_data"
@@ -451,7 +336,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -464,7 +349,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_place"
   } ]
 }, {
-  "@id" : "_:genid65",
+  "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -477,7 +362,7 @@
     "@id" : "http://www.w3.org/2006/time#hasTime"
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -490,7 +375,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#allowed_emotes"
   } ]
 }, {
-  "@id" : "_:genid67",
+  "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -503,7 +388,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid68",
+  "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -516,16 +401,16 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#color"
   } ]
 }, {
-  "@id" : "_:genid69",
+  "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#value"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "_:genid70"
+    "@id" : "_:genid63"
   } ]
 }, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -535,7 +420,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid73",
+  "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -548,7 +433,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_automatic"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#contains"
@@ -557,7 +442,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Content"
   } ]
 }, {
-  "@id" : "_:genid75",
+  "@id" : "_:genid68",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -570,7 +455,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_held_at"
   } ]
 }, {
-  "@id" : "_:genid76",
+  "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#area_of_study"
@@ -579,7 +464,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid77",
+  "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#extracurricular_activities"
@@ -588,7 +473,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid78",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -601,20 +486,20 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#certification"
   } ]
 }, {
-  "@id" : "_:genid79",
+  "@id" : "_:genid72",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "_:genid80"
+    "@id" : "_:genid73"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#evaluation"
   } ]
 }, {
-  "@id" : "_:genid80",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -624,7 +509,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid83",
+  "@id" : "_:genid76",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -637,7 +522,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_place"
   } ]
 }, {
-  "@id" : "_:genid84",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -650,7 +535,7 @@
     "@id" : "http://www.w3.org/2006/time#hasTime"
   } ]
 }, {
-  "@id" : "_:genid85",
+  "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -663,7 +548,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid86",
+  "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -676,7 +561,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_input_content_box_of"
   } ]
 }, {
-  "@id" : "_:genid87",
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -689,7 +574,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#max_character_number"
   } ]
 }, {
-  "@id" : "_:genid88",
+  "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://www.w3.org/2006/time#TemporalEntity"
@@ -702,7 +587,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid89",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -713,6 +598,86 @@
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#language"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#level"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#label"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#social_media_icon"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/nick"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#category"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#title"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_achievements"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Achievement"
   } ]
 }, {
   "@id" : "_:genid9",
@@ -727,86 +692,6 @@
 }, {
   "@id" : "_:genid90",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#level"
-  } ]
-}, {
-  "@id" : "_:genid91",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#label"
-  } ]
-}, {
-  "@id" : "_:genid92",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#social_media_icon"
-  } ]
-}, {
-  "@id" : "_:genid93",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/nick"
-  } ]
-}, {
-  "@id" : "_:genid94",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#category"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "_:genid95",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#title"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid96",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_achievements"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Achievement"
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_biographical_info"
   } ],
@@ -814,7 +699,7 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Biographical_info"
   } ]
 }, {
-  "@id" : "_:genid98",
+  "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_contact_info"
@@ -823,13 +708,92 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Contact_info"
   } ]
 }, {
-  "@id" : "_:genid99",
+  "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_container"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://rdfs.org/sioc/ns#Container"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_input_content_box"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Input_content_box"
+  } ]
+}, {
+  "@id" : "_:genid94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_main_media"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Main_Media"
+  } ]
+}, {
+  "@id" : "_:genid95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_stats"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats"
+  } ]
+}, {
+  "@id" : "_:genid96",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://rdfs.org/sioc/ns#UserAccount"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#created_by"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid97",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Color_Palette"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_color_palette"
+  } ]
+}, {
+  "@id" : "_:genid98",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Inscription_Date"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_inscription_date"
+  } ]
+}, {
+  "@id" : "_:genid99",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#uri"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/description",
@@ -871,9 +835,9 @@
 }, {
   "@id" : "http://rdfs.org/sioc/ns#UserAccount",
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid53"
+    "@id" : "_:genid46"
   }, {
-    "@id" : "_:genid54"
+    "@id" : "_:genid47"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"
@@ -939,7 +903,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Thing"
   }, {
-    "@id" : "_:genid55"
+    "@id" : "_:genid48"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Actual_Place"
@@ -1263,7 +1227,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Achievement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Some socials have some goals that can be reached, and once it happens the achievement appears on a user profile"
   } ],
@@ -1280,7 +1244,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Actual_Place",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as a personalized features of some profiles that give the user the possibility to specifiy a place either with a link (uri) internal to the social media or just by typing it (string)"
   } ],
@@ -1291,7 +1255,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Biographical_info"
   }, {
-    "@id" : "_:genid60"
+    "@id" : "_:genid53"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Address",
@@ -1305,26 +1269,43 @@
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order"
   } ]
 }, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order_Normal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Algorithmic Order Normal"
+  } ]
+}, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#All_but_blocked_users",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "All but blocked users"
+  } ]
+}, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order"
+  } ]
+}, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order_Normal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alphabetical Order Normal"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Background",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "It is intended as the experiences of the user and also the skills of the user"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Also History"
+  }, {
+    "@language" : "en",
+    "@value" : "It is intended as the experiences of the user and also the skills of the user"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1333,7 +1314,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Biographical_info"
   }, {
-    "@id" : "_:genid61"
+    "@id" : "_:genid54"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Media"
@@ -1358,9 +1339,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
   }, {
-    "@id" : "_:genid62"
+    "@id" : "_:genid55"
   }, {
-    "@id" : "_:genid63"
+    "@id" : "_:genid56"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"
@@ -1375,9 +1356,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Biographical_info"
   }, {
-    "@id" : "_:genid64"
+    "@id" : "_:genid57"
   }, {
-    "@id" : "_:genid65"
+    "@id" : "_:genid58"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.w3.org/2006/time#TemporalEntity"
@@ -1385,7 +1366,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chat",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "In this particular kind of input box the communication is shared between possibly multiple users"
   } ],
@@ -1396,7 +1377,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Input_content_box"
   }, {
-    "@id" : "_:genid66"
+    "@id" : "_:genid59"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order",
@@ -1408,26 +1389,32 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order"
   }, {
-    "@id" : "_:genid67"
+    "@id" : "_:genid60"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order_Normal",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order" ],
-  "http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old" : [ {
+  "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_new_to_old" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chronological Order Normal"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order_new_to_old",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order" ],
-  "http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old" : [ {
+  "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_new_to_old" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Chronological Order new to old"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Color_Palette",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background."
   } ],
@@ -1439,7 +1426,7 @@
     "@value" : "Color Palette"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid68"
+    "@id" : "_:genid61"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"
@@ -1447,7 +1434,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Contact_info",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as a section of a profile that gives some form of communication (not direct in the social) between the visitor of the profile and the person behind the user"
   } ],
@@ -1458,7 +1445,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
   }, {
-    "@id" : "_:genid69"
+    "@id" : "_:genid62"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"
@@ -1487,7 +1474,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
   }, {
-    "@id" : "_:genid73"
+    "@id" : "_:genid66"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Content_Container",
@@ -1499,12 +1486,12 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://rdfs.org/sioc/ns#Container"
   }, {
-    "@id" : "_:genid74"
+    "@id" : "_:genid67"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The order through which the items in a container are displayed"
   } ],
@@ -1528,15 +1515,15 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Experience"
   }, {
-    "@id" : "_:genid75"
+    "@id" : "_:genid68"
   }, {
-    "@id" : "_:genid76"
+    "@id" : "_:genid69"
   }, {
-    "@id" : "_:genid77"
+    "@id" : "_:genid70"
   }, {
-    "@id" : "_:genid78"
+    "@id" : "_:genid71"
   }, {
-    "@id" : "_:genid79"
+    "@id" : "_:genid72"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Organization"
@@ -1561,9 +1548,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Background"
   }, {
-    "@id" : "_:genid83"
+    "@id" : "_:genid76"
   }, {
-    "@id" : "_:genid84"
+    "@id" : "_:genid77"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://www.w3.org/2006/time#TemporalEntity"
@@ -1587,6 +1574,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Network_Container"
+  } ]
+}, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Followers_Only",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Followers Only"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Following",
@@ -1619,6 +1612,12 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Network_Container"
   } ]
 }, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Friends_of_a_friend",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Friends of a friend"
+  } ]
+}, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Group",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1631,7 +1630,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Highlighted_Media",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture."
   } ],
@@ -1652,12 +1651,12 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Contact_info"
   }, {
-    "@id" : "_:genid85"
+    "@id" : "_:genid78"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Input_content_box",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as a section of a profile that gives some form of communication (direct in the social) between the visitor of the profile and the user"
   } ],
@@ -1668,9 +1667,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
   }, {
-    "@id" : "_:genid86"
+    "@id" : "_:genid79"
   }, {
-    "@id" : "_:genid87"
+    "@id" : "_:genid80"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"
@@ -1678,7 +1677,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Inscription_Date",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as the information that some social display to see the date of the creation of the profile"
   } ],
@@ -1689,12 +1688,12 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
   }, {
-    "@id" : "_:genid88"
+    "@id" : "_:genid81"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Interest_Container",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as a container that aggregates some tags that represent particular interests of the user"
   } ],
@@ -1708,7 +1707,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Karma",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Particular stats that is displayed on Reddit"
   } ],
@@ -1722,7 +1721,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Language_Competency",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "More specific version of skill because it usually has a specific level"
   } ],
@@ -1733,9 +1732,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Skill"
   }, {
-    "@id" : "_:genid89"
+    "@id" : "_:genid82"
   }, {
-    "@id" : "_:genid90"
+    "@id" : "_:genid83"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Link_to_other_Social_Media",
@@ -1747,9 +1746,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Hypertext"
   }, {
-    "@id" : "_:genid91"
+    "@id" : "_:genid84"
   }, {
-    "@id" : "_:genid92"
+    "@id" : "_:genid85"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Main_Media",
@@ -1787,7 +1786,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Network_Container",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as \"following\", \"followers\" etc...)"
   } ],
@@ -1801,7 +1800,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Nickname",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The identifier of a user in a Social Media"
   } ],
@@ -1813,7 +1812,7 @@
     "@value" : "Nickname"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid93"
+    "@id" : "_:genid86"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"
@@ -1859,6 +1858,12 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats"
   } ]
 }, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Only_Users",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Only Users"
+  } ]
+}, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#deprecated" : [ {
@@ -1885,9 +1890,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Experience"
   }, {
-    "@id" : "_:genid94"
+    "@id" : "_:genid87"
   }, {
-    "@id" : "_:genid95"
+    "@id" : "_:genid88"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Personal_Website",
@@ -1911,9 +1916,32 @@
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order"
+  } ]
+}, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order_Normal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Popularity Order Normal"
+  } ]
+}, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This entity is used to describe the privacy settings of an entire profile or more in general to whichever social media data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Privacy"
+  } ]
+}, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Private",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Private"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile",
@@ -1925,6 +1953,20 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
   }, {
+    "@id" : "_:genid89"
+  }, {
+    "@id" : "_:genid90"
+  }, {
+    "@id" : "_:genid91"
+  }, {
+    "@id" : "_:genid92"
+  }, {
+    "@id" : "_:genid93"
+  }, {
+    "@id" : "_:genid94"
+  }, {
+    "@id" : "_:genid95"
+  }, {
     "@id" : "_:genid96"
   }, {
     "@id" : "_:genid97"
@@ -1932,20 +1974,6 @@
     "@id" : "_:genid98"
   }, {
     "@id" : "_:genid99"
-  }, {
-    "@id" : "_:genid100"
-  }, {
-    "@id" : "_:genid101"
-  }, {
-    "@id" : "_:genid102"
-  }, {
-    "@id" : "_:genid103"
-  }, {
-    "@id" : "_:genid104"
-  }, {
-    "@id" : "_:genid105"
-  }, {
-    "@id" : "_:genid106"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats"
@@ -1959,6 +1987,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Main_Media"
+  } ]
+}, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Public",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Public"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Relationships",
@@ -1980,7 +2014,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Background"
   }, {
-    "@id" : "_:genid107"
+    "@id" : "_:genid100"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data",
@@ -1993,7 +2027,7 @@
     "@value" : "Social Media Data"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid108"
+    "@id" : "_:genid101"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stars",
@@ -2008,7 +2042,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Numerical statistics linked to the profile"
   } ],
@@ -2019,7 +2053,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
   }, {
-    "@id" : "_:genid116"
+    "@id" : "_:genid102"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Telephone_Number",
@@ -2034,7 +2068,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trainership",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is a more specific kind of working experience"
   } ],
@@ -2048,7 +2082,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trivia",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as the information that some social media (like facebook) display on the profile as the answers of a set of predefined questions."
   } ],
@@ -2059,14 +2093,14 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Biographical_info"
   }, {
-    "@id" : "_:genid120"
+    "@id" : "_:genid106"
   }, {
-    "@id" : "_:genid121"
+    "@id" : "_:genid107"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trophies",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It's  a particular kind of achievement used in some socials for milestones."
   } ],
@@ -2080,9 +2114,12 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO_Profile",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User's Profile."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "UOMO Profile"
   } ]
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#User",
@@ -2094,7 +2131,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#User_Profile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as the structure and the content of a profile that belongs to a generic user (i.e. not Business Pages / account)"
   } ],
@@ -2108,7 +2145,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Views",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Some Social Media like Twitch or Youtube display the number of total views of the profile"
   } ],
@@ -2129,11 +2166,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Experience"
   }, {
-    "@id" : "_:genid122"
+    "@id" : "_:genid108"
   }, {
-    "@id" : "_:genid123"
+    "@id" : "_:genid109"
   }, {
-    "@id" : "_:genid124"
+    "@id" : "_:genid110"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Organization"
@@ -2141,7 +2178,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#allowed_emotes",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is a particular property of Twitch because the user can ban some emotes on her/his chat."
   } ],
@@ -2157,7 +2194,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#answer",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as the answer to a certain question in the \"Trivia\" section of a profile"
   } ],
@@ -2204,7 +2241,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#category",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is used to categorize a certain experience or highlighted media"
   } ],
@@ -2291,7 +2328,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#evaluation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as the grade obtained at the end of a particular educational experience"
   } ],
@@ -2307,7 +2344,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#extracurricular_activities",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as the activities done during an educational experience that are not directly linked to the courses followed or grades obtained. (Example: Theatre Club, Nomination as the president of students or others...)"
   } ],
@@ -2323,7 +2360,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#favorite_quotes",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended a particular biographic information that displays the favorite quotes of a user, all in string format"
   } ],
@@ -2336,7 +2373,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#field",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The field of the work done either by an organization or by the user in her/his working experience"
   } ],
@@ -2533,6 +2570,18 @@
     "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_place_of"
   } ]
 }, {
+  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_privacy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has privacy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"
+  } ]
+}, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_stats",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -2586,7 +2635,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_automatic",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the \"Comments\" and \"Post\" containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -2712,7 +2761,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_new_to_old",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as the property of a chronological order because usually in social media the chronological order is from new to old, meanwhile usually it should start from the old and go to the new."
   } ],
@@ -2750,30 +2799,14 @@
     "@id" : "_:genid12"
   } ]
 }, {
-  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_visible_to",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "This Data Property is used to describe the privacy settings of an entire profile or more in general to whichever social media data."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is visible to"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid30"
-  } ]
-}, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#label",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is used to give a name to some social media elements"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid37"
+    "@id" : "_:genid30"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "label"
@@ -2785,7 +2818,7 @@
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#language",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid41"
+    "@id" : "_:genid34"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "language"
@@ -2799,7 +2832,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#level",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Particular data property applied to language competency that describes the competency level of that particular language"
   } ],
@@ -2815,7 +2848,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#link",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Different from uri because it's not always considered as an identificator"
   } ],
@@ -2831,7 +2864,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#max_character_number",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Some input content box have a cap of characters that you can type into them"
   } ],
@@ -2868,7 +2901,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#question",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is intended as the question in the \"Trivia\" section of a profile"
   } ],
@@ -2902,7 +2935,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#shareable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It applies to every social media data to specify if it is shareable or not."
   } ],
@@ -2918,7 +2951,7 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#social_media_icon",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is used to specify, in the context of linking different social medias in a profile, if the social medias linked are represented also by an icon."
   } ],
@@ -2934,12 +2967,12 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It is used for all the medias or personal experiences that may have a title"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid44"
+    "@id" : "_:genid37"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "title"
@@ -2962,22 +2995,19 @@
 }, {
   "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owl#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "It can contain the general value of stats or contact info"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid47"
+    "@id" : "_:genid40"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid50"
+    "@id" : "_:genid43"
   } ]
-}, {
-  "@id" : "http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -2989,7 +3019,7 @@
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Organization",
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid125"
+    "@id" : "_:genid111"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/age",

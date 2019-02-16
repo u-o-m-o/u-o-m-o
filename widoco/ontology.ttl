@@ -185,10 +185,6 @@
 <http://schema.org/supersededBy> rdf:type owl:AnnotationProperty .
 
 
-###  http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old
-<http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old> rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
 rdf:type rdf:type owl:AnnotationProperty .
 
@@ -339,6 +335,13 @@ rdf:type rdf:type owl:AnnotationProperty .
            rdfs:label "has place" .
 
 
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_privacy
+:has_privacy rdf:type owl:ObjectProperty ;
+             rdfs:domain :Social_Media_Data ;
+             rdfs:range :Privacy ;
+             rdfs:label "has privacy" .
+
+
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_stats
 :has_stats rdf:type owl:ObjectProperty ;
            owl:inverseOf :is_a_stat_of ;
@@ -473,7 +476,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :allowed_emotes rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Chat ;
                 rdfs:range xsd:string ;
-                <http://purl.org/dc/terms/description> "It is a particular property of Twitch because the user can ban some emotes on her/his chat."@en ;
+                rdfs:comment "It is a particular property of Twitch because the user can ban some emotes on her/his chat."@en ;
                 rdfs:label "allowed emotes" .
 
 
@@ -481,7 +484,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :answer rdf:type owl:DatatypeProperty ;
         rdfs:domain :Trivia ;
         rdfs:range xsd:string ;
-        <http://purl.org/dc/terms/description> "It is intended as the answer to a certain question in the \"Trivia\" section of a profile"@en ;
+        rdfs:comment "It is intended as the answer to a certain question in the \"Trivia\" section of a profile"@en ;
         rdfs:label "answer" .
 
 
@@ -509,7 +512,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                     )
                       ] ;
           rdfs:range xsd:string ;
-          <http://purl.org/dc/terms/description> "It is used to categorize a certain experience or highlighted media"@en ;
+          rdfs:comment "It is used to categorize a certain experience or highlighted media"@en ;
           rdfs:label "category" .
 
 
@@ -536,7 +539,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                        xsd:string
                                      )
                        ] ;
-            <http://purl.org/dc/terms/description> "It is intended as the grade obtained at the end of a particular educational experience"@en ;
+            rdfs:comment "It is intended as the grade obtained at the end of a particular educational experience"@en ;
             rdfs:label "evaluation" .
 
 
@@ -544,14 +547,14 @@ rdf:type rdf:type owl:AnnotationProperty .
 :extracurricular_activities rdf:type owl:DatatypeProperty ;
                             rdfs:domain :Educational_Experience ;
                             rdfs:range xsd:string ;
-                            <http://purl.org/dc/terms/description> "It is intended as the activities done during an educational experience that are not directly linked to the courses followed or grades obtained. (Example: Theatre Club, Nomination as the president of students or others...)"@en ;
+                            rdfs:comment "It is intended as the activities done during an educational experience that are not directly linked to the courses followed or grades obtained. (Example: Theatre Club, Nomination as the president of students or others...)"@en ;
                             rdfs:label "extracurrricular activities" .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#favorite_quotes
 :favorite_quotes rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf :other_biographic_data ;
-                 <http://purl.org/dc/terms/description> "It is intended a particular biographic information that displays the favorite quotes of a user, all in string format"@en ;
+                 rdfs:comment "It is intended a particular biographic information that displays the favorite quotes of a user, all in string format"@en ;
                  rdfs:label "favorite quotes" .
 
 
@@ -563,7 +566,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                  )
                    ] ;
        rdfs:range xsd:string ;
-       <http://purl.org/dc/terms/description> "The field of the work done either by an organization or by the user in her/his working experience"@en ;
+       rdfs:comment "The field of the work done either by an organization or by the user in her/his working experience"@en ;
        rdfs:label "field" .
 
 
@@ -578,7 +581,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :is_automatic rdf:type owl:DatatypeProperty ;
               rdfs:domain :Content ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/terms/description> "With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the \"Comments\" and \"Post\" containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)" ;
+              rdfs:comment "With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the \"Comments\" and \"Post\" containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)" ;
               rdfs:label "is automatic" .
 
 
@@ -586,36 +589,8 @@ rdf:type rdf:type owl:AnnotationProperty .
 :is_new_to_old rdf:type owl:DatatypeProperty ;
                rdfs:domain :Chronological_Order ;
                rdfs:range xsd:boolean ;
-               <http://purl.org/dc/terms/description> "It is intended as the property of a chronological order because usually in social media the chronological order is from new to old, meanwhile usually it should start from the old and go to the new."@en ;
+               rdfs:comment "It is intended as the property of a chronological order because usually in social media the chronological order is from new to old, meanwhile usually it should start from the old and go to the new."@en ;
                rdfs:label "is new to old" .
-
-
-###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_visible_to
-:is_visible_to rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Social_Media_Data ;
-               rdfs:range [ rdf:type rdfs:Datatype ;
-                            owl:oneOf [ rdf:type rdf:List ;
-                                        rdf:first "all but blocked users" ;
-                                        rdf:rest [ rdf:type rdf:List ;
-                                                   rdf:first "followers" ;
-                                                   rdf:rest [ rdf:type rdf:List ;
-                                                              rdf:first "friends" ;
-                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                         rdf:first "friends of a friend" ;
-                                                                         rdf:rest [ rdf:type rdf:List ;
-                                                                                    rdf:first "only user" ;
-                                                                                    rdf:rest [ rdf:type rdf:List ;
-                                                                                               rdf:first "public" ;
-                                                                                               rdf:rest rdf:nil
-                                                                                             ]
-                                                                                  ]
-                                                                       ]
-                                                            ]
-                                                 ]
-                                      ]
-                          ] ;
-               <http://purl.org/dc/terms/description> "This Data Property is used to describe the privacy settings of an entire profile or more in general to whichever social media data."@en ;
-               rdfs:label "is visible to" .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#label
@@ -627,7 +602,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                  )
                    ] ;
        rdfs:range xsd:string ;
-       <http://purl.org/dc/terms/description> "It is used to give a name to some social media elements"@en ;
+       rdfs:comment "It is used to give a name to some social media elements"@en ;
        rdfs:label "label" .
 
 
@@ -647,7 +622,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :level rdf:type owl:DatatypeProperty ;
        rdfs:domain :Language_Competency ;
        rdfs:range xsd:string ;
-       <http://purl.org/dc/terms/description> "Particular data property applied to language competency that describes the competency level of that particular language"@en ;
+       rdfs:comment "Particular data property applied to language competency that describes the competency level of that particular language"@en ;
        rdfs:label "level" .
 
 
@@ -655,7 +630,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :link rdf:type owl:DatatypeProperty ;
       rdfs:domain :Hypertext ;
       rdfs:range xsd:anyURI ;
-      <http://purl.org/dc/terms/description> "Different from uri because it's not always considered as an identificator"@en ;
+      rdfs:comment "Different from uri because it's not always considered as an identificator"@en ;
       rdfs:label "link" .
 
 
@@ -663,7 +638,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :max_character_number rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Input_content_box ;
                       rdfs:range xsd:nonNegativeInteger ;
-                      <http://purl.org/dc/terms/description> "Some input content box have a cap of characters that you can type into them"@en ;
+                      rdfs:comment "Some input content box have a cap of characters that you can type into them"@en ;
                       rdfs:label "max character number" .
 
 
@@ -684,7 +659,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :question rdf:type owl:DatatypeProperty ;
           rdfs:domain :Trivia ;
           rdfs:range xsd:string ;
-          <http://purl.org/dc/terms/description> "It is intended as the question in the \"Trivia\" section of a profile"@en ;
+          rdfs:comment "It is intended as the question in the \"Trivia\" section of a profile"@en ;
           rdfs:label "question" .
 
 
@@ -704,7 +679,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :shareable rdf:type owl:DatatypeProperty ;
            rdfs:domain :Social_Media_Data ;
            rdfs:range xsd:boolean ;
-           <http://purl.org/dc/terms/description> "It applies to every social media data to specify if it is shareable or not."@en ;
+           rdfs:comment "It applies to every social media data to specify if it is shareable or not."@en ;
            rdfs:label "shareable" .
 
 
@@ -712,7 +687,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :social_media_icon rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Link_to_other_Social_Media ;
                    rdfs:range xsd:boolean ;
-                   <http://purl.org/dc/terms/description> "It is used to specify, in the context of linking different social medias in a profile, if the social medias linked are represented also by an icon."@en ;
+                   rdfs:comment "It is used to specify, in the context of linking different social medias in a profile, if the social medias linked are represented also by an icon."@en ;
                    rdfs:label "social media icon" .
 
 
@@ -724,7 +699,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                  )
                    ] ;
        rdfs:range xsd:string ;
-       <http://purl.org/dc/terms/description> "It is used for all the medias or personal experiences that may have a title"@en ;
+       rdfs:comment "It is used for all the medias or personal experiences that may have a title"@en ;
        rdfs:label "title" .
 
 
@@ -747,7 +722,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                   xsd:string
                                 )
                   ] ;
-       <http://purl.org/dc/terms/description> "It can contain the general value of stats or contact info"@en ;
+       rdfs:comment "It can contain the general value of stats or contact info"@en ;
        rdfs:label "value" .
 
 
@@ -875,7 +850,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 :Achievement rdf:type owl:Class ;
              rdfs:subClassOf :Social_Media_Data ;
              owl:disjointWith :Profile ;
-             <http://purl.org/dc/terms/description> "Some socials have some goals that can be reached, and once it happens the achievement appears on a user profile"@en ;
+             rdfs:comment "Some socials have some goals that can be reached, and once it happens the achievement appears on a user profile"@en ;
              rdfs:label "Achievement"@en .
 
 
@@ -887,7 +862,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass <http://schema.org/Place>
                               ] ;
-              <http://purl.org/dc/terms/description> "It is intended as a personalized features of some profiles that give the user the possibility to specifiy a place either with a link (uri) internal to the social media or just by typing it (string)"@en ;
+              rdfs:comment "It is intended as a personalized features of some profiles that give the user the possibility to specifiy a place either with a link (uri) internal to the social media or just by typing it (string)"@en ;
               rdfs:label "Actual Place"@en .
 
 
@@ -915,8 +890,8 @@ rdf:type rdf:type owl:AnnotationProperty .
                               owl:someValuesFrom :Media
                             ] ;
             owl:disjointWith :Media ;
-            <http://purl.org/dc/terms/description> "It is intended as the experiences of the user and also the skills of the user"@en ;
-            rdfs:comment "Also History"@en ;
+            rdfs:comment "Also History"@en ,
+                         "It is intended as the experiences of the user and also the skills of the user"@en ;
             rdfs:label "Background"@en .
 
 
@@ -967,7 +942,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                         owl:onDataRange xsd:string
                       ] ;
-      <http://purl.org/dc/terms/description> "In this particular kind of input box the communication is shared between possibly multiple users"@en ;
+      rdfs:comment "In this particular kind of input box the communication is shared between possibly multiple users"@en ;
       rdfs:label "Chat"@en .
 
 
@@ -990,7 +965,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                  owl:onDataRange xsd:string
                                ] ;
                owl:disjointWith :Profile ;
-               <http://purl.org/dc/terms/description> "Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background."@en ;
+               rdfs:comment "Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background."@en ;
                rdfs:isDefinedBy <http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO> ;
                rdfs:label "Color Palette"@en .
 
@@ -1007,7 +982,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                                    ]
                               ] ;
               owl:disjointWith :Profile ;
-              <http://purl.org/dc/terms/description> "It is intended as a section of a profile that gives some form of communication (not direct in the social) between the visitor of the profile and the person behind the user"@en ;
+              rdfs:comment "It is intended as a section of a profile that gives some form of communication (not direct in the social) between the visitor of the profile and the person behind the user"@en ;
               rdfs:label "Contact Info"@en .
 
 
@@ -1042,7 +1017,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order
 :Displaying_Order rdf:type owl:Class ;
                   owl:disjointWith :Profile ;
-                  <http://purl.org/dc/terms/description> "The order through which the items in a container are displayed"@en ;
+                  rdfs:comment "The order through which the items in a container are displayed"@en ;
                   rdfs:isDefinedBy <http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO> ;
                   rdfs:label "Displaying Order"@en .
 
@@ -1143,7 +1118,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Highlighted_Media
 :Highlighted_Media rdf:type owl:Class ;
                    rdfs:subClassOf :Main_Media ;
-                   <http://purl.org/dc/terms/description> "With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture."@en ;
+                   rdfs:comment "With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture."@en ;
                    rdfs:label "Highlighted Media"@en .
 
 
@@ -1172,7 +1147,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                      owl:onDataRange xsd:nonNegativeInteger
                                    ] ;
                    owl:disjointWith :Profile ;
-                   <http://purl.org/dc/terms/description> "It is intended as a section of a profile that gives some form of communication (direct in the social) between the visitor of the profile and the user"@en ;
+                   rdfs:comment "It is intended as a section of a profile that gives some form of communication (direct in the social) between the visitor of the profile and the user"@en ;
                    rdfs:label "Input Content Box"@en .
 
 
@@ -1184,21 +1159,21 @@ rdf:type rdf:type owl:AnnotationProperty .
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onClass <http://www.w3.org/2006/time#TemporalEntity>
                                   ] ;
-                  <http://purl.org/dc/terms/description> "It is intended as the information that some social display to see the date of the creation of the profile"@en ;
+                  rdfs:comment "It is intended as the information that some social display to see the date of the creation of the profile"@en ;
                   rdfs:label "Inscription Date"@en .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Interest_Container
 :Interest_Container rdf:type owl:Class ;
                     rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> ;
-                    <http://purl.org/dc/terms/description> "It is intended as a container that aggregates some tags that represent particular interests of the user"@en ;
+                    rdfs:comment "It is intended as a container that aggregates some tags that represent particular interests of the user"@en ;
                     rdfs:label "Interest Container"@en .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Karma
 :Karma rdf:type owl:Class ;
        rdfs:subClassOf :Stats ;
-       <http://purl.org/dc/terms/description> "Particular stats that is displayed on Reddit"@en ;
+       rdfs:comment "Particular stats that is displayed on Reddit"@en ;
        rdfs:label "Karma"@en .
 
 
@@ -1215,7 +1190,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                        owl:onDataRange xsd:string
                                      ] ;
-                     <http://purl.org/dc/terms/description> "More specific version of skill because it usually has a specific level"@en ;
+                     rdfs:comment "More specific version of skill because it usually has a specific level"@en ;
                      rdfs:label "Language Competency"@en .
 
 
@@ -1257,7 +1232,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Network_Container
 :Network_Container rdf:type owl:Class ;
                    rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> ;
-                   <http://purl.org/dc/terms/description> "A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as \"following\", \"followers\" etc...)"@en ;
+                   rdfs:comment "A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as \"following\", \"followers\" etc...)"@en ;
                    rdfs:label "Network Container"@en .
 
 
@@ -1268,7 +1243,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                             owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ;
           owl:disjointWith :Profile ;
-          <http://purl.org/dc/terms/description> "The identifier of a user in a Social Media"@en ;
+          rdfs:comment "The identifier of a user in a Social Media"@en ;
           rdfs:isDefinedBy <http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO> ;
           rdfs:label "Nickname"@en .
 
@@ -1338,6 +1313,12 @@ rdf:type rdf:type owl:AnnotationProperty .
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order
 :Popularity_Order rdf:type owl:Class ;
                   rdfs:subClassOf :Displaying_Order .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy
+:Privacy rdf:type owl:Class ;
+         rdfs:comment "This entity is used to describe the privacy settings of an entire profile or more in general to whichever social media data."@en ;
+         rdfs:label "Privacy"@en .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile
@@ -1421,29 +1402,9 @@ rdf:type rdf:type owl:AnnotationProperty .
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data
 :Social_Media_Data rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty :is_visible_to ;
-                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                     owl:onDataRange [ rdf:type rdfs:Datatype ;
-                                                       owl:oneOf [ rdf:type rdf:List ;
-                                                                   rdf:first "all but blocked users" ;
-                                                                   rdf:rest [ rdf:type rdf:List ;
-                                                                              rdf:first "followers" ;
-                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                         rdf:first "friends" ;
-                                                                                         rdf:rest [ rdf:type rdf:List ;
-                                                                                                    rdf:first "friends of a friend" ;
-                                                                                                    rdf:rest [ rdf:type rdf:List ;
-                                                                                                               rdf:first "only user" ;
-                                                                                                               rdf:rest [ rdf:type rdf:List ;
-                                                                                                                          rdf:first "public" ;
-                                                                                                                          rdf:rest rdf:nil
-                                                                                                                        ]
-                                                                                                             ]
-                                                                                                  ]
-                                                                                       ]
-                                                                            ]
-                                                                 ]
-                                                     ]
+                                     owl:onProperty :has_privacy ;
+                                     owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Privacy
                                    ] ;
                    rdfs:isDefinedBy <http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO> ;
                    rdfs:label "Social Media Data"@en .
@@ -1466,7 +1427,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                                           )
                                             ]
                        ] ;
-       <http://purl.org/dc/terms/description> "Numerical statistics linked to the profile"@en ;
+       rdfs:comment "Numerical statistics linked to the profile"@en ;
        rdfs:label "Stats"@en .
 
 
@@ -1479,7 +1440,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trainership
 :Trainership rdf:type owl:Class ;
              rdfs:subClassOf :Working_Experience ;
-             <http://purl.org/dc/terms/description> "It is a more specific kind of working experience"@en ;
+             rdfs:comment "It is a more specific kind of working experience"@en ;
              rdfs:label "Trainership"@en .
 
 
@@ -1494,14 +1455,14 @@ rdf:type rdf:type owl:AnnotationProperty .
                           owl:onProperty :question ;
                           owl:someValuesFrom xsd:string
                         ] ;
-        <http://purl.org/dc/terms/description> "It is intended as the information that some social media (like facebook) display on the profile as the answers of a set of predefined questions."@en ;
+        rdfs:comment "It is intended as the information that some social media (like facebook) display on the profile as the answers of a set of predefined questions."@en ;
         rdfs:label "Trivia"@en .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trophies
 :Trophies rdf:type owl:Class ;
           rdfs:subClassOf :Achievement ;
-          <http://purl.org/dc/terms/description> "It's  a particular kind of achievement used in some socials for milestones."@en ;
+          rdfs:comment "It's  a particular kind of achievement used in some socials for milestones."@en ;
           rdfs:label "Trophies"@en .
 
 
@@ -1513,14 +1474,14 @@ rdf:type rdf:type owl:AnnotationProperty .
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#User_Profile
 :User_Profile rdf:type owl:Class ;
               rdfs:subClassOf :Profile ;
-              <http://purl.org/dc/terms/description> "It is intended as the structure and the content of a profile that belongs to a generic user (i.e. not Business Pages / account)"@en ;
+              rdfs:comment "It is intended as the structure and the content of a profile that belongs to a generic user (i.e. not Business Pages / account)"@en ;
               rdfs:label "User Profile"@en .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Views
 :Views rdf:type owl:Class ;
        rdfs:subClassOf :Stats ;
-       <http://purl.org/dc/terms/description> "Some Social Media like Twitch or Youtube display the number of total views of the profile"@en ;
+       rdfs:comment "Some Social Media like Twitch or Youtube display the number of total views of the profile"@en ;
        rdfs:label "Views"@en .
 
 
@@ -1558,37 +1519,79 @@ rdf:type rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order
-:Algorithmic_Order rdf:type owl:NamedIndividual ,
-                            :Algorithmic_Order .
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order_Normal
+:Algorithmic_Order_Normal rdf:type owl:NamedIndividual ,
+                                   :Algorithmic_Order ;
+                          rdfs:label "Algorithmic Order Normal" .
 
 
-###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order
-:Alphabetical_Order rdf:type owl:NamedIndividual ,
-                             :Alphabetical_Order .
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#All_but_blocked_users
+:All_but_blocked_users rdf:type owl:NamedIndividual ,
+                                :Privacy ;
+                       rdfs:label "All but blocked users" .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order_Normal
+:Alphabetical_Order_Normal rdf:type owl:NamedIndividual ,
+                                    :Alphabetical_Order ;
+                           rdfs:label "Alphabetical Order Normal" .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order_Normal
 :Chronological_Order_Normal rdf:type owl:NamedIndividual ,
                                      :Chronological_Order ;
-                            <http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old> "false"^^xsd:boolean .
+                            :is_new_to_old "false"^^xsd:boolean ;
+                            rdfs:label "Chronological Order Normal" .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order_new_to_old
 :Chronological_Order_new_to_old rdf:type owl:NamedIndividual ,
                                          :Chronological_Order ;
-                                <http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old> "true"^^xsd:boolean .
+                                :is_new_to_old "true"^^xsd:boolean ;
+                                rdfs:label "Chronological Order new to old" .
 
 
-###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order
-:Popularity_Order rdf:type owl:NamedIndividual ,
-                           :Popularity_Order .
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Followers_Only
+:Followers_Only rdf:type owl:NamedIndividual ,
+                         :Privacy ;
+                rdfs:label "Followers Only" .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Friends_of_a_friend
+:Friends_of_a_friend rdf:type owl:NamedIndividual ,
+                              :Privacy ;
+                     rdfs:label "Friends of a friend" .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Only_Users
+:Only_Users rdf:type owl:NamedIndividual ,
+                     :Privacy ;
+            rdfs:label "Only Users" .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order_Normal
+:Popularity_Order_Normal rdf:type owl:NamedIndividual ,
+                                  :Popularity_Order ;
+                         rdfs:label "Popularity Order Normal" .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Private
+:Private rdf:type owl:NamedIndividual ,
+                  :Privacy ;
+         rdfs:label "Private" .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Public
+:Public rdf:type owl:NamedIndividual ,
+                 :Privacy ;
+        rdfs:label "Public" .
 
 
 ###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO_Profile
 :UOMO_Profile rdf:type owl:NamedIndividual ,
                        owl:Thing ;
-              <http://purl.org/dc/terms/description> "UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User's Profile."@en .
+              rdfs:comment "UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User's Profile."@en ;
+              rdfs:label "UOMO Profile" .
 
 
 ###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

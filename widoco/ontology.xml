@@ -14,7 +14,7 @@
      xmlns:rdfs1="rdfs:"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
-     xmlns:Ontology="http://uomodhdk.github.io/Ontology/">
+     xmlns:uomoprofile="http://uomodhdk.github.io/Ontology/uomoprofile.owl#">
     <owl:Ontology rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl">
         <owl:imports rdf:resource="http://rdfs.org/sioc/ns#"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
@@ -285,13 +285,6 @@
     
 
 
-    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old -->
-
-
-    <owl:AnnotationProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old"/>
-    
-
-
     <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
 
 
@@ -534,6 +527,17 @@
     
 
 
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_privacy -->
+
+
+    <owl:ObjectProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_privacy">
+        <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"/>
+        <rdfs:range rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"/>
+        <rdfs:label>has privacy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_stats -->
 
 
@@ -752,7 +756,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#allowed_emotes">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chat"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">It is a particular property of Twitch because the user can ban some emotes on her/his chat.</terms:description>
+        <rdfs:comment xml:lang="en">It is a particular property of Twitch because the user can ban some emotes on her/his chat.</rdfs:comment>
         <rdfs:label>allowed emotes</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -764,7 +768,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#answer">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trivia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">It is intended as the answer to a certain question in the &quot;Trivia&quot; section of a profile</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as the answer to a certain question in the &quot;Trivia&quot; section of a profile</rdfs:comment>
         <rdfs:label>answer</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -807,7 +811,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">It is used to categorize a certain experience or highlighted media</terms:description>
+        <rdfs:comment xml:lang="en">It is used to categorize a certain experience or highlighted media</rdfs:comment>
         <rdfs:label>category</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -849,7 +853,7 @@
                 </owl:unionOf>
             </rdfs:Datatype>
         </rdfs:range>
-        <terms:description xml:lang="en">It is intended as the grade obtained at the end of a particular educational experience</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as the grade obtained at the end of a particular educational experience</rdfs:comment>
         <rdfs:label>evaluation</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -861,7 +865,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#extracurricular_activities">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Educational_Experience"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">It is intended as the activities done during an educational experience that are not directly linked to the courses followed or grades obtained. (Example: Theatre Club, Nomination as the president of students or others...)</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as the activities done during an educational experience that are not directly linked to the courses followed or grades obtained. (Example: Theatre Club, Nomination as the president of students or others...)</rdfs:comment>
         <rdfs:label>extracurrricular activities</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -872,7 +876,7 @@
 
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#favorite_quotes">
         <rdfs:subPropertyOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#other_biographic_data"/>
-        <terms:description xml:lang="en">It is intended a particular biographic information that displays the favorite quotes of a user, all in string format</terms:description>
+        <rdfs:comment xml:lang="en">It is intended a particular biographic information that displays the favorite quotes of a user, all in string format</rdfs:comment>
         <rdfs:label>favorite quotes</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -891,7 +895,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">The field of the work done either by an organization or by the user in her/his working experience</terms:description>
+        <rdfs:comment xml:lang="en">The field of the work done either by an organization or by the user in her/his working experience</rdfs:comment>
         <rdfs:label>field</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -914,7 +918,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_automatic">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Content"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <terms:description>With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the &quot;Comments&quot; and &quot;Post&quot; containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)</terms:description>
+        <rdfs:comment>With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the &quot;Comments&quot; and &quot;Post&quot; containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)</rdfs:comment>
         <rdfs:label>is automatic</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -926,60 +930,8 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_new_to_old">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <terms:description xml:lang="en">It is intended as the property of a chronological order because usually in social media the chronological order is from new to old, meanwhile usually it should start from the old and go to the new.</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as the property of a chronological order because usually in social media the chronological order is from new to old, meanwhile usually it should start from the old and go to the new.</rdfs:comment>
         <rdfs:label>is new to old</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_visible_to -->
-
-
-    <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_visible_to">
-        <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>all but blocked users</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>followers</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>friends</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first>friends of a friend</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first>only user</rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first>public</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <terms:description xml:lang="en">This Data Property is used to describe the privacy settings of an entire profile or more in general to whichever social media data.</terms:description>
-        <rdfs:label>is visible to</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -998,7 +950,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">It is used to give a name to some social media elements</terms:description>
+        <rdfs:comment xml:lang="en">It is used to give a name to some social media elements</rdfs:comment>
         <rdfs:label>label</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1029,7 +981,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#level">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Language_Competency"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">Particular data property applied to language competency that describes the competency level of that particular language</terms:description>
+        <rdfs:comment xml:lang="en">Particular data property applied to language competency that describes the competency level of that particular language</rdfs:comment>
         <rdfs:label>level</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1041,7 +993,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#link">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Hypertext"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <terms:description xml:lang="en">Different from uri because it&apos;s not always considered as an identificator</terms:description>
+        <rdfs:comment xml:lang="en">Different from uri because it&apos;s not always considered as an identificator</rdfs:comment>
         <rdfs:label>link</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1053,7 +1005,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#max_character_number">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Input_content_box"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
-        <terms:description xml:lang="en">Some input content box have a cap of characters that you can type into them</terms:description>
+        <rdfs:comment xml:lang="en">Some input content box have a cap of characters that you can type into them</rdfs:comment>
         <rdfs:label>max character number</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1086,7 +1038,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#question">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trivia"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">It is intended as the question in the &quot;Trivia&quot; section of a profile</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as the question in the &quot;Trivia&quot; section of a profile</rdfs:comment>
         <rdfs:label>question</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1118,7 +1070,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#shareable">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <terms:description xml:lang="en">It applies to every social media data to specify if it is shareable or not.</terms:description>
+        <rdfs:comment xml:lang="en">It applies to every social media data to specify if it is shareable or not.</rdfs:comment>
         <rdfs:label>shareable</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1130,7 +1082,7 @@
     <owl:DatatypeProperty rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#social_media_icon">
         <rdfs:domain rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Link_to_other_Social_Media"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <terms:description xml:lang="en">It is used to specify, in the context of linking different social medias in a profile, if the social medias linked are represented also by an icon.</terms:description>
+        <rdfs:comment xml:lang="en">It is used to specify, in the context of linking different social medias in a profile, if the social medias linked are represented also by an icon.</rdfs:comment>
         <rdfs:label>social media icon</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1149,7 +1101,7 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <terms:description xml:lang="en">It is used for all the medias or personal experiences that may have a title</terms:description>
+        <rdfs:comment xml:lang="en">It is used for all the medias or personal experiences that may have a title</rdfs:comment>
         <rdfs:label>title</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1186,7 +1138,7 @@
                 </owl:unionOf>
             </rdfs:Datatype>
         </rdfs:range>
-        <terms:description xml:lang="en">It can contain the general value of stats or contact info</terms:description>
+        <rdfs:comment xml:lang="en">It can contain the general value of stats or contact info</rdfs:comment>
         <rdfs:label>value</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -1419,7 +1371,7 @@
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Achievement">
         <rdfs:subClassOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data"/>
         <owl:disjointWith rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"/>
-        <terms:description xml:lang="en">Some socials have some goals that can be reached, and once it happens the achievement appears on a user profile</terms:description>
+        <rdfs:comment xml:lang="en">Some socials have some goals that can be reached, and once it happens the achievement appears on a user profile</rdfs:comment>
         <rdfs:label xml:lang="en">Achievement</rdfs:label>
     </owl:Class>
     
@@ -1437,7 +1389,7 @@
                 <owl:onClass rdf:resource="http://schema.org/Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <terms:description xml:lang="en">It is intended as a personalized features of some profiles that give the user the possibility to specifiy a place either with a link (uri) internal to the social media or just by typing it (string)</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as a personalized features of some profiles that give the user the possibility to specifiy a place either with a link (uri) internal to the social media or just by typing it (string)</rdfs:comment>
         <rdfs:label xml:lang="en">Actual Place</rdfs:label>
     </owl:Class>
     
@@ -1483,8 +1435,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Media"/>
-        <terms:description xml:lang="en">It is intended as the experiences of the user and also the skills of the user</terms:description>
         <rdfs:comment xml:lang="en">Also History</rdfs:comment>
+        <rdfs:comment xml:lang="en">It is intended as the experiences of the user and also the skills of the user</rdfs:comment>
         <rdfs:label xml:lang="en">Background</rdfs:label>
     </owl:Class>
     
@@ -1561,7 +1513,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <terms:description xml:lang="en">In this particular kind of input box the communication is shared between possibly multiple users</terms:description>
+        <rdfs:comment xml:lang="en">In this particular kind of input box the communication is shared between possibly multiple users</rdfs:comment>
         <rdfs:label xml:lang="en">Chat</rdfs:label>
     </owl:Class>
     
@@ -1596,7 +1548,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"/>
-        <terms:description xml:lang="en">Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background.</terms:description>
+        <rdfs:comment xml:lang="en">Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO"/>
         <rdfs:label xml:lang="en">Color Palette</rdfs:label>
     </owl:Class>
@@ -1622,7 +1574,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"/>
-        <terms:description xml:lang="en">It is intended as a section of a profile that gives some form of communication (not direct in the social) between the visitor of the profile and the person behind the user</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as a section of a profile that gives some form of communication (not direct in the social) between the visitor of the profile and the person behind the user</rdfs:comment>
         <rdfs:label xml:lang="en">Contact Info</rdfs:label>
     </owl:Class>
     
@@ -1677,7 +1629,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order">
         <owl:disjointWith rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"/>
-        <terms:description xml:lang="en">The order through which the items in a container are displayed</terms:description>
+        <rdfs:comment xml:lang="en">The order through which the items in a container are displayed</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO"/>
         <rdfs:label xml:lang="en">Displaying Order</rdfs:label>
     </owl:Class>
@@ -1835,7 +1787,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Highlighted_Media">
         <rdfs:subClassOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Main_Media"/>
-        <terms:description xml:lang="en">With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture.</terms:description>
+        <rdfs:comment xml:lang="en">With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture.</rdfs:comment>
         <rdfs:label xml:lang="en">Highlighted Media</rdfs:label>
     </owl:Class>
     
@@ -1878,7 +1830,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"/>
-        <terms:description xml:lang="en">It is intended as a section of a profile that gives some form of communication (direct in the social) between the visitor of the profile and the user</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as a section of a profile that gives some form of communication (direct in the social) between the visitor of the profile and the user</rdfs:comment>
         <rdfs:label xml:lang="en">Input Content Box</rdfs:label>
     </owl:Class>
     
@@ -1896,7 +1848,7 @@
                 <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <terms:description xml:lang="en">It is intended as the information that some social display to see the date of the creation of the profile</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as the information that some social display to see the date of the creation of the profile</rdfs:comment>
         <rdfs:label xml:lang="en">Inscription Date</rdfs:label>
     </owl:Class>
     
@@ -1907,7 +1859,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Interest_Container">
         <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
-        <terms:description xml:lang="en">It is intended as a container that aggregates some tags that represent particular interests of the user</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as a container that aggregates some tags that represent particular interests of the user</rdfs:comment>
         <rdfs:label xml:lang="en">Interest Container</rdfs:label>
     </owl:Class>
     
@@ -1918,7 +1870,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Karma">
         <rdfs:subClassOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats"/>
-        <terms:description xml:lang="en">Particular stats that is displayed on Reddit</terms:description>
+        <rdfs:comment xml:lang="en">Particular stats that is displayed on Reddit</rdfs:comment>
         <rdfs:label xml:lang="en">Karma</rdfs:label>
     </owl:Class>
     
@@ -1943,7 +1895,7 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <terms:description xml:lang="en">More specific version of skill because it usually has a specific level</terms:description>
+        <rdfs:comment xml:lang="en">More specific version of skill because it usually has a specific level</rdfs:comment>
         <rdfs:label xml:lang="en">Language Competency</rdfs:label>
     </owl:Class>
     
@@ -2009,7 +1961,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Network_Container">
         <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
-        <terms:description xml:lang="en">A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as &quot;following&quot;, &quot;followers&quot; etc...)</terms:description>
+        <rdfs:comment xml:lang="en">A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as &quot;following&quot;, &quot;followers&quot; etc...)</rdfs:comment>
         <rdfs:label xml:lang="en">Network Container</rdfs:label>
     </owl:Class>
     
@@ -2026,7 +1978,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"/>
-        <terms:description xml:lang="en">The identifier of a user in a Social Media</terms:description>
+        <rdfs:comment xml:lang="en">The identifier of a user in a Social Media</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO"/>
         <rdfs:label xml:lang="en">Nickname</rdfs:label>
     </owl:Class>
@@ -2140,6 +2092,16 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order">
         <rdfs:subClassOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy -->
+
+
+    <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy">
+        <rdfs:comment xml:lang="en">This entity is used to describe the privacy settings of an entire profile or more in general to whichever social media data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Privacy</rdfs:label>
     </owl:Class>
     
 
@@ -2268,49 +2230,9 @@
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_visible_to"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange>
-                    <rdfs:Datatype>
-                        <owl:oneOf>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>all but blocked users</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>followers</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first>friends</rdf:first>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first>friends of a friend</rdf:first>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first>only user</rdf:first>
-                                                                <rdf:rest>
-                                                                    <rdf:Description>
-                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                        <rdf:first>public</rdf:first>
-                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                                    </rdf:Description>
-                                                                </rdf:rest>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </owl:oneOf>
-                    </rdfs:Datatype>
-                </owl:onDataRange>
+                <owl:onProperty rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_privacy"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:isDefinedBy rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO"/>
@@ -2347,7 +2269,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <terms:description xml:lang="en">Numerical statistics linked to the profile</terms:description>
+        <rdfs:comment xml:lang="en">Numerical statistics linked to the profile</rdfs:comment>
         <rdfs:label xml:lang="en">Stats</rdfs:label>
     </owl:Class>
     
@@ -2368,7 +2290,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trainership">
         <rdfs:subClassOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Working_Experience"/>
-        <terms:description xml:lang="en">It is a more specific kind of working experience</terms:description>
+        <rdfs:comment xml:lang="en">It is a more specific kind of working experience</rdfs:comment>
         <rdfs:label xml:lang="en">Trainership</rdfs:label>
     </owl:Class>
     
@@ -2391,7 +2313,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <terms:description xml:lang="en">It is intended as the information that some social media (like facebook) display on the profile as the answers of a set of predefined questions.</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as the information that some social media (like facebook) display on the profile as the answers of a set of predefined questions.</rdfs:comment>
         <rdfs:label xml:lang="en">Trivia</rdfs:label>
     </owl:Class>
     
@@ -2402,7 +2324,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trophies">
         <rdfs:subClassOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Achievement"/>
-        <terms:description xml:lang="en">It&apos;s  a particular kind of achievement used in some socials for milestones.</terms:description>
+        <rdfs:comment xml:lang="en">It&apos;s  a particular kind of achievement used in some socials for milestones.</rdfs:comment>
         <rdfs:label xml:lang="en">Trophies</rdfs:label>
     </owl:Class>
     
@@ -2422,7 +2344,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#User_Profile">
         <rdfs:subClassOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile"/>
-        <terms:description xml:lang="en">It is intended as the structure and the content of a profile that belongs to a generic user (i.e. not Business Pages / account)</terms:description>
+        <rdfs:comment xml:lang="en">It is intended as the structure and the content of a profile that belongs to a generic user (i.e. not Business Pages / account)</rdfs:comment>
         <rdfs:label xml:lang="en">User Profile</rdfs:label>
     </owl:Class>
     
@@ -2433,7 +2355,7 @@
 
     <owl:Class rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Views">
         <rdfs:subClassOf rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats"/>
-        <terms:description xml:lang="en">Some Social Media like Twitch or Youtube display the number of total views of the profile</terms:description>
+        <rdfs:comment xml:lang="en">Some Social Media like Twitch or Youtube display the number of total views of the profile</rdfs:comment>
         <rdfs:label xml:lang="en">Views</rdfs:label>
     </owl:Class>
     
@@ -2503,20 +2425,32 @@
     
 
 
-    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order -->
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order_Normal -->
 
 
-    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order">
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order_Normal">
         <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order"/>
+        <rdfs:label>Algorithmic Order Normal</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order -->
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#All_but_blocked_users -->
 
 
-    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order">
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#All_but_blocked_users">
+        <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"/>
+        <rdfs:label>All but blocked users</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order_Normal -->
+
+
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order_Normal">
         <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order"/>
+        <rdfs:label>Alphabetical Order Normal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2526,7 +2460,8 @@
 
     <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order_Normal">
         <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order"/>
-        <Ontology:uomoprofile.owlis_new_to_old rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Ontology:uomoprofile.owlis_new_to_old>
+        <is_new_to_old rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_new_to_old>
+        <rdfs:label>Chronological Order Normal</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2536,16 +2471,68 @@
 
     <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order_new_to_old">
         <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order"/>
-        <Ontology:uomoprofile.owlis_new_to_old rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Ontology:uomoprofile.owlis_new_to_old>
+        <is_new_to_old rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_new_to_old>
+        <rdfs:label>Chronological Order new to old</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order -->
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Followers_Only -->
 
 
-    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order">
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Followers_Only">
+        <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"/>
+        <rdfs:label>Followers Only</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Friends_of_a_friend -->
+
+
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Friends_of_a_friend">
+        <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"/>
+        <rdfs:label>Friends of a friend</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Only_Users -->
+
+
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Only_Users">
+        <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"/>
+        <rdfs:label>Only Users</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order_Normal -->
+
+
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order_Normal">
         <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order"/>
+        <rdfs:label>Popularity Order Normal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Private -->
+
+
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Private">
+        <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"/>
+        <rdfs:label>Private</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://uomodhdk.github.io/Ontology/uomoprofile.owl#Public -->
+
+
+    <owl:NamedIndividual rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Public">
+        <rdf:type rdf:resource="http://uomodhdk.github.io/Ontology/uomoprofile.owl#Privacy"/>
+        <rdfs:label>Public</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2555,7 +2542,8 @@
 
     <owl:Thing rdf:about="http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO_Profile">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <terms:description xml:lang="en">UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User&apos;s Profile.</terms:description>
+        <rdfs:comment xml:lang="en">UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User&apos;s Profile.</rdfs:comment>
+        <rdfs:label>UOMO Profile</rdfs:label>
     </owl:Thing>
 </rdf:RDF>
 
