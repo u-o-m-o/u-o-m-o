@@ -116,5 +116,5 @@
  	uomoprofile:created_by :user ;
  	uomoprofile:has_container :meetups, :interests ;
  	uomoprofile:has_contact_info :Facebook, :Twitter, :Tumblr, :Linkedin, :Flickr ;
- 	uomoprofile:has_privacy uomo:Public ;
+ 	uomoprofile:has_privacy uomoprofile:Public ;
  	uomoprofile:bio "Sono solo un progetto :)"^^xsd:string .
