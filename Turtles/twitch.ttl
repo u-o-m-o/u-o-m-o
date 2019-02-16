@@ -1,0 +1,132 @@
+@prefix uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <https://www.twitch.tv/demyhanna/> .
+
+#Demyhanna
+
+ :user
+ 	a sioc:UserAccount ;
+ 	uomoprofile:creates <https://www.twitch.tv/demyhanna> ;
+ 	uomoprofile:has_nickname :nickname .
+
+ 	
+#Nickname
+
+ :nickname
+ 	a uomoprofile:Nickname ;
+ 	uomoprofile:is_nickname_of :user ;
+ 	foaf:nick "demyhanna"^^rdfs:Literal .
+
+ 	
+#ProfileImage
+
+ <https://static-cdn.jtvnw.net/jtv_user_pictures/c01a9d9d-a00b-4fe5-ae7c-0f640abdb218-profile_image-70x70.jpeg>
+ 	a uomoprofile:Profile_Media ;
+ 	uomoprofile:is_main_media_of <https://www.twitch.tv/demyhanna> .
+
+ 	
+#VideoStream
+
+ :videostream
+ 	a uomoprofile:Highlighted_Media ;
+ 	uomoprofile:is_main_media_of <https://www.twitch.tv/demyhanna> ;
+ 	uomoprofile:title "Hello World" ;
+ 	uomoprofile:category "Hearthstone" .
+
+
+#Chat
+
+ :chat
+ 	a uomoprofile:Chat;
+ 	uomoprofile:is_input_content_box_of <https://www.twitch.tv/demyhanna>;
+ 	uomoprofile:allowed_emotes "All global" .
+ 	
+
+#ContainerVideos
+
+ :videos
+ 	a uomoprofile:ContentContainer ;
+ 	uomoprofile:has_displaying_order uomoprofile:Chronological_Order_new_to_old ;
+ 	uomoprofile:is_container_of <https://www.twitch.tv/demyhanna> .
+ 	
+ 	
+#ContainerClips
+
+ :clips
+	a uomoprofile:ContentContainer ;
+	uomoprofile:has_displaying_order uomoprofile:Popularity_Order_Normal ;
+	uomoprofile:is_container_of <https://www.twitch.tv/demyhanna> .
+	
+	
+#ContainerEvents
+
+ :events
+	a uomoprofile:ContentContainer ;
+	uomoprofile:is_container_of <https://www.twitch.tv/demyhanna> .
+
+	
+#ContainerFollowers
+
+ :followers
+	a uomoprofile:Followers ;
+	uomoprofile:is_container_of <https://www.twitch.tv/demyhanna> .
+
+	
+#ContainerFollowing
+
+ :following
+	a uomoprofile:Following ;
+	uomoprofile:is_container_of <https://www.twitch.tv/demyhanna> .
+
+	
+#ContainerPanel
+
+ :panels
+	a uomoprofile:ContentContainer ;
+	uomoprofile:is_container_of <https://www.twitch.tv/demyhanna> .
+
+
+#NofFollower
+
+ :numberoffollower
+	a uomoprofile:Number_of_followers ;
+	uomoprofile:is_a_stat_of <https://www.twitch.tv/demyhanna> ;
+	uomoprofile:value "134"^^xsd:nonNegativeInteger .
+
+	
+#NofFollowing
+
+ :numberoffollowing
+	a uomoprofile:Number_of_following ;
+	uomoprofile:is_a_stat_of <https://www.twitch.tv/demyhanna> ;
+	uomoprofile:value "92"^^xsd:nonNegativeInteger .
+
+	
+#Views
+
+ :views
+	a uomoprofile:Views ;
+	uomoprofile:is_a_stat_of <https://www.twitch.tv/demyhanna> ;
+	uomoprofile:value "123"^^xsd:nonNegativeInteger .
+	
+	
+#Profile
+
+ :
+ 	a uomoprofile:User_Profile;
+ 	uomoprofile:uri "https://www.twitch.tv/demyhanna"^^xsd:anyURI ;
+ 	uomoprofile:created_by :user ;
+ 	uomoprofile:has_main_media <https://static-cdn.jtvnw.net/jtv_user_pictures/c01a9d9d-a00b-4fe5-ae7c-0f640abdb218-profile_image-70x70.jpeg>, :videostream ;
+ 	uomoprofile:has_input_content_box :chat ;
+ 	uomoprofile:has_container :videos, :clips, :events, :followers, :following, :panels ;
+ 	uomoprofile:has_stats :numberoffollwing, :numberoffollowers, :views ;
+ 	uomoprofile:is_visible_to "public";
+ 	uomoprofile:shareable "true"^^xsd:boolean .
+ 	

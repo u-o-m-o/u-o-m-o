@@ -1,0 +1,146 @@
+@prefix uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <https://www.pinterest.it/DemetraHanna/> .
+
+
+#User
+
+ :user
+ 	a sioc:UserAccount ;
+ 	uomoprofile:creates <https://www.pinterest.it/DemetraHanna/> ;
+ 	uomoprofile:has_nickname :nickname .
+
+ 	
+#Nickname
+
+ :nickname
+ 	a uomoprofile:Nickname ;
+ 	uomoprofile:is_nickname_of :user ;
+ 	foaf:nick "DemetraHanna"^^rdfs:Literal .
+ 
+
+#ProfilePic
+
+ <https://i-h2.pinimg.com/280x280_RS/5c/80/f2/5c80f27786891a478307473b5ef00f02.jpg>
+ 	a uomoprofile:Profile_Media ;
+ 	uomoprofile:is_main_media_of <https://www.pinterest.it/DemetraHanna/> .
+
+ 	
+#Numoffollower
+
+ :numoffollower
+ 	a uomoprofile:Number_of_followers ;
+ 	uomoprofile:is_a_stat_of <https://www.pinterest.it/DemetraHanna/> ;
+ 	uomoprofile:value "137"^^xsd:nonNegativeInteger .
+ 	
+
+#Numoffollowing
+
+ :numoffollowing
+ 	a uomoprofile:Number_of_following ;
+ 	uomoprofile:is_a_stat_of <https://www.pinterest.it/DemetraHanna/> ;
+ 	uomoprofile:value "24"^^xsd:nonNegativeInteger .
+ 	
+
+#ActualPlace
+
+ :ActualPlace
+ 	a uomoprofile:Actual_Place ;
+ 	uomoprofile:value "Bologna"^^xsd:string; .
+
+
+#FullName
+
+ :FullName
+ 	a uomoprofile:Biographical_Info ;
+ 	uomoprofile:fullname "Demetra Hanna Davis Keys"^^rdfs:Literal .
+
+
+#Followers
+
+ :followers
+ 	a uomoprofile:Followers ;
+ 	uomoprofile:is_container_of <https://www.pinterest.it/DemetraHanna/> .
+
+
+#Following
+
+ :following
+ 	a uomoprofile:Following ;
+ 	uomoprofile:is_container_of <https://www.pinterest.it/DemetraHanna/> .	
+
+
+#Boards
+
+ :boards
+ 	a uomoprofile:Content_Container ;
+ 	uomoprofile:is_container_of <https://www.pinterest.it/DemetraHanna/> ;
+ 	uomoprofile:has_displaying_order <uomoprofile:Algortihmic_Order_Normal> ;
+ 	uomoprofile:contains :burrosalvia, :frutta, :34, :dhdk .
+ 	
+
+#Pins
+
+ :pins
+ 	a uomoprofile:Content_Container ;
+ 	uomoprofile:is_container_of <https://www.pinterest.it/DemetraHanna/> .
+
+ 	
+#Tried
+
+ :tried
+ 	a uomoprofile:Content_Container ;
+ 	uomoprofile:is_container_of <https://www.pinterest.it/DemetraHanna/> .
+
+ 	
+#Topics
+
+ :topics
+ 	a uomoprofile:Interest_Container ;
+ 	uomoprofile:is_container_of <https://www.pinterest.it/DemetraHanna/> .
+
+ 	
+#Burrosalvia
+
+ :burrosalvia
+ 	a uomoprofile:Content_Container .
+
+
+#Frutta
+
+ :frutta
+ 	a uomoprofile:Content_Container .
+
+
+#34
+
+ :34
+ 	a uomoprofile:Content_Container .
+
+ 	
+#DHDK
+
+ :dhdk
+ 	a uomoprofile:Content_Container .
+
+
+#Profile
+
+ :
+ 	a uomoprofile:User_Profile ;
+ 	uomoprofile:created_by :user ;
+ 	uomoprofile:uri "https://www.pinterest.it/DemetraHanna/"^^xsd:anyURI ;
+ 	uomoprofile:has_main_media <https://i-h2.pinimg.com/280x280_RS/5c/80/f2/5c80f27786891a478307473b5ef00f02.jpg> ;
+ 	uomoprofile:has_stats :numoffollower, :numoffollowing ;
+ 	uomoprofile:is_visible_to "public" ;
+ 	uomoprofile:bio "Researcher, where I am the research myself."^^xsd:string ;
+ 	uomoprofile:has_biographical_info :ActualPlace, :FullName ;
+ 	uomoprofile:has_container :followers, :following, :boards, :pins, :tried, :topics .
+ 	

@@ -1,0 +1,120 @@
+@prefix uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <https://www.meetup.com/members/273645503/> .
+
+#User
+
+ :user
+ 	a sioc:UserAccount ;
+ 	uomoprofile:creates <https://www.meetup.com/members/273645503/> .
+ 
+
+#ProfilePicture 	
+ 	
+ <https://secure.meetupstatic.com/photos/member/a/e/d/1/member_284744753.jpeg>
+ 	a uomoprofile:Profile_Media ;
+ 	is_main_media_of <https://www.meetup.com/members/273645503/> .
+ 	
+
+#InscriptionDate
+
+ :InscriptionDate
+ 	a uomoprofile:Inscription_Date ;
+ 	time:has_time :Date .
+
+
+#Date
+
+ :Date
+ 	a time:Instant ;
+ 	time:inXSDDate "2019/02/03"^^xsd:date .
+
+
+#Actual_Place
+
+ :ActualPlace
+ 	a uomoprofile:Actual_Place ;
+ 	uomoprofile:has_place <https://www.meetup.com/it-IT/cities/it/bo/bologna/> . #Bologna
+
+
+#Facebook
+
+ :Facebook
+ 	a uomoprofile:Link_to_other_Social_Media ;
+ 	uomoprofile:social_media_icon "true"^^xsd:boolean ;
+ 	uomoprofile:link "http://www.facebook.com/profile.php?id=107487310380771"^^xsd:anyURI .
+
+ 	
+#Twitter
+
+ :Twitter
+ 	a uomoprofile:Link_to_other_Social_Media ;
+ 	uomoprofile:social_media_icon "true"^^xsd:boolean ;
+ 	uomoprofile:link "https://twitter.com/KeysDemetra"^^xsd:anyURI .
+
+ 	
+#Tumblr
+
+ :Tumblr
+ 	a uomoprofile:Link_to_other_Social_Media ;
+ 	uomoprofile:social_media_icon "true"^^xsd:boolean ;
+ 	uomoprofile:link "https://demyhanna.tumblr.com/"^^xsd:anyURI .
+
+ 	
+#Linkedin
+
+ :Linkedin
+ 	a uomoprofile:Link_to_other_Social_Media ;
+ 	uomoprofile:social_media_icon "true"^^xsd:boolean ;
+ 	uomoprofile:link "https://www.linkedin.com/in/demetra-hannah-1447589157/"^^xsd:anyURI .
+ 
+	
+#Flickr
+
+ :Flickr
+ 	a uomoprofile:Link_to_other_Social_Media ;
+ 	uomoprofile:social_media_icon "true"^^xsd:boolean ;
+ 	uomoprofile:link "https://www.flickr.com/photos/156178253@N07"^^xsd:anyURI .
+
+
+#Meetups
+
+ :meetups
+ 	a uomoprofile:Network_Container ;
+ 	uomoprofile:has_displaying_order <urideidisplayingalfabetici> .
+
+ 	
+#Interests
+
+ :interests
+ 	a uomoprofile:Interest_Container ;
+ 	uomoprofile:has_displaying_order <urideialgorithmic> .
+
+
+#FullName
+
+ :FullName
+ 	a uomoprofile:Biographical_Info ;
+ 	uomoprofile:full_name "Demetra Hanna Davis Keys"^^rdfs:Literal .
+
+
+#Profile
+
+ :
+ 	a uomoprofile:User_Profile ;
+ 	uomoprofile:uri "https://www.meetup.com/members/273645503/"^^xsd:anyURI ;
+ 	uomoprofile:has_inscription_date :InscriptionDate ;
+ 	uomoprofile:has_main_media <https://secure.meetupstatic.com/photos/member/a/e/d/1/member_284744753.jpeg> ;
+ 	uomoprofile:has_biographical_info :ActualPlace :FullName;
+ 	uomoprofile:created_by :user ;
+ 	uomoprofile:has_container :meetups, :interests ;
+ 	uomoprofile:has_contact_info :Facebook, :Twitter, :Tumblr, :Linkedin, :Flickr ;
+ 	uomoprofile:is_visible_to "public" ;
+ 	uomoprofile:bio "Sono solo un progetto :)"^^xsd:string .
