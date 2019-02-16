@@ -177,13 +177,13 @@ $(document).ready(function() {
             })
     $.ajax({
         dataType: "json",
-        url: "attributisocial.json",
+        url: "newattributisocial.json",
         success: function(datisegn) {
                     datisegn.forEach(function(arrayItem) {
-                        socialname.push(arrayItem["social"])
-                        attributiunici.push(arrayItem["attributi unici"])
-                        attributi.push(arrayItem["attributi"])
-                        percentualecompletezza.push(Math.round(arrayItem["percentualecompletezza"]))
+                        socialname.push(arrayItem["Social"])
+                        attributiunici.push(arrayItem["Attributi Unici"])
+                        attributi.push(arrayItem["Attributi"])
+                        percentualecompletezza.push(Math.round(arrayItem["Percentualecompletezza"]))
                     });
                 }
             })
