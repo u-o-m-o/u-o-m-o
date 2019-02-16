@@ -1,0 +1,3050 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#"
+     xml:base="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24"
+     xmlns:schema="http://schema.org/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdfs1="rdfs:"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+        <owl:imports rdf:resource="http://rdfs.org/sioc/ns#"/>
+        <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <terms:issued xml:lang="en">11/02/2019</terms:issued>
+        <terms:title xml:lang="en">UOMO (User Oriented social Media Ontology) Profile</terms:title>
+        <terms:description xml:lang="en">UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User&apos;s Profile.</terms:description>
+        <terms:modified xml:lang="en">16/02/2019</terms:modified>
+        <terms:publisher xml:lang="en">https://github.com/uomodhdk</terms:publisher>
+        <terms:hasVersion xml:lang="en">0.1.1</terms:hasVersion>
+        <terms:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/</terms:license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="_:genid90"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://schema.org/additionalType -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/additionalType">
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <schema:sameAs rdf:resource="https://schema.org/additionalType"/>
+        <rdfs:comment>An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the &apos;typeof&apos; attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.</rdfs:comment>
+        <rdfs:label>additionalType</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/category -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/category"/>
+    
+
+
+    <!-- http://schema.org/description -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/description">
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema:sameAs rdf:resource="https://schema.org/description"/>
+        <rdfs:comment>A description of the item.</rdfs:comment>
+        <rdfs:label>description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/disambiguatingDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/disambiguatingDescription">
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema:sameAs rdf:resource="https://schema.org/disambiguatingDescription"/>
+        <rdfs:comment>A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.</rdfs:comment>
+        <rdfs:label>disambiguatingDescription</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
+    
+
+
+    <!-- http://schema.org/globalLocationNumber -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/globalLocationNumber">
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Person"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema:sameAs rdf:resource="https://schema.org/globalLocationNumber"/>
+        <rdfs:comment>The &lt;a href=&quot;http://www.gs1.org/gln&quot;&gt;Global Location Number&lt;/a&gt; (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.</rdfs:comment>
+        <rdfs:label>globalLocationNumber</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/identifier"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/identifier">
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/PropertyValue"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <schema:sameAs rdf:resource="https://schema.org/identifier"/>
+        <rdfs:comment>The identifier property represents any kind of identifier for any kind of &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/Thing&quot;&gt;Thing&lt;/a&gt;, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See &lt;a href=&quot;/docs/datamodel.html#identifierBg&quot;&gt;background notes&lt;/a&gt; for more details.</rdfs:comment>
+        <rdfs:label>identifier</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/image -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/image">
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <schema:sameAs rdf:resource="https://schema.org/image"/>
+        <rdfs:comment>An image of the item. This can be a &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/URL&quot;&gt;URL&lt;/a&gt; or a fully described &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/ImageObject&quot;&gt;ImageObject&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label>image</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/inverseOf -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/inverseOf"/>
+    
+
+
+    <!-- http://schema.org/isPartOf -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/isPartOf"/>
+    
+
+
+    <!-- http://schema.org/logo -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/logo">
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Brand"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Product"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Service"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <schema:sameAs rdf:resource="https://schema.org/logo"/>
+        <rdfs:comment>An associated logo.</rdfs:comment>
+        <rdfs:label>logo</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/image"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/name -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/name">
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema:sameAs rdf:resource="https://schema.org/name"/>
+        <rdfs:comment>The name of the item.</rdfs:comment>
+        <rdfs:label>name</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="rdfs:label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/photo -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/photo">
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Photograph"/>
+        <schema:sameAs rdf:resource="https://schema.org/photo"/>
+        <rdfs:comment>A photograph of this place.</rdfs:comment>
+        <rdfs:label>photo</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/image"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/rangeIncludes -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/rangeIncludes"/>
+    
+
+
+    <!-- http://schema.org/sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/sameAs">
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <schema:sameAs rdf:resource="https://schema.org/sameAs"/>
+        <rdfs:comment>URL of a reference Web page that unambiguously indicates the item&apos;s identity. E.g. the URL of the item&apos;s Wikipedia page, Wikidata entry, or official website.</rdfs:comment>
+        <rdfs:label>sameAs</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/supersededBy -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/supersededBy"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+    
+
+
+    <!-- rdfs:label -->
+
+    <owl:AnnotationProperty rdf:about="rdfs:label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#container_of -->
+
+    <rdf:Description rdf:about="http://rdfs.org/sioc/ns#container_of">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#has_container -->
+
+    <rdf:Description rdf:about="http://rdfs.org/sioc/ns#has_container">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User"/>
+        <rdfs:label>created by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates">
+        <rdfs:domain rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>creates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"/>
+        <rdfs:label>has achievements</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:label>has biographical info</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"/>
+        <rdfs:label>has color palette</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:label>has contact info</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:label>has container</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_displaying_order -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_displaying_order">
+        <rdfs:domain rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+        <rdfs:label>has displaying order</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+        <rdfs:label>has input content box</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"/>
+        <rdfs:label>has inscription date</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+        <rdfs:label>has main media</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <rdfs:label>has media</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname">
+        <rdfs:domain rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:label>has nickname</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>has place</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:label>has stats</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>is a biographical info of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>is a stat of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>is an achievement of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>is color palette of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>is contact info of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container"/>
+        <rdfs:label>is contained in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of">
+        <rdfs:domain rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>is container of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:label>is displaying order of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label>is held at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>is input content box of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label>is main media of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+        <rdfs:label>is media of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"/>
+        <rdfs:range rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+        <rdfs:label>is nickname of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of">
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>is place of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTime">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">It is a particular property of Twitch because the user can ban some emotes on her/his chat.</terms:description>
+        <rdfs:label>allowed emotes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">It is intended as the answer to a certain question in the &quot;Trivia&quot; section of a profile</terms:description>
+        <rdfs:label>answer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">It is intended both as the type of University or school general study program</rdfs:comment>
+        <rdfs:label>area of study</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#bio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#bio">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>bio</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">It is used to categorize a certain experience or highlighted media</terms:description>
+        <rdfs:label>category</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">It is intended for every kind of educational certificates (School diploma or Proof)</rdfs:comment>
+        <rdfs:label>certification</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>color</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <terms:description xml:lang="en">It is intended as the grade obtained at the end of a particular educational experience</terms:description>
+        <rdfs:label>evaluation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">It is intended as the activities done during an educational experience that are not directly linked to the courses followed or grades obtained. (Example: Theatre Club, Nomination as the president of students or others...)</terms:description>
+        <rdfs:label>extracurrricular activities</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#favorite_quotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#favorite_quotes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+        <terms:description xml:lang="en">It is intended a particular biographic information that displays the favorite quotes of a user, all in string format</terms:description>
+        <rdfs:label>favorite quotes</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">The field of the work done either by an organization or by the user in her/his working experience</terms:description>
+        <rdfs:label>field</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>full name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:description>With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the &quot;Comments&quot; and &quot;Post&quot; containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)</terms:description>
+        <rdfs:label>is automatic</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:description xml:lang="en">It is intended as the property of a chronological order because usually in social media the chronological order is from new to old, meanwhile usually it should start from the old and go to the new.</terms:description>
+        <rdfs:label>is new to old</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>all but blocked users</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>followers</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>friends</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>friends of a friend</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>only user</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>public</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <terms:description xml:lang="en">This Data Property is used to describe the privacy settings of an entire profile or more in general to whichever social media data.</terms:description>
+        <rdfs:label>is visible to</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">It is used to give a name to some social media elements</terms:description>
+        <rdfs:label>label</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>language</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">Particular data property applied to language competency that describes the competency level of that particular language</terms:description>
+        <rdfs:label>level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <terms:description xml:lang="en">Different from uri because it&apos;s not always considered as an identificator</terms:description>
+        <rdfs:label>link</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <terms:description xml:lang="en">Some input content box have a cap of characters that you can type into them</terms:description>
+        <rdfs:label>max character number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>other biographic data</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#political_orientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#political_orientation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+        <rdfs:label>political orientation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">It is intended as the question in the &quot;Trivia&quot; section of a profile</terms:description>
+        <rdfs:label>question</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#religion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#religion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+        <rdfs:label>religion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#sexual_orientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#sexual_orientation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+        <rdfs:label>sexual orientation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#shareable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#shareable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:description xml:lang="en">It applies to every social media data to specify if it is shareable or not.</terms:description>
+        <rdfs:label>shareable</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:description xml:lang="en">It is used to specify, in the context of linking different social medias in a profile, if the social medias linked are represented also by an icon.</terms:description>
+        <rdfs:label>social media icon</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <terms:description xml:lang="en">It is used for all the medias or personal experiences that may have a title</terms:description>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>uri</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <terms:description xml:lang="en">It can contain the general value of stats or contact info</terms:description>
+        <rdfs:label>value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/age -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/age">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/family_name -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/family_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/firstName -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/firstName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/gender -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/nick -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/nick">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/surname -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/surname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#Container -->
+
+    <rdf:Description rdf:about="http://rdfs.org/sioc/ns#Container">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://rdfs.org/sioc/ns#UserAccount -->
+
+    <rdf:Description rdf:about="http://rdfs.org/sioc/ns#UserAccount">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://schema.org/Accommodation -->
+
+    <owl:Class rdf:about="http://schema.org/Accommodation">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/AdministrativeArea -->
+
+    <owl:Class rdf:about="http://schema.org/AdministrativeArea">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/CivicStructure -->
+
+    <owl:Class rdf:about="http://schema.org/CivicStructure">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Landform -->
+
+    <owl:Class rdf:about="http://schema.org/Landform">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/LandmarksOrHistoricalBuildings -->
+
+    <owl:Class rdf:about="http://schema.org/LandmarksOrHistoricalBuildings">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/LocalBusiness -->
+
+    <owl:Class rdf:about="http://schema.org/LocalBusiness">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+        <schema:sameAs rdf:resource="https://schema.org/Place"/>
+        <rdfs:comment>Entities that have a somewhat fixed, physical extension.</rdfs:comment>
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Residence -->
+
+    <owl:Class rdf:about="http://schema.org/Residence">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Thing -->
+
+    <owl:Class rdf:about="http://schema.org/Thing">
+        <schema:sameAs rdf:resource="https://schema.org/Thing"/>
+        <rdfs:comment>The most generic type of item.</rdfs:comment>
+        <rdfs:label>Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/TouristAttraction -->
+
+    <owl:Class rdf:about="http://schema.org/TouristAttraction">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/TouristDestination -->
+
+    <owl:Class rdf:about="http://schema.org/TouristDestination">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">Some socials have some goals that can be reached, and once it happens the achievement appears on a user profile</terms:description>
+        <rdfs:label xml:lang="en">Achievement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description xml:lang="en">It is intended as a personalized features of some profiles that give the user the possibility to specifiy a place either with a link (uri) internal to the social media or just by typing it (string)</terms:description>
+        <rdfs:label xml:lang="en">Actual Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Address -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Address">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:label xml:lang="en">Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <terms:description xml:lang="en">It is intended as the experiences of the user and also the skills of the user</terms:description>
+        <rdfs:comment xml:lang="en">Also History</rdfs:comment>
+        <rdfs:label xml:lang="en">Background</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+        <rdfs:label xml:lang="en">Background Media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label xml:lang="en">Biographical Info</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:label xml:lang="en">Birth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description xml:lang="en">In this particular kind of input box the communication is shared between possibly multiple users</terms:description>
+        <rdfs:label xml:lang="en">Chat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Chronological Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"/>
+        <rdfs:label xml:lang="en">Color Palette</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">It is intended as a section of a profile that gives some form of communication (not direct in the social) between the visitor of the profile and the person behind the user</terms:description>
+        <rdfs:label xml:lang="en">Contact Info</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Container">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:comment xml:lang="en">A container is intended as a section of a profile that contains other elements such has media, hyperlinks, tags</rdfs:comment>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container">
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Content Container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">The order through which the items in a container are displayed</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"/>
+        <rdfs:label xml:lang="en">Displaying Order</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label xml:lang="en">Educational Experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Email -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Email">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:label xml:lang="en">Email</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://schema.org/Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+        <rdfs:label xml:lang="en">Experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Fax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Fax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:label xml:lang="en">Fax</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Followers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Followers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"/>
+        <rdfs:label xml:lang="en">Followers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Following -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Following">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"/>
+        <rdfs:label xml:lang="en">Following</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Form -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Form">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+        <rdfs:label xml:lang="en">Form</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Friends -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Friends">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"/>
+        <rdfs:label xml:lang="en">Friends</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Group -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Group">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container"/>
+        <rdfs:label xml:lang="en">Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+        <terms:description xml:lang="en">With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture.</terms:description>
+        <rdfs:label xml:lang="en">Highlighted Media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Hypertext</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">It is intended as a section of a profile that gives some form of communication (direct in the social) between the visitor of the profile and the user</terms:description>
+        <rdfs:label xml:lang="en">Input Content Box</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#hasTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description xml:lang="en">It is intended as the information that some social display to see the date of the creation of the profile</terms:description>
+        <rdfs:label xml:lang="en">Inscription Date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Interest_Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Interest_Container">
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <terms:description xml:lang="en">It is intended as a container that aggregates some tags that represent particular interests of the user</terms:description>
+        <rdfs:label xml:lang="en">Interest Container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Karma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Karma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <terms:description xml:lang="en">Particular stats that is displayed on Reddit</terms:description>
+        <rdfs:label xml:lang="en">Karma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description xml:lang="en">More specific version of skill because it usually has a specific level</terms:description>
+        <rdfs:label xml:lang="en">Language Competency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Link to other Social Media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <rdfs:label xml:lang="en">Main Media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content"/>
+        <rdfs:label xml:lang="en">Media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:label xml:lang="en">Name Day</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container">
+        <rdfs:subClassOf rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+        <terms:description xml:lang="en">A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as &quot;following&quot;, &quot;followers&quot; etc...)</terms:description>
+        <rdfs:label xml:lang="en">Network Container</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://xmlns.com/foaf/0.1/nick"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">The identifier of a user in a Social Media</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"/>
+        <rdfs:label xml:lang="en">Nickname</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_followers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_followers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:label xml:lang="en">Number of followers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_following -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_following">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:label xml:lang="en">Number of following</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_likes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_likes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:label xml:lang="en">Number of likes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_posts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_posts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:label xml:lang="en">Number of posts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Organization">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Other_user_generated_content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Other_user_generated_content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <rdfs:label xml:lang="en">Other User Generated Content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Personal Experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Website -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Website">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext"/>
+        <rdfs:label xml:lang="en">Personal Website</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_generated_content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_generated_content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media"/>
+        <rdfs:label xml:lang="en">Personal Generated Content</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container"/>
+                <owl:someValuesFrom rdf:resource="http://rdfs.org/sioc/ns#Container"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:label xml:lang="en">Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile_Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile_Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media"/>
+        <rdfs:label xml:lang="en">Profile Media</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Relationships -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Relationships">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:label xml:lang="en">Relationships</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Skill</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:oneOf>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>all but blocked users</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>followers</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>friends</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>friends of a friend</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>only user</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>public</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </owl:oneOf>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO"/>
+        <rdfs:label xml:lang="en">Social Media Data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stars -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stars">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <rdfs:label xml:lang="en">Stars</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+                            <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                        </owl:unionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description xml:lang="en">Numerical statistics linked to the profile</terms:description>
+        <rdfs:label xml:lang="en">Stats</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Telephone_Number -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Telephone_Number">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info"/>
+        <rdfs:label xml:lang="en">Telephone Number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trainership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trainership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience"/>
+        <terms:description xml:lang="en">It is a more specific kind of working experience</terms:description>
+        <rdfs:label xml:lang="en">Trainership</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <terms:description xml:lang="en">It is intended as the information that some social media (like facebook) display on the profile as the answers of a set of predefined questions.</terms:description>
+        <rdfs:label xml:lang="en">Trivia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trophies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trophies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement"/>
+        <terms:description xml:lang="en">It&apos;s  a particular kind of achievement used in some socials for milestones.</terms:description>
+        <rdfs:label xml:lang="en">Trophies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User_Profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User_Profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile"/>
+        <terms:description xml:lang="en">It is intended as the structure and the content of a profile that belongs to a generic user (i.e. not Business Pages / account)</terms:description>
+        <rdfs:label xml:lang="en">User Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Views -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Views">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats"/>
+        <terms:description xml:lang="en">Some Social Media like Twitch or Youtube display the number of total views of the profile</terms:description>
+        <rdfs:label xml:lang="en">Views</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <rdfs:label xml:lang="en">Working Experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Organization">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order_Normal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order_Normal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order"/>
+        <is_new_to_old rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</is_new_to_old>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order_new_to_old -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order_new_to_old">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order"/>
+        <is_new_to_old rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_new_to_old>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO_Profile -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO_Profile">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <terms:description xml:lang="en">UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User&apos;s Profile.</terms:description>
+    </owl:Thing>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/">
+        <terms:publisher rdf:resource="http://purl.org/dc/aboutdcmi#DCMI"/>
+        <terms:title xml:lang="en">Dublin Core Metadata Element Set, Version 1.1</terms:title>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</terms:modified>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#contributor-006"/>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <terms:description xml:lang="en">Examples of a Contributor include a person, an organization, or a service. Typically, the name of a Contributor should be used to indicate the entity.</terms:description>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/coverage">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#coverage-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.</rdfs:comment>
+        <terms:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:label xml:lang="en">Coverage</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.</terms:description>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#creator-006"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/date">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#date-006"/>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <terms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].</terms:description>
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#description-006"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#format-007"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME].</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#identifier-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. </terms:description>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/language">
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#language-007"/>
+        <terms:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].</terms:description>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="http://www.ietf.org/rfc/rfc4646.txt"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#publisher-006"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.</terms:description>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/relation">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#relation-006"/>
+        <terms:description xml:lang="en">Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. </terms:description>
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#rights-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</terms:description>
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/source">
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#source-006"/>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</terms:description>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <terms:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.</terms:description>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <rdfs:comment xml:lang="en">The topic of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-14</terms:modified>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#subject-007"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#title-006"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/type">
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <terms:hasVersion rdf:resource="http://dublincore.org/usage/terms/history/#type-006"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <terms:description xml:lang="en">Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <skos:note xml:lang="en">A second property with the same name as this property has been declared in the dcterms: namespace (http://purl.org/dc/terms/).  See the Introduction to the document &quot;DCMI Metadata Terms&quot; (http://dublincore.org/documents/dcmi-terms/) for an explanation.</skos:note>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:modified>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/additionalProperty">
+        <schema:domainIncludes rdf:resource="http://schema.org/QuantitativeValue"/>
+        <rdfs:label>additionalProperty</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Product"/>
+        <schema:sameAs rdf:resource="https://schema.org/additionalProperty"/>
+        <rdfs:comment>A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.&lt;br/&gt;&lt;br/&gt;
+
+Note: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/QualitativeValue"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/PropertyValue"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/address">
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Person"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/PostalAddress"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeoShape"/>
+        <rdfs:comment>Physical address of the item.</rdfs:comment>
+        <rdfs:label>address</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeoCoordinates"/>
+        <schema:sameAs rdf:resource="https://schema.org/address"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/aggregateRating">
+        <rdfs:comment>The overall rating, based on a collection of reviews or ratings, of the item.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Brand"/>
+        <schema:sameAs rdf:resource="https://schema.org/aggregateRating"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Service"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Event"/>
+        <rdfs:label>aggregateRating</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Product"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/AggregateRating"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Offer"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/alternateName">
+        <rdfs:comment>An alias for the item.</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>alternateName</rdfs:label>
+        <schema:sameAs rdf:resource="https://schema.org/alternateName"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/amenityFeature">
+        <schema:domainIncludes rdf:resource="http://schema.org/Accommodation"/>
+        <rdfs:comment>An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/LocationFeatureSpecification"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:sameAs rdf:resource="https://schema.org/amenityFeature"/>
+        <rdfs:label>amenityFeature</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/LodgingBusiness"/>
+        <terms:source rdf:resource="https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/area">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/areaServed">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/availableAtOrFrom">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/birthPlace">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/branchCode">
+        <rdfs:label>branchCode</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment>A short textual code (also called &quot;store code&quot;) that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.&lt;br/&gt;&lt;br/&gt;
+
+For example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code &quot;3047&quot; is a branchCode for a particular branch.</rdfs:comment>
+        <schema:sameAs rdf:resource="https://schema.org/branchCode"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/containedIn">
+        <rdfs:comment>The basic containment relation between a place and one that contains it.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>containedIn</rdfs:label>
+        <schema:supersededBy rdf:resource="http://schema.org/containedInPlace"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:sameAs rdf:resource="https://schema.org/containedIn"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/containedInPlace">
+        <schema:inverseOf rdf:resource="http://schema.org/containsPlace"/>
+        <rdfs:comment>The basic containment relation between a place and one that contains it.</rdfs:comment>
+        <rdfs:label>containedInPlace</rdfs:label>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:sameAs rdf:resource="https://schema.org/containedInPlace"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/containsPlace">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:inverseOf rdf:resource="http://schema.org/containedInPlace"/>
+        <rdfs:label>containsPlace</rdfs:label>
+        <rdfs:comment>The basic containment relation between a place and another that it contains.</rdfs:comment>
+        <schema:sameAs rdf:resource="https://schema.org/containsPlace"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/contentLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/course">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/deathPlace">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/dropoffLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/eligibleRegion">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/event">
+        <schema:domainIncludes rdf:resource="http://schema.org/JoinAction"/>
+        <schema:sameAs rdf:resource="https://schema.org/event"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Event"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/LeaveAction"/>
+        <rdfs:label>event</rdfs:label>
+        <rdfs:comment>Upcoming or past event associated with this place, organization, or action.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/InformAction"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/InviteAction"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/PlayAction"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/events">
+        <schema:sameAs rdf:resource="https://schema.org/events"/>
+        <rdfs:comment>Upcoming or past events associated with this place or organization.</rdfs:comment>
+        <schema:supersededBy rdf:resource="http://schema.org/event"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>events</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Event"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/exerciseCourse">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/faxNumber">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Person"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/ContactPoint"/>
+        <rdfs:label>faxNumber</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <rdfs:comment>The fax number.</rdfs:comment>
+        <schema:sameAs rdf:resource="https://schema.org/faxNumber"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/foodEstablishment">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/foundingLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/fromLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/gameLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geo">
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment>The geo coordinates of the place.</rdfs:comment>
+        <schema:sameAs rdf:resource="https://schema.org/geo"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeoShape"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeoCoordinates"/>
+        <rdfs:label>geo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyContains">
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <rdfs:label>geospatiallyContains</rdfs:label>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment>Represents a relationship between two geometries (or the places they represent), relating a containing geometry to a contained geometry. &quot;a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a&quot;. As defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;.</rdfs:comment>
+        <schema:category>issue-1375</schema:category>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyContains"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyCoveredBy">
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <rdfs:label>geospatiallyCoveredBy</rdfs:label>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyCoveredBy"/>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:category>issue-1375</schema:category>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment>Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;.</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyCovers">
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyCovers"/>
+        <schema:category>issue-1375</schema:category>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment>Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. &quot;Every point of b is a point of (the interior or boundary of) a&quot;. As defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label>geospatiallyCovers</rdfs:label>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyCrosses">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <schema:category>issue-1375</schema:category>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment>Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: &quot;a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them&quot;. As defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;.</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyCrosses"/>
+        <rdfs:label>geospatiallyCrosses</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyDisjoint">
+        <rdfs:label>geospatiallyDisjoint</rdfs:label>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:category>issue-1375</schema:category>
+        <rdfs:comment>Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.&quot; (a symmetric relationship, as defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;)</rdfs:comment>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyDisjoint"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyEquals">
+        <rdfs:comment>Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;. &quot;Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other&quot; (a symmetric relationship)</rdfs:comment>
+        <rdfs:label>geospatiallyEquals</rdfs:label>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:category>issue-1375</schema:category>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyEquals"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyIntersects">
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:category>issue-1375</schema:category>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyIntersects"/>
+        <rdfs:comment>Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;.</rdfs:comment>
+        <rdfs:label>geospatiallyIntersects</rdfs:label>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyOverlaps">
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:label>geospatiallyOverlaps</rdfs:label>
+        <rdfs:comment>Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;.</rdfs:comment>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyOverlaps"/>
+        <schema:category>issue-1375</schema:category>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyTouches">
+        <schema:category>issue-1375</schema:category>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <rdfs:label>geospatiallyTouches</rdfs:label>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyTouches"/>
+        <rdfs:comment>Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.&quot; (a symmetric relationship, as defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt; )</rdfs:comment>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/geospatiallyWithin">
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <schema:category>issue-1375</schema:category>
+        <schema:sameAs rdf:resource="https://schema.org/geospatiallyWithin"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <rdfs:comment>Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in &lt;a href=&quot;https://en.wikipedia.org/wiki/DE-9IM&quot;&gt;DE-9IM&lt;/a&gt;.</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/GeospatialGeometry"/>
+        <rdfs:label>geospatiallyWithin</rdfs:label>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1375"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/hasMap">
+        <rdfs:label>hasMap</rdfs:label>
+        <rdfs:comment>A URL to a map of the place.</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <schema:sameAs rdf:resource="https://schema.org/hasMap"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Map"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/hasPOS">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/homeLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/ineligibleRegion">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/isAccessibleForFree">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Boolean"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:comment>A flag to signal that the item, event, or place is accessible for free.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Event"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:sameAs rdf:resource="https://schema.org/isAccessibleForFree"/>
+        <rdfs:label>isAccessibleForFree</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/PublicationEvent"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/isicV4">
+        <rdfs:label>isicV4</rdfs:label>
+        <schema:sameAs rdf:resource="https://schema.org/isicV4"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+        <rdfs:comment>The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Person"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/itinerary">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/jobLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/location">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/locationCreated">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/mainEntityOfPage">
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:sameAs rdf:resource="https://schema.org/mainEntityOfPage"/>
+        <rdfs:comment>Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See &lt;a href=&quot;/docs/datamodel.html#mainEntityBackground&quot;&gt;background notes&lt;/a&gt; for details.</rdfs:comment>
+        <schema:inverseOf rdf:resource="http://schema.org/mainEntity"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <rdfs:label>mainEntityOfPage</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/map">
+        <rdfs:label>map</rdfs:label>
+        <schema:supersededBy rdf:resource="http://schema.org/hasMap"/>
+        <rdfs:comment>A URL to a map of the place.</rdfs:comment>
+        <schema:sameAs rdf:resource="https://schema.org/map"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/maps">
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <schema:supersededBy rdf:resource="http://schema.org/hasMap"/>
+        <rdfs:comment>A URL to a map of the place.</rdfs:comment>
+        <rdfs:label>maps</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:sameAs rdf:resource="https://schema.org/maps"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/maximumAttendeeCapacity">
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment>The total number of individuals that may attend an event or venue.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Event"/>
+        <schema:sameAs rdf:resource="https://schema.org/maximumAttendeeCapacity"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Integer"/>
+        <rdfs:label>maximumAttendeeCapacity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/openingHoursSpecification">
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment>The opening hours of a certain place.</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/OpeningHoursSpecification"/>
+        <rdfs:label>openingHoursSpecification</rdfs:label>
+        <schema:sameAs rdf:resource="https://schema.org/openingHoursSpecification"/>
+        <terms:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/photos">
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Photograph"/>
+        <rdfs:comment>Photographs of this place.</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/ImageObject"/>
+        <schema:sameAs rdf:resource="https://schema.org/photos"/>
+        <rdfs:label>photos</rdfs:label>
+        <schema:supersededBy rdf:resource="http://schema.org/photo"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/pickupLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/potentialAction">
+        <rdfs:comment>Indicates a potential Action, which describes an idealized action in which this thing would play an &apos;object&apos; role.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:sameAs rdf:resource="https://schema.org/potentialAction"/>
+        <rdfs:label>potentialAction</rdfs:label>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Action"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/publicAccess">
+        <rdfs:label>publicAccess</rdfs:label>
+        <rdfs:comment>A flag to signal that the &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/Place&quot;&gt;Place&lt;/a&gt; is open to public visitors.  If this property is omitted there is no assumed default boolean value</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Boolean"/>
+        <schema:sameAs rdf:resource="https://schema.org/publicAccess"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/regionsAllowed">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/review">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Review"/>
+        <rdfs:comment>A review of the item.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Service"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Product"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Brand"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/CreativeWork"/>
+        <rdfs:label>review</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Event"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Offer"/>
+        <schema:sameAs rdf:resource="https://schema.org/review"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/reviews">
+        <schema:supersededBy rdf:resource="http://schema.org/review"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/CreativeWork"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Offer"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Product"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Review"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:sameAs rdf:resource="https://schema.org/reviews"/>
+        <rdfs:comment>Review of the item.</rdfs:comment>
+        <rdfs:label>reviews</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/serviceArea">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/serviceLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/smokingAllowed">
+        <terms:source rdf:resource="https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:sameAs rdf:resource="https://schema.org/smokingAllowed"/>
+        <rdfs:comment>Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.</rdfs:comment>
+        <rdfs:label>smokingAllowed</rdfs:label>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Boolean"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/spatial">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/spatialCoverage">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/specialOpeningHoursSpecification">
+        <rdfs:label>specialOpeningHoursSpecification</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <rdfs:comment>The special opening hours of a certain place.&lt;br/&gt;&lt;br/&gt;
+
+Use this to explicitly override general opening hours brought in scope by &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/openingHoursSpecification&quot;&gt;openingHoursSpecification&lt;/a&gt; or &lt;a class=&quot;localLink&quot; href=&quot;http://schema.org/openingHours&quot;&gt;openingHours&lt;/a&gt;.</rdfs:comment>
+        <schema:sameAs rdf:resource="https://schema.org/specialOpeningHoursSpecification"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/OpeningHoursSpecification"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/subjectOf">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Event"/>
+        <rdfs:label>subjectOf</rdfs:label>
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <schema:isPartOf rdf:resource="http://pending.schema.org"/>
+        <schema:category>issue-1670</schema:category>
+        <schema:sameAs rdf:resource="https://schema.org/subjectOf"/>
+        <terms:source rdf:resource="https://github.com/schemaorg/schemaorg/issues/1670"/>
+        <schema:inverseOf rdf:resource="http://schema.org/about"/>
+        <rdfs:comment>A CreativeWork or Event about this Thing..</rdfs:comment>
+        <schema:rangeIncludes rdf:resource="http://schema.org/CreativeWork"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/telephone">
+        <schema:domainIncludes rdf:resource="http://schema.org/ContactPoint"/>
+        <rdfs:label>telephone</rdfs:label>
+        <rdfs:comment>The telephone number.</rdfs:comment>
+        <schema:domainIncludes rdf:resource="http://schema.org/Place"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Organization"/>
+        <schema:sameAs rdf:resource="https://schema.org/telephone"/>
+        <schema:domainIncludes rdf:resource="http://schema.org/Person"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/Text"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/toLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/url">
+        <schema:domainIncludes rdf:resource="http://schema.org/Thing"/>
+        <rdfs:comment>URL of the item.</rdfs:comment>
+        <schema:sameAs rdf:resource="https://schema.org/url"/>
+        <schema:rangeIncludes rdf:resource="http://schema.org/URL"/>
+        <rdfs:label>url</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/workLocation">
+        <schema:rangeIncludes rdf:resource="http://schema.org/Place"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order">
+        <terms:description xml:lang="en">The order is given through a generally unknown internal algorithm of the Social Media</terms:description>
+        <rdfs:label xml:lang="en">Algorithmic Order</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order">
+        <rdfs:label xml:lang="en">Alphabetical Order</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order">
+        <terms:description xml:lang="en">With popularity order it is intended the order that displays elements in descending number of &quot;likes&quot; or similar features of SM</terms:description>
+        <rdfs:label xml:lang="en">Popularity Order</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
