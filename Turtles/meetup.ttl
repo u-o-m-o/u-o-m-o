@@ -104,7 +104,7 @@
  	a uomoprofile:Biographical_Info ;
  	uomoprofile:full_name "Demetra Hanna Davis Keys"^^rdfs:Literal .
 
-
+	
 #Profile
 
  :
@@ -116,5 +116,5 @@
  	uomoprofile:created_by :user ;
  	uomoprofile:has_container :meetups, :interests ;
  	uomoprofile:has_contact_info :Facebook, :Twitter, :Tumblr, :Linkedin, :Flickr ;
- 	uomoprofile:is_visible_to "public" ;
+ 	uomoprofile:has_privacy uomo:Public ;
  	uomoprofile:bio "Sono solo un progetto :)"^^xsd:string .

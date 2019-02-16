@@ -139,7 +139,7 @@
  	uomoprofile:uri "https://www.pinterest.it/DemetraHanna/"^^xsd:anyURI ;
  	uomoprofile:has_main_media <https://i-h2.pinimg.com/280x280_RS/5c/80/f2/5c80f27786891a478307473b5ef00f02.jpg> ;
  	uomoprofile:has_stats :numoffollower, :numoffollowing ;
- 	uomoprofile:is_visible_to "public" ;
+ 	uomoprofile:has_privacy uomo:Public ;
  	uomoprofile:bio "Researcher, where I am the research myself."^^xsd:string ;
  	uomoprofile:has_biographical_info :ActualPlace, :FullName ;
  	uomoprofile:has_container :followers, :following, :boards, :pins, :tried, :topics .
