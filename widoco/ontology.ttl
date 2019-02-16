@@ -1,22 +1,22 @@
-@prefix : <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#> .
+@prefix : <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24> .
+@base <http://uomodhdk.github.io/Ontology/uomoprofile.owl> .
 
-<http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24> rdf:type owl:Ontology ;
-                                                                           owl:imports <http://rdfs.org/sioc/ns#> ,
-                                                                                       <http://www.w3.org/2006/time#2016> ,
-                                                                                       <http://xmlns.com/foaf/0.1/> ;
-                                                                           <http://purl.org/dc/terms/description> "UOMO (User Oriented social Media Ontology) is an ontology for describing the information about Social Media focusing on the User Perspective."@en ;
-                                                                           <http://purl.org/dc/terms/hasVersion> "0.0.4"@en ;
-                                                                           <http://purl.org/dc/terms/issued> "11/02/2019"@en ;
-                                                                           <http://purl.org/dc/terms/modified> "13/02/2019"@en ;
-                                                                           <http://purl.org/dc/terms/publisher> "https://github.com/uomodhdk"@en ;
-                                                                           <http://purl.org/dc/terms/rights> "https://creativecommons.org/licenses/by/4.0/"@en ;
-                                                                           <http://purl.org/dc/terms/title> "UOMO User Oriented social Media Ontology"@en .
+<http://uomodhdk.github.io/Ontology/uomoprofile.owl> rdf:type owl:Ontology ;
+                                                      owl:imports <http://rdfs.org/sioc/ns#> ,
+                                                                  <http://www.w3.org/2006/time#2016> ,
+                                                                  <http://xmlns.com/foaf/0.1/> ;
+                                                      <http://purl.org/dc/terms/description> "UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User's Profile."@en ;
+                                                      <http://purl.org/dc/terms/hasVersion> "0.1.1"@en ;
+                                                      <http://purl.org/dc/terms/issued> "11/02/2019"@en ;
+                                                      <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/"@en ;
+                                                      <http://purl.org/dc/terms/modified> "16/02/2019"@en ;
+                                                      <http://purl.org/dc/terms/publisher> "https://github.com/uomodhdk"@en ;
+                                                      <http://purl.org/dc/terms/title> "UOMO (User Oriented social Media Ontology) Profile"@en .
 
 #################################################################
 #    Annotation properties
@@ -185,6 +185,10 @@
 <http://schema.org/supersededBy> rdf:type owl:AnnotationProperty .
 
 
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old
+<http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#type
 rdf:type rdf:type owl:AnnotationProperty .
 
@@ -205,106 +209,124 @@ rdf:type rdf:type owl:AnnotationProperty .
 <http://rdfs.org/sioc/ns#has_container> owl:equivalentProperty :has_container .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#contains
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#contains
 :contains rdf:type owl:ObjectProperty ;
           rdfs:domain :Content_Container ;
-          rdfs:range :Content .
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :Content
+                                     :Content_Container
+                                   )
+                     ] ;
+          rdfs:label "contains" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#created_by
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#created_by
 :created_by rdf:type owl:ObjectProperty ;
             owl:inverseOf :creates ;
             rdfs:domain :Profile ;
             rdfs:range <http://rdfs.org/sioc/ns#UserAccount> ,
-                       :User .
+                       :User ;
+            rdfs:label "created by" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#creates
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#creates
 :creates rdf:type owl:ObjectProperty ;
          rdfs:domain <http://rdfs.org/sioc/ns#UserAccount> ,
                      :User ;
-         rdfs:range :Profile .
+         rdfs:range :Profile ;
+         rdfs:label "creates" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_achievements
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_achievements
 :has_achievements rdf:type owl:ObjectProperty ;
                   owl:inverseOf :is_an_achievement_of ;
                   rdfs:domain :Profile ;
-                  rdfs:range :Achievement .
+                  rdfs:range :Achievement ;
+                  rdfs:label "has achievements" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_biographical_info
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_biographical_info
 :has_biographical_info rdf:type owl:ObjectProperty ;
                        owl:inverseOf :is_a_biographical_info_of ;
                        rdfs:domain :Profile ;
-                       rdfs:range :Biographical_info .
+                       rdfs:range :Biographical_info ;
+                       rdfs:label "has biographical info" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_color_palette
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_color_palette
 :has_color_palette rdf:type owl:ObjectProperty ;
                    owl:inverseOf :is_color_palette_of ;
                    rdfs:domain :Profile ;
-                   rdfs:range :Color_Palette .
+                   rdfs:range :Color_Palette ;
+                   rdfs:label "has color palette" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_contact_info
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_contact_info
 :has_contact_info rdf:type owl:ObjectProperty ;
                   owl:inverseOf :is_contact_info_of ;
                   rdfs:domain :Profile ;
-                  rdfs:range :Contact_info .
+                  rdfs:range :Contact_info ;
+                  rdfs:label "has contact info" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_container
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_container
 :has_container rdf:type owl:ObjectProperty ;
                owl:inverseOf :is_container_of ;
                rdfs:domain :Profile ;
-               rdfs:range <http://rdfs.org/sioc/ns#Container> .
+               rdfs:range <http://rdfs.org/sioc/ns#Container> ;
+               rdfs:label "has container" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_displaying_order
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_displaying_order
 :has_displaying_order rdf:type owl:ObjectProperty ;
                       rdfs:domain <http://rdfs.org/sioc/ns#Container> ;
-                      rdfs:range :Displaying_Order .
+                      rdfs:range :Displaying_Order ;
+                      rdfs:label "has displaying order" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_input_content_box
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_input_content_box
 :has_input_content_box rdf:type owl:ObjectProperty ;
                        owl:inverseOf :is_input_content_box_of ;
                        rdfs:domain :Profile ;
-                       rdfs:range :Input_content_box .
+                       rdfs:range :Input_content_box ;
+                       rdfs:label "has input content box" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_inscription_date
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_inscription_date
 :has_inscription_date rdf:type owl:ObjectProperty ;
                       rdfs:domain :Profile ;
-                      rdfs:range :Inscription_Date .
+                      rdfs:range :Inscription_Date ;
+                      rdfs:label "has inscription date" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_main_media
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_main_media
 :has_main_media rdf:type owl:ObjectProperty ;
                 owl:inverseOf :is_main_media_of ;
                 rdfs:domain :Profile ;
-                rdfs:range :Main_Media .
+                rdfs:range :Main_Media ;
+                rdfs:label "has main media" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_media
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_media
 :has_media rdf:type owl:ObjectProperty ;
            owl:inverseOf :is_media_of ;
            rdfs:domain :Background ;
-           rdfs:range :Media .
+           rdfs:range :Media ;
+           rdfs:label "has media" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_nickname
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_nickname
 :has_nickname rdf:type owl:ObjectProperty ;
               rdfs:domain <http://rdfs.org/sioc/ns#UserAccount> ;
               rdfs:range [ rdf:type owl:Restriction ;
                            owl:onProperty :has_nickname ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass :Nickname
-                         ] .
+                         ] ;
+              rdfs:label "has nickname" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_place
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_place
 :has_place rdf:type owl:ObjectProperty ;
            owl:inverseOf :is_place_of ;
            rdfs:domain [ rdf:type owl:Class ;
@@ -313,98 +335,115 @@ rdf:type rdf:type owl:AnnotationProperty .
                                        :Experience
                                      )
                        ] ;
-           rdfs:range <http://schema.org/Place> .
+           rdfs:range <http://schema.org/Place> ;
+           rdfs:label "has place" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#has_stats
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#has_stats
 :has_stats rdf:type owl:ObjectProperty ;
            owl:inverseOf :is_a_stat_of ;
            rdfs:domain :Profile ;
-           rdfs:range :Stats .
+           rdfs:range :Stats ;
+           rdfs:label "has stats" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_biographical_info_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_a_biographical_info_of
 :is_a_biographical_info_of rdf:type owl:ObjectProperty ;
                            rdfs:domain :Biographical_info ;
-                           rdfs:range :Profile .
+                           rdfs:range :Profile ;
+                           rdfs:label "is a biographical info of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_a_stat_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_a_stat_of
 :is_a_stat_of rdf:type owl:ObjectProperty ;
               rdfs:domain :Stats ;
-              rdfs:range :Profile .
+              rdfs:range :Profile ;
+              rdfs:label "is a stat of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_an_achievement_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_an_achievement_of
 :is_an_achievement_of rdf:type owl:ObjectProperty ;
                       rdfs:domain :Achievement ;
-                      rdfs:range :Profile .
+                      rdfs:range :Profile ;
+                      rdfs:label "is an achievement of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_color_palette_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_color_palette_of
 :is_color_palette_of rdf:type owl:ObjectProperty ;
                      rdfs:domain :Color_Palette ;
-                     rdfs:range :Profile .
+                     rdfs:range :Profile ;
+                     rdfs:label "is color palette of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contact_info_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_contact_info_of
 :is_contact_info_of rdf:type owl:ObjectProperty ;
                     rdfs:domain :Contact_info ;
-                    rdfs:range :Profile .
+                    rdfs:range :Profile ;
+                    rdfs:label "is contact info of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_contained_in
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_contained_in
 :is_contained_in rdf:type owl:ObjectProperty ;
                  rdfs:domain :Content ;
-                 rdfs:range :Content_Container .
+                 rdfs:range :Content_Container ;
+                 rdfs:label "is contained in" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_container_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_container_of
 :is_container_of rdf:type owl:ObjectProperty ;
                  rdfs:domain <http://rdfs.org/sioc/ns#Container> ;
-                 rdfs:range :Profile .
+                 rdfs:range :Profile ;
+                 rdfs:label "is container of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_displaying_order_of
-:is_displaying_order_of rdf:type owl:ObjectProperty .
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_displaying_order_of
+:is_displaying_order_of rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Displaying_Order ;
+                        rdfs:range <http://rdfs.org/sioc/ns#Container> ;
+                        rdfs:label "is displaying order of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_held_at
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_held_at
 :is_held_at rdf:type owl:ObjectProperty ;
             rdfs:domain [ rdf:type owl:Class ;
                           owl:unionOf ( :Educational_Experience
                                         :Working_Experience
                                       )
                         ] ;
-            rdfs:range <http://xmlns.com/foaf/0.1/Organization> .
+            rdfs:range <http://xmlns.com/foaf/0.1/Organization> ;
+            rdfs:label "is held at" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_input_content_box_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_input_content_box_of
 :is_input_content_box_of rdf:type owl:ObjectProperty ;
                          rdfs:domain :Input_content_box ;
-                         rdfs:range :Profile .
+                         rdfs:range :Profile ;
+                         rdfs:label "is input content box of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_main_media_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_main_media_of
 :is_main_media_of rdf:type owl:ObjectProperty ;
                   rdfs:domain :Main_Media ;
-                  rdfs:range :Profile .
+                  rdfs:range :Profile ;
+                  rdfs:label "is main media of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_media_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_media_of
 :is_media_of rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain :Media ;
-             rdfs:range :Background .
+             rdfs:range :Background ;
+             rdfs:label "is media of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_nickname_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_nickname_of
 :is_nickname_of rdf:type owl:ObjectProperty ;
                 rdfs:domain :Nickname ;
-                rdfs:range <http://rdfs.org/sioc/ns#UserAccount> .
+                rdfs:range <http://rdfs.org/sioc/ns#UserAccount> ;
+                rdfs:label "is nickname of" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_place_of
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_place_of
 :is_place_of rdf:type owl:ObjectProperty ;
              rdfs:domain <http://schema.org/Place> ;
              rdfs:range [ rdf:type owl:Class ;
@@ -412,7 +451,8 @@ rdf:type rdf:type owl:AnnotationProperty .
                                         :Birth
                                         :Experience
                                       )
-                        ] .
+                        ] ;
+             rdfs:label "is place of" .
 
 
 ###  http://www.w3.org/2006/time#hasTime
@@ -429,104 +469,128 @@ rdf:type rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Bio
-:Bio rdf:type owl:DatatypeProperty ;
-     rdfs:subPropertyOf <http://purl.org/dc/terms/description> .
-
-
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#allowed_emotes
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#allowed_emotes
 :allowed_emotes rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Chat ;
-                rdfs:range xsd:string .
+                rdfs:range xsd:string ;
+                <http://purl.org/dc/terms/description> "It is a particular property of Twitch because the user can ban some emotes on her/his chat."@en ;
+                rdfs:label "allowed emotes" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#answer
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#answer
 :answer rdf:type owl:DatatypeProperty ;
         rdfs:domain :Trivia ;
-        rdfs:range xsd:string .
+        rdfs:range xsd:string ;
+        <http://purl.org/dc/terms/description> "It is intended as the answer to a certain question in the \"Trivia\" section of a profile"@en ;
+        rdfs:label "answer" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#area_of_study
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#area_of_study
 :area_of_study rdf:type owl:DatatypeProperty ;
                rdfs:domain :Educational_Experience ;
                rdfs:range xsd:string ;
-               rdfs:comment "It is intended both as the type of University or school general study program"@en .
+               rdfs:comment "It is intended both as the type of University or school general study program"@en ;
+               rdfs:label "area of study" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#category
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#bio
+:bio rdf:type owl:DatatypeProperty ;
+     rdfs:subPropertyOf <http://purl.org/dc/terms/description> ;
+     rdfs:domain :Profile ;
+     rdfs:range xsd:string ;
+     rdfs:label "bio" .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#category
 :category rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Personal_Experience ;
-          rdfs:range xsd:string .
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Highlighted_Media
+                                      :Personal_Experience
+                                    )
+                      ] ;
+          rdfs:range xsd:string ;
+          <http://purl.org/dc/terms/description> "It is used to categorize a certain experience or highlighted media"@en ;
+          rdfs:label "category" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#certification
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#certification
 :certification rdf:type owl:DatatypeProperty ;
                rdfs:domain :Educational_Experience ;
                rdfs:range xsd:anyURI ;
-               rdfs:comment "It is intended for every kind of educational certificates (School diploma or Proof)"@en .
+               rdfs:comment "It is intended for every kind of educational certificates (School diploma or Proof)"@en ;
+               rdfs:label "certification" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#color
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#color
 :color rdf:type owl:DatatypeProperty ;
        rdfs:domain :Color_Palette ;
-       rdfs:range rdfs:Literal .
+       rdfs:range rdfs:Literal ;
+       rdfs:label "color" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#evaluation
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#evaluation
 :evaluation rdf:type owl:DatatypeProperty ;
             rdfs:domain :Educational_Experience ;
             rdfs:range [ rdf:type rdfs:Datatype ;
                          owl:unionOf ( xsd:nonNegativeInteger
                                        xsd:string
                                      )
-                       ] .
+                       ] ;
+            <http://purl.org/dc/terms/description> "It is intended as the grade obtained at the end of a particular educational experience"@en ;
+            rdfs:label "evaluation" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#extracurricular_activities
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#extracurricular_activities
 :extracurricular_activities rdf:type owl:DatatypeProperty ;
                             rdfs:domain :Educational_Experience ;
-                            rdfs:range xsd:string .
+                            rdfs:range xsd:string ;
+                            <http://purl.org/dc/terms/description> "It is intended as the activities done during an educational experience that are not directly linked to the courses followed or grades obtained. (Example: Theatre Club, Nomination as the president of students or others...)"@en ;
+                            rdfs:label "extracurrricular activities" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#favorite_quotes
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#favorite_quotes
 :favorite_quotes rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf :other_biographic_data .
+                 rdfs:subPropertyOf :other_biographic_data ;
+                 <http://purl.org/dc/terms/description> "It is intended a particular biographic information that displays the favorite quotes of a user, all in string format"@en ;
+                 rdfs:label "favorite quotes" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#field
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#field
 :field rdf:type owl:DatatypeProperty ;
        rdfs:domain [ rdf:type owl:Class ;
                      owl:unionOf ( :Working_Experience
                                    <http://xmlns.com/foaf/0.1/Organization>
                                  )
                    ] ;
-       rdfs:range xsd:string .
+       rdfs:range xsd:string ;
+       <http://purl.org/dc/terms/description> "The field of the work done either by an organization or by the user in her/his working experience"@en ;
+       rdfs:label "field" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#full_name
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#full_name
 :full_name rdf:type owl:DatatypeProperty ;
-           rdfs:subPropertyOf :other_biographic_data .
+           rdfs:subPropertyOf :other_biographic_data ;
+           rdfs:range rdfs:Literal ;
+           rdfs:label "full name" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#gender
-:gender rdf:type owl:DatatypeProperty ;
-        rdfs:subPropertyOf :other_biographic_data .
-
-
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_automatic
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_automatic
 :is_automatic rdf:type owl:DatatypeProperty ;
               rdfs:domain :Content ;
               rdfs:range xsd:boolean ;
-              <http://purl.org/dc/terms/description> "With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the \"Comments\" and \"Post\" containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)" .
+              <http://purl.org/dc/terms/description> "With automatic it is meant that the container is generated automatically by inference of the Social Media itself (such as the \"Comments\" and \"Post\" containers of Reddit) and that the user cannot directly modify it (like you can in Facebook)" ;
+              rdfs:label "is automatic" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_new_to_old
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_new_to_old
 :is_new_to_old rdf:type owl:DatatypeProperty ;
                rdfs:domain :Chronological_Order ;
-               rdfs:range xsd:boolean .
+               rdfs:range xsd:boolean ;
+               <http://purl.org/dc/terms/description> "It is intended as the property of a chronological order because usually in social media the chronological order is from new to old, meanwhile usually it should start from the old and go to the new."@en ;
+               rdfs:label "is new to old" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#is_visible_to
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#is_visible_to
 :is_visible_to rdf:type owl:DatatypeProperty ;
                rdfs:domain :Social_Media_Data ;
                rdfs:range [ rdf:type rdfs:Datatype ;
@@ -549,20 +613,25 @@ rdf:type rdf:type owl:AnnotationProperty .
                                                             ]
                                                  ]
                                       ]
-                          ] .
+                          ] ;
+               <http://purl.org/dc/terms/description> "This Data Property is used to describe the privacy settings of an entire profile or more in general to whichever social media data."@en ;
+               rdfs:label "is visible to" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#label
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#label
 :label rdf:type owl:DatatypeProperty ;
        rdfs:domain [ rdf:type owl:Class ;
-                     owl:unionOf ( :Skill
+                     owl:unionOf ( :Link_to_other_Social_Media
+                                   :Skill
                                    :Working_Experience
                                  )
                    ] ;
-       rdfs:range xsd:string .
+       rdfs:range xsd:string ;
+       <http://purl.org/dc/terms/description> "It is used to give a name to some social media elements"@en ;
+       rdfs:label "label" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#language
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#language
 :language rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf :other_biographic_data ;
           rdfs:domain [ rdf:type owl:Class ;
@@ -570,79 +639,103 @@ rdf:type rdf:type owl:AnnotationProperty .
                                       :Language_Competency
                                     )
                       ] ;
-          rdfs:range xsd:string .
+          rdfs:range xsd:string ;
+          rdfs:label "language" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#level
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#level
 :level rdf:type owl:DatatypeProperty ;
        rdfs:domain :Language_Competency ;
-       rdfs:range xsd:string .
+       rdfs:range xsd:string ;
+       <http://purl.org/dc/terms/description> "Particular data property applied to language competency that describes the competency level of that particular language"@en ;
+       rdfs:label "level" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#link
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#link
 :link rdf:type owl:DatatypeProperty ;
       rdfs:domain :Hypertext ;
-      rdfs:range xsd:anyURI .
+      rdfs:range xsd:anyURI ;
+      <http://purl.org/dc/terms/description> "Different from uri because it's not always considered as an identificator"@en ;
+      rdfs:label "link" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#max_character_number
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#max_character_number
 :max_character_number rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Input_content_box ;
-                      rdfs:range xsd:nonNegativeInteger .
+                      rdfs:range xsd:nonNegativeInteger ;
+                      <http://purl.org/dc/terms/description> "Some input content box have a cap of characters that you can type into them"@en ;
+                      rdfs:label "max character number" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#other_biographic_data
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#other_biographic_data
 :other_biographic_data rdf:type owl:DatatypeProperty ;
                        rdfs:domain :Biographical_info ;
-                       rdfs:range xsd:string .
+                       rdfs:range xsd:string ;
+                       rdfs:label "other biographic data" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#political_orientation
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#political_orientation
 :political_orientation rdf:type owl:DatatypeProperty ;
-                       rdfs:subPropertyOf :other_biographic_data .
+                       rdfs:subPropertyOf :other_biographic_data ;
+                       rdfs:label "political orientation" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#question
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#question
 :question rdf:type owl:DatatypeProperty ;
           rdfs:domain :Trivia ;
-          rdfs:range xsd:string .
+          rdfs:range xsd:string ;
+          <http://purl.org/dc/terms/description> "It is intended as the question in the \"Trivia\" section of a profile"@en ;
+          rdfs:label "question" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#religion
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#religion
 :religion rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf :other_biographic_data .
+          rdfs:subPropertyOf :other_biographic_data ;
+          rdfs:label "religion" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#sexual_orientation
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#sexual_orientation
 :sexual_orientation rdf:type owl:DatatypeProperty ;
-                    rdfs:subPropertyOf :other_biographic_data .
+                    rdfs:subPropertyOf :other_biographic_data ;
+                    rdfs:label "sexual orientation" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_icon
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#shareable
+:shareable rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Social_Media_Data ;
+           rdfs:range xsd:boolean ;
+           <http://purl.org/dc/terms/description> "It applies to every social media data to specify if it is shareable or not."@en ;
+           rdfs:label "shareable" .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#social_media_icon
 :social_media_icon rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Link_to_other_Social_Media ;
-                   rdfs:range xsd:anyURI .
+                   rdfs:range xsd:boolean ;
+                   <http://purl.org/dc/terms/description> "It is used to specify, in the context of linking different social medias in a profile, if the social medias linked are represented also by an icon."@en ;
+                   rdfs:label "social media icon" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#social_media_label
-:social_media_label rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Link_to_other_Social_Media ;
-                    rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#title
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#title
 :title rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Personal_Experience ;
-       rdfs:range xsd:string .
+       rdfs:domain [ rdf:type owl:Class ;
+                     owl:unionOf ( :Highlighted_Media
+                                   :Personal_Experience
+                                 )
+                   ] ;
+       rdfs:range xsd:string ;
+       <http://purl.org/dc/terms/description> "It is used for all the medias or personal experiences that may have a title"@en ;
+       rdfs:label "title" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#uri
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#uri
 :uri rdf:type owl:DatatypeProperty ;
      rdfs:domain :Profile ;
-     rdfs:range xsd:anyURI .
+     rdfs:range xsd:anyURI ;
+     rdfs:label "uri" .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#value
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#value
 :value rdf:type owl:DatatypeProperty ;
        rdfs:domain [ rdf:type owl:Class ;
                      owl:unionOf ( :Contact_info
@@ -653,7 +746,9 @@ rdf:type rdf:type owl:AnnotationProperty .
                     owl:unionOf ( xsd:nonNegativeInteger
                                   xsd:string
                                 )
-                  ] .
+                  ] ;
+       <http://purl.org/dc/terms/description> "It can contain the general value of stats or contact info"@en ;
+       rdfs:label "value" .
 
 
 ###  http://xmlns.com/foaf/0.1/age
@@ -686,11 +781,7 @@ rdf:type rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://rdfs.org/sioc/ns#Container
-<http://rdfs.org/sioc/ns#Container> rdfs:subClassOf :Social_Media_Data ,
-                                                    [ rdf:type owl:Restriction ;
-                                                      owl:onProperty :is_container_of ;
-                                                      owl:someValuesFrom :Profile
-                                                    ] ;
+<http://rdfs.org/sioc/ns#Container> rdfs:subClassOf :Social_Media_Data ;
                                     owl:disjointWith :Content ,
                                                      :Profile .
 
@@ -702,7 +793,7 @@ rdf:type rdf:type owl:AnnotationProperty .
                                                       ] ,
                                                       [ rdf:type owl:Restriction ;
                                                         owl:onProperty :has_nickname ;
-                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                         owl:onClass :Nickname
                                                       ] ;
                                       owl:disjointWith :Profile .
@@ -780,45 +871,43 @@ rdf:type rdf:type owl:AnnotationProperty .
                                        rdfs:subClassOf <http://schema.org/Place> .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Achievement
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Achievement
 :Achievement rdf:type owl:Class ;
-             rdfs:subClassOf :Social_Media_Data ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty :is_an_achievement_of ;
-                               owl:someValuesFrom :Profile
-                             ] ;
-             owl:disjointWith :Profile .
+             rdfs:subClassOf :Social_Media_Data ;
+             owl:disjointWith :Profile ;
+             <http://purl.org/dc/terms/description> "Some socials have some goals that can be reached, and once it happens the achievement appears on a user profile"@en ;
+             rdfs:label "Achievement"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Actual_Place
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Actual_Place
 :Actual_Place rdf:type owl:Class ;
               rdfs:subClassOf :Biographical_info ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :has_place ;
                                 owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                 owl:onClass <http://schema.org/Place>
-                              ] .
+                              ] ;
+              <http://purl.org/dc/terms/description> "It is intended as a personalized features of some profiles that give the user the possibility to specifiy a place either with a link (uri) internal to the social media or just by typing it (string)"@en ;
+              rdfs:label "Actual Place"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Address
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Address
 :Address rdf:type owl:Class ;
-         rdfs:subClassOf :Contact_info .
+         rdfs:subClassOf :Contact_info ;
+         rdfs:label "Address"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Algorithmic_Order
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order
 :Algorithmic_Order rdf:type owl:Class ;
-                   rdfs:subClassOf :Displaying_Order ;
-                   <http://purl.org/dc/terms/description> "The order is given through a generally unknown internal algorithm of the Social Media"@en ;
-                   rdfs:label "Algorithmic Order"@en .
+                   rdfs:subClassOf :Displaying_Order .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Alphabetical_Order
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order
 :Alphabetical_Order rdf:type owl:Class ;
-                    rdfs:subClassOf :Displaying_Order ;
-                    rdfs:label "Alphabetical Order"@en .
+                    rdfs:subClassOf :Displaying_Order .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Background
 :Background rdf:type owl:Class ;
             rdfs:subClassOf :Biographical_info ,
                             [ rdf:type owl:Restriction ;
@@ -826,21 +915,20 @@ rdf:type rdf:type owl:AnnotationProperty .
                               owl:someValuesFrom :Media
                             ] ;
             owl:disjointWith :Media ;
-            rdfs:comment "Also History"@en .
+            <http://purl.org/dc/terms/description> "It is intended as the experiences of the user and also the skills of the user"@en ;
+            rdfs:comment "Also History"@en ;
+            rdfs:label "Background"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Background_Media
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Background_Media
 :Background_Media rdf:type owl:Class ;
-                  rdfs:subClassOf :Main_Media .
+                  rdfs:subClassOf :Main_Media ;
+                  rdfs:label "Background Media"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Biographical_info
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Biographical_info
 :Biographical_info rdf:type owl:Class ;
                    rdfs:subClassOf :Social_Media_Data ,
-                                   [ rdf:type owl:Restriction ;
-                                     owl:onProperty :is_a_biographical_info_of ;
-                                     owl:someValuesFrom :Profile
-                                   ] ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty <http://www.w3.org/2006/time#hasTime> ;
                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -850,10 +938,11 @@ rdf:type rdf:type owl:AnnotationProperty .
                                      owl:onProperty :other_biographic_data ;
                                      owl:someValuesFrom xsd:string
                                    ] ;
-                   owl:disjointWith :Profile .
+                   owl:disjointWith :Profile ;
+                   rdfs:label "Biographical Info"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Birth
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Birth
 :Birth rdf:type owl:Class ;
        rdfs:subClassOf :Biographical_info ,
                        [ rdf:type owl:Restriction ;
@@ -866,20 +955,23 @@ rdf:type rdf:type owl:AnnotationProperty .
                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onClass <http://www.w3.org/2006/time#TemporalEntity>
                        ] ;
-       owl:disjointWith <http://www.w3.org/2006/time#TemporalEntity> .
+       owl:disjointWith <http://www.w3.org/2006/time#TemporalEntity> ;
+       rdfs:label "Birth"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chat
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chat
 :Chat rdf:type owl:Class ;
       rdfs:subClassOf :Input_content_box ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :allowed_emotes ;
                         owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                         owl:onDataRange xsd:string
-                      ] .
+                      ] ;
+      <http://purl.org/dc/terms/description> "In this particular kind of input box the communication is shared between possibly multiple users"@en ;
+      rdfs:label "Chat"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Chronological_Order
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order
 :Chronological_Order rdf:type owl:Class ;
                      rdfs:subClassOf :Displaying_Order ,
                                      [ rdf:type owl:Restriction ;
@@ -890,30 +982,22 @@ rdf:type rdf:type owl:AnnotationProperty .
                      rdfs:label "Chronological Order"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Color_Palette
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Color_Palette
 :Color_Palette rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                 owl:onProperty :is_color_palette_of ;
-                                 owl:someValuesFrom :Profile
-                               ] ,
-                               [ rdf:type owl:Restriction ;
                                  owl:onProperty :color ;
                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                  owl:onDataRange xsd:string
                                ] ;
                owl:disjointWith :Profile ;
                <http://purl.org/dc/terms/description> "Color palette is intended as the range of colors that can be applied to general elements of the profile such as texts, containers or the background."@en ;
-               rdfs:isDefinedBy <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> ;
+               rdfs:isDefinedBy <http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO> ;
                rdfs:label "Color Palette"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Contact_info
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Contact_info
 :Contact_info rdf:type owl:Class ;
               rdfs:subClassOf :Social_Media_Data ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :is_contact_info_of ;
-                                owl:someValuesFrom :Profile
-                              ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :value ;
                                 owl:someValuesFrom [ rdf:type rdfs:Datatype ;
@@ -922,52 +1006,48 @@ rdf:type rdf:type owl:AnnotationProperty .
                                                                  )
                                                    ]
                               ] ;
-              owl:disjointWith :Profile .
+              owl:disjointWith :Profile ;
+              <http://purl.org/dc/terms/description> "It is intended as a section of a profile that gives some form of communication (not direct in the social) between the visitor of the profile and the person behind the user"@en ;
+              rdfs:label "Contact Info"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Container
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Container
 :Container rdf:type owl:Class ;
            rdfs:subClassOf :Social_Media_Data ;
            rdfs:comment "A container is intended as a section of a profile that contains other elements such has media, hyperlinks, tags"@en ;
            owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Content
 :Content rdf:type owl:Class ;
          rdfs:subClassOf :Social_Media_Data ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :is_contained_in ;
-                           owl:someValuesFrom <http://rdfs.org/sioc/ns#Container>
-                         ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :is_automatic ;
                            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:boolean
-                         ] .
+                         ] ;
+         rdfs:label "Content"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Content_Container
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Content_Container
 :Content_Container rdf:type owl:Class ;
                    rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> ,
                                    [ rdf:type owl:Restriction ;
                                      owl:onProperty :contains ;
                                      owl:someValuesFrom :Content
-                                   ] .
+                                   ] ;
+                   rdfs:label "Content Container"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Displaying_Order
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Displaying_Order
 :Displaying_Order rdf:type owl:Class ;
-                  rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                    owl:onProperty :is_displaying_order_of ;
-                                    owl:someValuesFrom :Profile
-                                  ] ;
                   owl:disjointWith :Profile ;
                   <http://purl.org/dc/terms/description> "The order through which the items in a container are displayed"@en ;
-                  rdfs:isDefinedBy <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> ;
+                  rdfs:isDefinedBy <http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO> ;
                   rdfs:label "Displaying Order"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Educational_Experience
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Educational_Experience
 :Educational_Experience rdf:type owl:Class ;
                         rdfs:subClassOf :Experience ,
                                         [ rdf:type owl:Restriction ;
@@ -997,15 +1077,17 @@ rdf:type rdf:type owl:AnnotationProperty .
                                                                         )
                                                           ]
                                         ] ;
-                        owl:disjointWith <http://xmlns.com/foaf/0.1/Organization> .
+                        owl:disjointWith <http://xmlns.com/foaf/0.1/Organization> ;
+                        rdfs:label "Educational Experience"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Email
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Email
 :Email rdf:type owl:Class ;
-       rdfs:subClassOf :Contact_info .
+       rdfs:subClassOf :Contact_info ;
+       rdfs:label "Email"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Experience
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Experience
 :Experience rdf:type owl:Class ;
             rdfs:subClassOf :Background ,
                             [ rdf:type owl:Restriction ;
@@ -1018,56 +1100,65 @@ rdf:type rdf:type owl:AnnotationProperty .
                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                               owl:onClass <http://www.w3.org/2006/time#TemporalEntity>
                             ] ;
-            owl:disjointWith <http://www.w3.org/2006/time#TemporalEntity> .
+            owl:disjointWith <http://www.w3.org/2006/time#TemporalEntity> ;
+            rdfs:label "Experience"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Fax
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Fax
 :Fax rdf:type owl:Class ;
-     rdfs:subClassOf :Contact_info .
+     rdfs:subClassOf :Contact_info ;
+     rdfs:label "Fax"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Follower
-:Follower rdf:type owl:Class ;
-          rdfs:subClassOf :Network_Container .
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Followers
+:Followers rdf:type owl:Class ;
+           rdfs:subClassOf :Network_Container ;
+           rdfs:label "Followers"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Following
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Following
 :Following rdf:type owl:Class ;
-           rdfs:subClassOf :Network_Container .
+           rdfs:subClassOf :Network_Container ;
+           rdfs:label "Following"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Form
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Form
 :Form rdf:type owl:Class ;
-      rdfs:subClassOf :Input_content_box .
+      rdfs:subClassOf :Input_content_box ;
+      rdfs:label "Form"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Friends
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Friends
 :Friends rdf:type owl:Class ;
-         rdfs:subClassOf :Network_Container .
+         rdfs:subClassOf :Network_Container ;
+         rdfs:label "Friends"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Group
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Group
 :Group rdf:type owl:Class ;
-       rdfs:subClassOf :Network_Container .
+       rdfs:subClassOf :Network_Container ;
+       rdfs:label "Group"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Highlighted_Media
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Highlighted_Media
 :Highlighted_Media rdf:type owl:Class ;
                    rdfs:subClassOf :Main_Media ;
-                   rdfs:comment "With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture."@en .
+                   <http://purl.org/dc/terms/description> "With Highlighted Media it is meant the main media that is displayed in a part of the profile which is not the background or the profile pic. As an example we have the main video played when you enter a Youtube channel or the Twitch stream in a Twitch profile. Note that both these Social Media have a Profile Picture."@en ;
+                   rdfs:label "Highlighted Media"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Hypertext
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Hypertext
 :Hypertext rdf:type owl:Class ;
            rdfs:subClassOf :Contact_info ,
                            [ rdf:type owl:Restriction ;
                              owl:onProperty :link ;
                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                              owl:onDataRange xsd:anyURI
-                           ] .
+                           ] ;
+           rdfs:label "Hypertext"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Input_content_box
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Input_content_box
 :Input_content_box rdf:type owl:Class ;
                    rdfs:subClassOf :Social_Media_Data ,
                                    [ rdf:type owl:Restriction ;
@@ -1080,30 +1171,38 @@ rdf:type rdf:type owl:AnnotationProperty .
                                      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                      owl:onDataRange xsd:nonNegativeInteger
                                    ] ;
-                   owl:disjointWith :Profile .
+                   owl:disjointWith :Profile ;
+                   <http://purl.org/dc/terms/description> "It is intended as a section of a profile that gives some form of communication (direct in the social) between the visitor of the profile and the user"@en ;
+                   rdfs:label "Input Content Box"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Inscription_Date
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Inscription_Date
 :Inscription_Date rdf:type owl:Class ;
                   rdfs:subClassOf :Social_Media_Data ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://www.w3.org/2006/time#hasTime> ;
                                     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                     owl:onClass <http://www.w3.org/2006/time#TemporalEntity>
-                                  ] .
+                                  ] ;
+                  <http://purl.org/dc/terms/description> "It is intended as the information that some social display to see the date of the creation of the profile"@en ;
+                  rdfs:label "Inscription Date"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Interest_Container
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Interest_Container
 :Interest_Container rdf:type owl:Class ;
-                    rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> .
+                    rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> ;
+                    <http://purl.org/dc/terms/description> "It is intended as a container that aggregates some tags that represent particular interests of the user"@en ;
+                    rdfs:label "Interest Container"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Karma
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Karma
 :Karma rdf:type owl:Class ;
-       rdfs:subClassOf :Stats .
+       rdfs:subClassOf :Stats ;
+       <http://purl.org/dc/terms/description> "Particular stats that is displayed on Reddit"@en ;
+       rdfs:label "Karma"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Language_Competency
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Language_Competency
 :Language_Competency rdf:type owl:Class ;
                      rdfs:subClassOf :Skill ,
                                      [ rdf:type owl:Restriction ;
@@ -1115,102 +1214,101 @@ rdf:type rdf:type owl:AnnotationProperty .
                                        owl:onProperty :level ;
                                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                        owl:onDataRange xsd:string
-                                     ] .
+                                     ] ;
+                     <http://purl.org/dc/terms/description> "More specific version of skill because it usually has a specific level"@en ;
+                     rdfs:label "Language Competency"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Link_to_other_Social_Media
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Link_to_other_Social_Media
 :Link_to_other_Social_Media rdf:type owl:Class ;
                             rdfs:subClassOf :Hypertext ,
                                             [ rdf:type owl:Restriction ;
-                                              owl:onProperty :social_media_icon ;
-                                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                              owl:onDataRange xsd:anyURI
-                                            ] ,
-                                            [ rdf:type owl:Restriction ;
-                                              owl:onProperty :social_media_label ;
+                                              owl:onProperty :label ;
                                               owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                               owl:onDataRange xsd:string
-                                            ] .
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty :social_media_icon ;
+                                              owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                              owl:onDataRange xsd:boolean
+                                            ] ;
+                            rdfs:label "Link to other Social Media"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Main_Media
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Main_Media
 :Main_Media rdf:type owl:Class ;
-            rdfs:subClassOf :Media ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :is_main_media_of ;
-                              owl:someValuesFrom :Profile
-                            ] ;
-            owl:disjointWith :Profile .
+            rdfs:subClassOf :Media ;
+            owl:disjointWith :Profile ;
+            rdfs:label "Main Media"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Media
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Media
 :Media rdf:type owl:Class ;
-       rdfs:subClassOf :Content ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :is_media_of ;
-                         owl:someValuesFrom :Background
-                       ] .
+       rdfs:subClassOf :Content ;
+       rdfs:label "Media"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Name_Day
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Name_Day
 :Name_Day rdf:type owl:Class ;
-          rdfs:subClassOf :Biographical_info .
+          rdfs:subClassOf :Biographical_info ;
+          rdfs:label "Name Day"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Network_Container
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Network_Container
 :Network_Container rdf:type owl:Class ;
                    rdfs:subClassOf <http://rdfs.org/sioc/ns#Container> ;
-                   rdfs:comment "A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as \"following\", \"followers\" etc...)"@en .
+                   <http://purl.org/dc/terms/description> "A Network Container is intended as a particular kind of container that aggregates other social media profile under specific relationships (such as \"following\", \"followers\" etc...)"@en ;
+                   rdfs:label "Network Container"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Nickname
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Nickname
 :Nickname rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :is_nickname_of ;
-                            owl:someValuesFrom <http://rdfs.org/sioc/ns#UserAccount>
-                          ] ,
-                          [ rdf:type owl:Restriction ;
                             owl:onProperty <http://xmlns.com/foaf/0.1/nick> ;
                             owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ;
           owl:disjointWith :Profile ;
           <http://purl.org/dc/terms/description> "The identifier of a user in a Social Media"@en ;
-          rdfs:isDefinedBy <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> ;
-          rdfs:label "Account Name"@en ,
-                     "Nickname"@en .
+          rdfs:isDefinedBy <http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO> ;
+          rdfs:label "Nickname"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_followers
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Number_of_followers
 :Number_of_followers rdf:type owl:Class ;
-                     rdfs:subClassOf :Stats .
+                     rdfs:subClassOf :Stats ;
+                     rdfs:label "Number of followers"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_following
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Number_of_following
 :Number_of_following rdf:type owl:Class ;
-                     rdfs:subClassOf :Stats .
+                     rdfs:subClassOf :Stats ;
+                     rdfs:label "Number of following"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_likes
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Number_of_likes
 :Number_of_likes rdf:type owl:Class ;
-                 rdfs:subClassOf :Stats .
+                 rdfs:subClassOf :Stats ;
+                 rdfs:label "Number of likes"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Number_of_posts
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Number_of_posts
 :Number_of_posts rdf:type owl:Class ;
-                 rdfs:subClassOf :Stats .
+                 rdfs:subClassOf :Stats ;
+                 rdfs:label "Number of posts"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Organization
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Organization
 :Organization rdf:type owl:Class ;
               owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Other_user_generated_content
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Other_user_generated_content
 :Other_user_generated_content rdf:type owl:Class ;
-                              rdfs:subClassOf :Media .
+                              rdfs:subClassOf :Media ;
+                              rdfs:label "Other User Generated Content"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Experience
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Personal_Experience
 :Personal_Experience rdf:type owl:Class ;
                      rdfs:subClassOf :Experience ,
                                      [ rdf:type owl:Restriction ;
@@ -1221,26 +1319,28 @@ rdf:type rdf:type owl:AnnotationProperty .
                                        owl:onProperty :title ;
                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                        owl:onDataRange xsd:string
-                                     ] .
+                                     ] ;
+                     rdfs:label "Personal Experience"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_Website
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Personal_Website
 :Personal_Website rdf:type owl:Class ;
-                  rdfs:subClassOf :Hypertext .
+                  rdfs:subClassOf :Hypertext ;
+                  rdfs:label "Personal Website"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Personal_generated_content
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Personal_generated_content
 :Personal_generated_content rdf:type owl:Class ;
-                            rdfs:subClassOf :Media .
+                            rdfs:subClassOf :Media ;
+                            rdfs:label "Personal Generated Content"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Popularity_Order
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order
 :Popularity_Order rdf:type owl:Class ;
-                  rdfs:subClassOf :Displaying_Order ;
-                  rdfs:label "Popularity Order"@en .
+                  rdfs:subClassOf :Displaying_Order .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile
 :Profile rdf:type owl:Class ;
          rdfs:subClassOf :Social_Media_Data ,
                          [ rdf:type owl:Restriction ;
@@ -1291,30 +1391,34 @@ rdf:type rdf:type owl:AnnotationProperty .
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:anyURI
                          ] ;
-         owl:disjointWith :Stats .
+         owl:disjointWith :Stats ;
+         rdfs:label "Profile"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Profile_Media
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Profile_Media
 :Profile_Media rdf:type owl:Class ;
-               rdfs:subClassOf :Main_Media .
+               rdfs:subClassOf :Main_Media ;
+               rdfs:label "Profile Media"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Relationships
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Relationships
 :Relationships rdf:type owl:Class ;
-               rdfs:subClassOf :Biographical_info .
+               rdfs:subClassOf :Biographical_info ;
+               rdfs:label "Relationships"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Skill
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Skill
 :Skill rdf:type owl:Class ;
        rdfs:subClassOf :Background ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :label ;
                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                          owl:onDataRange xsd:string
-                       ] .
+                       ] ;
+       rdfs:label "Skill"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Social_Media_Data
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Social_Media_Data
 :Social_Media_Data rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
                                      owl:onProperty :is_visible_to ;
@@ -1341,21 +1445,19 @@ rdf:type rdf:type owl:AnnotationProperty .
                                                                  ]
                                                      ]
                                    ] ;
-                   rdfs:isDefinedBy <http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> .
+                   rdfs:isDefinedBy <http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO:UOMO:UOMO> ;
+                   rdfs:label "Social Media Data"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stars
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stars
 :Stars rdf:type owl:Class ;
-       rdfs:subClassOf :Stats .
+       rdfs:subClassOf :Stats ;
+       rdfs:label "Stars"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Stats
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Stats
 :Stats rdf:type owl:Class ;
        rdfs:subClassOf :Social_Media_Data ,
-                       [ rdf:type owl:Restriction ;
-                         owl:onProperty :is_a_stat_of ;
-                         owl:someValuesFrom :Profile
-                       ] ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :value ;
                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
@@ -1363,20 +1465,25 @@ rdf:type rdf:type owl:AnnotationProperty .
                                                             xsd:string
                                                           )
                                             ]
-                       ] .
+                       ] ;
+       <http://purl.org/dc/terms/description> "Numerical statistics linked to the profile"@en ;
+       rdfs:label "Stats"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Telephone_Number
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Telephone_Number
 :Telephone_Number rdf:type owl:Class ;
-                  rdfs:subClassOf :Contact_info .
+                  rdfs:subClassOf :Contact_info ;
+                  rdfs:label "Telephone Number"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trainership
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trainership
 :Trainership rdf:type owl:Class ;
-             rdfs:subClassOf :Working_Experience .
+             rdfs:subClassOf :Working_Experience ;
+             <http://purl.org/dc/terms/description> "It is a more specific kind of working experience"@en ;
+             rdfs:label "Trainership"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trivia
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trivia
 :Trivia rdf:type owl:Class ;
         rdfs:subClassOf :Biographical_info ,
                         [ rdf:type owl:Restriction ;
@@ -1386,30 +1493,38 @@ rdf:type rdf:type owl:AnnotationProperty .
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :question ;
                           owl:someValuesFrom xsd:string
-                        ] .
+                        ] ;
+        <http://purl.org/dc/terms/description> "It is intended as the information that some social media (like facebook) display on the profile as the answers of a set of predefined questions."@en ;
+        rdfs:label "Trivia"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Trophies
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Trophies
 :Trophies rdf:type owl:Class ;
-          rdfs:subClassOf :Achievement .
+          rdfs:subClassOf :Achievement ;
+          <http://purl.org/dc/terms/description> "It's  a particular kind of achievement used in some socials for milestones."@en ;
+          rdfs:label "Trophies"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#User
 :User rdf:type owl:Class ;
       owl:deprecated "true"^^xsd:boolean .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#User_Profile
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#User_Profile
 :User_Profile rdf:type owl:Class ;
-              rdfs:subClassOf :Profile .
+              rdfs:subClassOf :Profile ;
+              <http://purl.org/dc/terms/description> "It is intended as the structure and the content of a profile that belongs to a generic user (i.e. not Business Pages / account)"@en ;
+              rdfs:label "User Profile"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Views
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Views
 :Views rdf:type owl:Class ;
-       rdfs:subClassOf :Stats .
+       rdfs:subClassOf :Stats ;
+       <http://purl.org/dc/terms/description> "Some Social Media like Twitch or Youtube display the number of total views of the profile"@en ;
+       rdfs:label "Views"@en .
 
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#Working_Experience
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Working_Experience
 :Working_Experience rdf:type owl:Class ;
                     rdfs:subClassOf :Experience ,
                                     [ rdf:type owl:Restriction ;
@@ -1426,7 +1541,8 @@ rdf:type rdf:type owl:AnnotationProperty .
                                       owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                       owl:onDataRange xsd:string
                                     ] ;
-                    owl:disjointWith <http://xmlns.com/foaf/0.1/Organization> .
+                    owl:disjointWith <http://xmlns.com/foaf/0.1/Organization> ;
+                    rdfs:label "Working Experience"@en .
 
 
 ###  http://www.w3.org/2006/time#TemporalEntity
@@ -1442,10 +1558,37 @@ rdf:type rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO
-<http://www.semanticweb.org/bruno/ontologies/2019/1/untitled-ontology-24#UOMO:UOMO:UOMO> rdf:type owl:NamedIndividual ,
-                                                                                                  owl:Thing ;
-                                                                                         <http://purl.org/dc/terms/description> "UOMO (User Oriented social Media Ontology) is an ontology for describing the information about Social Media focusing on the User Perspective."@en .
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Algorithmic_Order
+:Algorithmic_Order rdf:type owl:NamedIndividual ,
+                            :Algorithmic_Order .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Alphabetical_Order
+:Alphabetical_Order rdf:type owl:NamedIndividual ,
+                             :Alphabetical_Order .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order_Normal
+:Chronological_Order_Normal rdf:type owl:NamedIndividual ,
+                                     :Chronological_Order ;
+                            <http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old> "false"^^xsd:boolean .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Chronological_Order_new_to_old
+:Chronological_Order_new_to_old rdf:type owl:NamedIndividual ,
+                                         :Chronological_Order ;
+                                <http://uomodhdk.github.io/Ontology/uomoprofile.owlis_new_to_old> "true"^^xsd:boolean .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#Popularity_Order
+:Popularity_Order rdf:type owl:NamedIndividual ,
+                           :Popularity_Order .
+
+
+###  http://uomodhdk.github.io/Ontology/uomoprofile.owl#UOMO_Profile
+:UOMO_Profile rdf:type owl:NamedIndividual ,
+                       owl:Thing ;
+              <http://purl.org/dc/terms/description> "UOMO (User Oriented social Media Ontology) Profile is an ontology for describing the information about Social Media focusing on the User's Profile."@en .
 
 
 ###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
