@@ -28,6 +28,8 @@
 																									<link rel="preconnect" href="https://player.twitch.tv/">
 																										<link rel="preconnect" href="https://static.twitchcdn.net/">
 																											<link rel="preconnect" href="https://cvp.twitch.tv/">
+																											<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+																												<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
 																											<style>
 																												input{
 																															pointer-events: none !important; cursor: default !important;
@@ -64,20 +66,21 @@
 
 <div id="primarigachannel" class="row" style="padding-top: 5px; padding-bottom: 5px">
 <div id="immagineenick" class="col-3"> <!-- immaginenick -->
-
-      <img style="display:inline;vertical-align:middle" width="50px" height="50px" alt="demyhanna" src="https://static-cdn.jtvnw.net/jtv_user_pictures/c01a9d9d-a00b-4fe5-ae7c-0f640abdb218-profile_image-70x70.jpeg">
-	<h5 style="display:inline;position:center"> demyhanna </h5>
-
+	  <div data-balloon="UomoProfile:Profile_Media" data-balloon-pos="right"  style="position:center; display: table-cell; background-color:yellow !important; width: 50px; ">
+	  <img style="opacity: 0.3" width="50" height="50" alt="demyhanna" src="https://static-cdn.jtvnw.net/jtv_user_pictures/c01a9d9d-a00b-4fe5-ae7c-0f640abdb218-profile_image-70x70.jpeg">
+	  </div>
+	  <h5 data-balloon="UomoProfile:Nickname" data-balloon-pos="up"  style="display: table-cell;position:center; vertical-align: bottom; background-color:yellow !important; border: 3px solid white;"> demyhanna </h5>
+    
 
 </div>
 <div id="listanav" class="col-7"> <!-- listanav -->
 
 <ul style="display:inline;font-size:100%">
-<li style="display:inline;padding:10px;color: #6441a4;"> <a style="text-decoration:none;color: #6441a4;font-size:100%" > Videos  <span> 12 </span></a> </li>
-<li style="display:inline;padding:10px;color: #6441a4;"> <a style="text-decoration:none;color: #6441a4;font-size:100%" > Clips  <span> 20 </span></a> </li>
-<li style="display:inline;padding:10px;color: #6441a4;"> <a style="text-decoration:none;color: #6441a4;font-size:100%" > Events <span> 11 </span></a> </li>
-<li style="display:inline;padding:10px;color: #6441a4;"> <a style="text-decoration:none;color: #6441a4;font-size:100%"> Followers <span> 134 </span></a> </li>
-<li style="display:inline;padding:10px;color: #6441a4;"> <a style="text-decoration:none;color: #6441a4;font-size:100%"> Following  <span> 92 </span></a> </li>
+<li style="display:inline;padding:10px;color: #6441a4;"> <a data-balloon="UomoProfile:ContentContainer" data-balloon-pos="up"  style="background-color:yellow !important;  border: 3px solid white; text-decoration:none;color: #6441a4;font-size:100%" > Videos  <span> 12 </span></a> </li>
+<li style="display:inline;padding:10px;color: #6441a4;"> <a data-balloon="UomoProfile:ContentContainer" data-balloon-pos="up"  style="background-color:yellow !important;  border: 3px solid white; text-decoration:none;color: #6441a4;font-size:100%" > Clips <span> 20 </span> </a> </li>
+<li style="display:inline;padding:10px;color: #6441a4;"> <a data-balloon="UomoProfile:ContentContainer" data-balloon-pos="up"  style="background-color:yellow !important;  border: 3px solid white; text-decoration:none;color: #6441a4;font-size:100%" > Events <span> 11 </span></a> </li>
+<li style="display:inline;padding:10px;color: #6441a4;"> <a data-balloon="UomoProfile:Followers" data-balloon-pos="up"  style="background-color:yellow !important;  border: 3px solid white; text-decoration:none;color: #6441a4;font-size:100%"> Followers </a><span data-balloon="UomoProfile:Number_of_followers" data-balloon-pos="up"  style="background-color:yellow !important; border-style: solid; border-color: white !important"> 134 </span> </li>
+<li style="display:inline;padding:10px;color: #6441a4;"> <a data-balloon="UomoProfile:Following" data-balloon-pos="up"  style="background-color:yellow !important; border: 3px solid white; text-decoration:none;color: #6441a4;font-size:100%"> Following  </a><span data-balloon="UomoProfile:Number_of_following" data-balloon-pos="up"  style="background-color:yellow !important; border-style: solid; border-color: white !important"> 92 </span> </li>
 </ul>
 
 
@@ -137,13 +140,13 @@
 <div id="video" class="col"> <!-- Video channel -->
 
 <div class="channel-root__player-container tw-pd-b-2">
-																														<div class="channel-root__player-container tw-pd-b-2">
+																														<div data-balloon="UomoProfile:Highlighted_Media" data-balloon-pos="up" style="background-color: yellow; z-index:20"  class="channel-root__player-container tw-pd-b-2">
 																															<div class="video-player-hosting-ui__container">
 																																<span>
-																																	<div class="channel-page__video-player tw-flex-nowrap tw-relative">
+																																	<div class="channel-page__video-player tw-flex-nowrap tw-relative" style=" opacity: 0.3; background-image: url('download.png');">
+																																			
 																																		<div class="tw-aspect tw-aspect--align-top">
 																																			<div class="tw-aspect__spacer" style="padding-bottom: 56.25%;"></div>
-																																			<div data-target="persistent-player-content" class="tw-absolute tw-bottom-0 tw-c-background-alt-2 tw-left-0 tw-right-0 tw-root--hover tw-root--theme-light tw-top-0"></div>
 																																		</div>
 																																	</div>
 																																</span>
@@ -158,7 +161,7 @@
 																																					<div class="tw-card-img tw-card-img--size-6 tw-flex-shrink-0 tw-overflow-hidden">
 																																						<div class="tw-aspect tw-aspect--align-top">
 																																							<div class="tw-aspect__spacer" style="padding-bottom: 133.333%;"></div>
-																																							<img class="tw-image" alt="Hearthstone" src="https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-85x113.jpg">
+																																							<img class="tw-image" alt="Hearthstone" style="opacity: 0.3" src="https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-85x113.jpg">
 																																							</div>
 																																						</div>
 																																					</a>
@@ -189,7 +192,7 @@
 																																								<div class="channel-info-bar__viewers-wrapper tw-c-text-live tw-inline-flex"></div>
 																																								<div class="tw-align-items-center tw-inline-flex">
 																																									<div class="tw-inline-flex tw-tooltip-wrapper" aria-describedby="704cb9520bf785ded2baa8d8871462fa">
-																																										<div class="tw-stat" data-a-target="total-views-count">
+																																										<div data-balloon="UomoProfile:Views" data-balloon-pos="up"  style="background-color:yellow !important;"class="tw-stat" data-a-target="total-views-count">
 																																											<span class="tw-stat__icon">
 																																												<div class="tw-align-items-center tw-icon tw-inline-flex">
 																																													<div class="tw-aspect tw-aspect--align-top">
@@ -200,7 +203,7 @@
 																																													</div>
 																																												</div>
 																																											</span>
-																																											<span class="tw-stat__value" data-a-target="tw-stat-value">10</span>
+																																											<span class="tw-stat__value" data-a-target="tw-stat-value">123</span>
 																																										</div>
 																																										<div class="tw-tooltip tw-tooltip--align-center tw-tooltip--down" data-a-target="tw-tooltip-label" role="tooltip" id="704cb9520bf785ded2baa8d8871462fa">Total Views</div>
 																																									</div>
@@ -209,12 +212,12 @@
 																																							<div class="tw-flex">
 																																								<div class="tw-mg-x-1">
 																																									<div data-toggle-balloon-id="3a4190e0-6f4b-485b-ba50-f9afca7735db" class="tw-relative">
-																																										<div data-test-selector="toggle-balloon-wrapper__mouse-enter-detector" style="display: inherit;">
+																																										<div  data-test-selector="toggle-balloon-wrapper__mouse-enter-detector" style="display: inherit;">
 																																											<button class="tw-interactive tw-button tw-button--text" data-a-target="share-button">
 																																												<span class="tw-button__icon tw-button__icon--left">
 																																													<div style="width: 2rem; height: 2rem;">
 																																														<div class="tw-align-items-center tw-full-width tw-icon tw-icon--fill tw-inline-flex">
-																																															<div class="tw-aspect tw-aspect--align-top">
+																																															<div  class="tw-aspect tw-aspect--align-top">
 																																																<div class="tw-aspect__spacer" style="padding-bottom: 100%;"></div>
 																																																<svg class="tw-icon__svg" width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px">
 																																																	<path d="M18 10v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-7a1 1 0 1 1 2 0v6h12v-6a1 1 0 1 1 2 0zm-3.963-1.954h-2.038v4.973a1 1 0 0 1-1 1H9.005a1 1 0 0 1-1-1V8.046h-2.02a1 1 0 0 1-.706-1.707l4.026-4.046a1 1 0 0 1 1.414 0l4.025 4.046a1 1 0 0 1-.707 1.707z" fill-rule="evenodd"></path>
@@ -352,11 +355,11 @@
 </div>
 
 </div>
-<div id="rigacontent" class="row"> 
+<div id="rigacontent" class="row" > 
 	
-<div id="colcontent" class="col"> <!-- Container -->
+<div id="colcontent" class="col"data-balloon="UomoProfile:ContentContainer" data-balloon-pos="up"  style="background-color:yellow !important; margin: 20px"> <!-- Container -->
 
-<div data-test-selector="channel_panels_container_selector" class="channel-panels"><div class="channel-panels-container" data-test-selector="masonry_container_selector" style="width: 320px; height: 264.4px;"><div style=" left: 0px; top: 0px;"><div data-test-selector="channel_panel_test_selector" data-a-target="panel-0" class="default-panel tw-mg-b-2 tw-mg-r-2"><h3 class="" data-test-selector="title_test_selector">My life</h3><img data-test-selector="image_test_selector" src="https://static-cdn.jtvnw.net/jtv_user_pictures/panel-414203211-image-94e1caa2-e3eb-4a71-982b-7ca81fa5397e" alt="Panel Content"><div data-test-selector="description_test_selector"><div class="tw-font-size-5 tw-typeset"><div class="panel-description"><p>Born and raised in BO. Living through DHDK</p></div></div></div></div></div></div></div>
+<div data-test-selector="channel_panels_container_selector" class="channel-panels"><div class="channel-panels-container" data-test-selector="masonry_container_selector" style="width: 320px; height: 264.4px;"><div style=" left: 0px; top: 0px;"><div data-test-selector="channel_panel_test_selector" data-a-target="panel-0" class="default-panel tw-mg-b-2 tw-mg-r-2"><h3 class="" data-test-selector="title_test_selector">My life</h3><img style="opacity: 0.3" data-test-selector="image_test_selector" src="https://static-cdn.jtvnw.net/jtv_user_pictures/panel-414203211-image-94e1caa2-e3eb-4a71-982b-7ca81fa5397e" alt="Panel Content"><div data-test-selector="description_test_selector"><div class="tw-font-size-5 tw-typeset"><div class="panel-description"><p>Born and raised in BO. Living through DHDK</p></div></div></div></div></div></div></div>
 
 
 
@@ -376,8 +379,8 @@
 
 </div>
 </div>
-<div id="rigachat" class="row">
-<div id="colchat" style="max-height:750px!important" class="col">  <!-- Chat -->
+<div id="rigachat" class="row" >
+<div id="colchat" data-balloon="UomoProfile:Chat" data-balloon-pos="up"  style="background-color:yellow !important; max-height:750px!important" class="col">  <!-- Chat -->
 
 <section class="chat-room tw-flex tw-flex-column tw-flex-grow-1 tw-flex-shrink-1 tw-full-width" role="complementary" aria-labelledby="chat-room-header-label" data-test-selector="chat-room-component-layout" data-a-target="chat-theme-light">
 <div class="chat-room__content tw-border-l tw-c-text-base tw-flex tw-flex-column tw-flex-grow-1 tw-flex-nowrap tw-full-height tw-relative">
@@ -393,7 +396,7 @@
 <div class="simplebar-track horizontal" style="visibility: visible;">
 <div class="simplebar-scrollbar" style="left: 2px; width: 320px;"></div> 
 </div><div class="simplebar-scroll-content" style="padding-right: 15px; margin-bottom: -30px;">
-<div class="simplebar-content" style="padding-bottom: 15px; margin-right: -15px;"><div role="log" class="tw-flex-grow-1 tw-full-height tw-pd-b-1">
+<div class="simplebar-content" style="padding-bottom: 15px; margin-right: -15px;"><div role="log" class="tw-flex-grow-1 tw-full-height tw-pd-b-1" >
 <div data-a-target="chat-welcome-message" class="chat-line__status"><span class="">Welcome to the chat room!</span></div><div class="chat-line__message" data-a-target="chat-line-message"><span>
 </span>
 <span class="chat-line__username" role="button" tabindex="0"><span><span class="chat-author__display-name" data-a-target="chat-message-username" data-a-user="g00ast" data-test-selector="message-username" style="color: rgb(0, 186, 93);">g00ast</span>
