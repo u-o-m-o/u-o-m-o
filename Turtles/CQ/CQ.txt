@@ -93,3 +93,28 @@ SELECT *
       FILTER regex(str(?container), "pets", "i")
 }
 
+---CQ5
+
+PREFIX uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX time: <http://www.w3.org/2006/time> 
+PREFIX terms: <http://purl.org/dc/terms/> 
+PREFIX schema: <http://schema.org/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
+SELECT ?profile ?value
+    WHERE{
+      ?profile a uomoprofile:User_Profile.
+      ?profile uomoprofile:has_main_media ?stream.
+      ?stream a uomoprofile:Highlighted_Media.
+      ?stream uomoprofile:category ?category.
+      ?profile uomoprofile:has_stats ?stats.
+      ?stats a uomoprofile:Views.
+      ?stats uomoprofile:value ?value
+    FILTER regex(?category, "DOTA", "i")
+  FILTER (?value > 1500000)
+    } 
+ORDER BY DESC(?value)
