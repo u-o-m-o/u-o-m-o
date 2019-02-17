@@ -9,7 +9,7 @@
                     "label": "Common Profile Feature",
                     fontColor: "black",
                     data: featuresdata,
-                    backgroundColor: "#808080"
+                    backgroundColor: "#7ecc8c"
                     },
                 ]
             };
@@ -64,13 +64,13 @@
                 "label": "Profile Features",
                 fontColor: "black",
                 data: attributi,
-                backgroundColor: "#808080"
+                backgroundColor: "#7ecc8c"
                 },
                 {
                     "label": "Unique Profile Features",
                     fontColor: "black",
                     data: attributiunici,
-                    backgroundColor: "#000000"
+                    backgroundColor: "#5a9164"
                     },
                 ]
         };
@@ -116,7 +116,8 @@
                     labels: socialname,
                     datasets: [{
                         "label": "Social Profile Completeness",
-                        data: percentualecompletezza
+                        data: percentualecompletezza,
+                        backgroundColor: "#7ecc8c"
                     }]
                 };
                 var opzioniradar = {
