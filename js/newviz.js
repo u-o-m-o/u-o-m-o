@@ -117,12 +117,12 @@
                     datasets: [{
                         "label": "Social Profile Completeness",
                         data: percentualecompletezza,
-                        fillColor: "#7ecc8c",
+                        backgroundColor: "#7ecc8c",
+                        fill: true,
                         fillOpacity: 0.3
                     }]
                 };
                 var opzioniradar = {
-                                                
                                                 responsiveAnimationDuration: 1000,
                                                 "tooltips": {
                                                     "enabled": true,
