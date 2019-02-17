@@ -2,14 +2,7 @@
 ----CQ1
 
 PREFIX uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> 
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
-PREFIX time: <http://www.w3.org/2006/time> 
-PREFIX terms: <http://purl.org/dc/terms/> 
-PREFIX schema: <http://schema.org/> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
 
 SELECT *
 WHERE{
@@ -25,14 +18,7 @@ WHERE{
 ---CQ2
 
 PREFIX uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> 
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
-PREFIX time: <http://www.w3.org/2006/time> 
-PREFIX terms: <http://purl.org/dc/terms/> 
-PREFIX schema: <http://schema.org/> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
 
 SELECT *
 WHERE{
@@ -47,14 +33,7 @@ WHERE{
 ---CQ3
 
 PREFIX uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> 
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
-PREFIX time: <http://www.w3.org/2006/time> 
-PREFIX terms: <http://purl.org/dc/terms/> 
-PREFIX schema: <http://schema.org/> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
 
 SELECT ?category (ROUND(AVG(?value)) AS ?avg_views)
     WHERE{
@@ -75,14 +54,6 @@ LIMIT 1
 --CQ4
 
 PREFIX uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> 
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
-PREFIX time: <http://www.w3.org/2006/time> 
-PREFIX terms: <http://purl.org/dc/terms/> 
-PREFIX schema: <http://schema.org/> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
 
 SELECT *
     WHERE{
@@ -96,14 +67,7 @@ SELECT *
 ---CQ5
 
 PREFIX uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> 
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
-PREFIX time: <http://www.w3.org/2006/time> 
-PREFIX terms: <http://purl.org/dc/terms/> 
-PREFIX schema: <http://schema.org/> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
 
 SELECT ?profile ?value
     WHERE{
@@ -123,14 +87,7 @@ ORDER BY DESC(?value)
 --CQ6
 
 PREFIX uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> 
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
-PREFIX time: <http://www.w3.org/2006/time> 
-PREFIX terms: <http://purl.org/dc/terms/> 
-PREFIX schema: <http://schema.org/> 
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
-PREFIX dc: <http://purl.org/dc/elements/1.1/> 
-PREFIX sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+
 
 SELECT ?category (COUNT(?profile) as ?profilecount)
     WHERE{
@@ -142,3 +99,20 @@ SELECT ?category (COUNT(?profile) as ?profilecount)
 GROUP BY (?category)
 ORDER BY DESC(?profilecount)
 LIMIT 1
+
+
+-CQ7
+
+PREFIX uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> 
+
+
+SELECT ?profile ?n_followers ?n_following
+    WHERE{
+      ?followers uomoprofile:is_a_stat_of ?profile.
+      ?followers a uomoprofile:Number_of_followers.
+      ?followers uomoprofile:value ?n_followers.
+      ?following uomoprofile:is_a_stat_of ?profile.
+      ?following a uomoprofile:Number_of_following.
+      ?following uomoprofile:value ?n_following.
+  FILTER (?n_followers/?n_following > 100)
+    }
