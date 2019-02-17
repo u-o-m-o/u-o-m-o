@@ -1,0 +1,146 @@
+@prefix uomoprofile: <http://uomodhdk.github.io/Ontology/uomoprofile.owl#> .  \n
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .  \n
+@prefix time: <http://www.w3.org/2006/time> . \n
+@prefix terms: <http://purl.org/dc/terms/> . \n
+@prefix schema: <http://schema.org/> . \n
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> . \n
+@prefix dc: <http://purl.org/dc/elements/1.1/> . \n
+@prefix sioc: <http://www.w3.org/2003/06/sw-vocab-status/ns#> . \n
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . \n
+@prefix : <profilelinkhere> . \n
+ \n
+ \n
+#User \n
+ \n
+ :user \n
+ 	a sioc:UserAccount ; \n
+ 	uomoprofile:creates <profilelinkhere> ; \n
+ 	uomoprofile:has_nickname :nickname . \n
+ \n
+ 	 \n
+#Nickname \n
+ \n
+ :nickname \n
+ 	a uomoprofile:Nickname ; \n
+ 	uomoprofile:is_nickname_of :user ; \n
+ 	foaf:nick "nicknamehere"^^rdfs:Literal . \n
+  \n
+ \n
+#ProfilePic \n
+ \n
+ <imagelinkhere> \n
+ 	a uomoprofile:Profile_Media ; \n
+ 	uomoprofile:is_main_media_of <profilelinkhere> . \n
+ \n
+ 	 \n
+#Numoffollower \n
+ \n
+ :numoffollower \n
+ 	a uomoprofile:Number_of_followers ; \n
+ 	uomoprofile:is_a_stat_of <profilelinkhere> ; \n
+ 	uomoprofile:value "numfollowerhere"^^xsd:nonNegativeInteger . \n
+ 	 \n
+ \n
+#Numoffollowing \n
+ \n
+ :numoffollowing \n
+ 	a uomoprofile:Number_of_following ; \n
+ 	uomoprofile:is_a_stat_of <profilelinkhere> ; \n
+ 	uomoprofile:value "numfollowing"^^xsd:nonNegativeInteger . \n
+ 	 \n
+ \n
+#ActualPlace \n
+ \n
+ :ActualPlace \n
+ 	a uomoprofile:Actual_Place ; \n
+ 	uomoprofile:value "placenamehere"^^xsd:string; . \n
+ \n
+ \n
+#FullName \n
+ \n
+ :FullName \n
+ 	a uomoprofile:Biographical_Info ; \n
+ 	uomoprofile:fullname "fullnamehere"^^rdfs:Literal . \n
+ \n
+ \n
+#Followers \n
+ \n
+ :followers \n
+ 	a uomoprofile:Followers ; \n
+ 	uomoprofile:is_container_of <profilelinkhere> . \n
+ \n
+ \n
+#Following \n
+ \n
+ :following \n
+ 	a uomoprofile:Following ; \n
+ 	uomoprofile:is_container_of <profilelinkhere> .	 \n
+ \n
+ \n
+#Boards \n
+ \n
+ :boards \n
+ 	a uomoprofile:Content_Container ; \n
+ 	uomoprofile:is_container_of <profilelinkhere> ; \n
+ 	uomoprofile:has_displaying_order orderhere ; \n
+ 	uomoprofile:contains :containername1, :containername2, :containername3, :containername4. \n
+ 	 \n
+ \n
+#Pins \n
+ \n
+ :pins \n
+ 	a uomoprofile:Content_Container ; \n
+ 	uomoprofile:is_container_of <profilelinkhere> . \n
+ \n
+ 	 \n
+#Tried \n
+ \n
+ :tried \n
+ 	a uomoprofile:Content_Container ; \n
+ 	uomoprofile:is_container_of <profilelinkhere> . \n
+ \n
+ 	 \n
+#Topics \n
+ \n
+ :topics \n
+ 	a uomoprofile:Interest_Container ; \n
+ 	uomoprofile:is_container_of <profilelinkhere> . \n
+ \n
+ 	 \n
+#containername1 \n
+ \n
+ :containername1 \n
+ 	a uomoprofile:Content_Container . \n
+ \n
+ \n
+#containername2 \n
+ \n
+ :containername2 \n
+ 	a uomoprofile:Content_Container . \n
+ \n
+ \n
+#containername3 \n
+ \n
+ :containername3 \n
+ 	a uomoprofile:Content_Container . \n
+ \n
+ 	 \n
+#containername4 \n
+ \n
+ :containername4 \n
+ 	a uomoprofile:Content_Container . \n
+ \n
+ \n
+#Profile \n
+ \n
+ : \n
+ 	a uomoprofile:User_Profile ; \n
+ 	uomoprofile:created_by :user ; \n
+ 	uomoprofile:uri "profilelinkhere"^^xsd:anyURI ; \n
+ 	uomoprofile:has_main_media <imagelinkhere> ; \n
+ 	uomoprofile:has_stats :numoffollower, :numoffollowing ; \n
+ 	uomoprofile:has_privacy privacyhere ; \n
+ 	uomoprofile:bio "fakebio"^^xsd:string ; \n
+ 	uomoprofile:has_biographical_info :ActualPlace, :FullName ; \n
+ 	uomoprofile:has_container :followers, :following, :boards, :pins, :tried, :topics . \n
+ 	
