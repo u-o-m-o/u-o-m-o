@@ -117,7 +117,7 @@
                     datasets: [{
                         "label": "Social Profile Completeness",
                         data: percentualecompletezza,
-                        backgroundColor: "#7ecc8c"
+                        backgroundColor: "rgba(126,204,140, 0.5)"
                     }]
                 };
                 var opzioniradar = {
