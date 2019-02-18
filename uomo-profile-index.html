@@ -668,21 +668,196 @@
 		</div>  
 
 		<div id="Modal2d" class="modal fade">
-				<div class="modal-dialog" style="width:100%">
+				<div class="modal-dialog" style="width:95%">
 					<div class="modal-content">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 							<h4 class="modal-title">Competency Questions</h4>
 						</div>
 						<div class="modal-body">
-							<div class="row">
+								<div class="container fluid">
+										<div class="row" style="display:-ms-flexbox; display:-webkit-flex; display:flex; padding-bottom:10px">
+											<div class="col-md-4">
+												<div class="panel panel-default" style="height:100%">
+													<div class="panel-heading">
+														<h3 class="panel-title">CQ1: <span style="font-size:70%">Which Profiles have the Privacy set to "Public"?</span></h3>
+													</div>
+													<div class="panel-body">
+															<p style="font-size:75%">PREFIX uomoprofile: &lt;http://uomodhdk.github.io/Ontology/uomoprofile.owl#&gt;
+															<br><br>
+															SELECT * <br>
+															WHERE{ <br>
+																?profile a uomoprofile:User_Profile. <br>
+																?profile uomoprofile:has_privacy ?privacy. <br>
+																?profile uomoprofile:has_privacy uomoprofile:Public. <br>
+															}
+														</p>
+													</div>
+													<div class="panel-footer" style="vertical-align:bottom; position:absolute; bottom:0; width:92%"><a href="https://github.com/uomodhdk/uomodhdk.github.io/blob/master/Turtles/CQ/CQ1.csv" target="_blank">Show Results</a></div>
+												</div>	
+											</div>
+											<div class="col-md-4" style="display:table-cell">
+												<div class="panel panel-default" style="height:100%">
+													<div class="panel-heading">
+														<h3 class="panel-title">CQ2: <span style="font-size:70%">Which Profiles have the "Current Place" set to "Bologna"?</h3>
+													</div>
+													<div class="panel-body">
+														<p style="font-size:75%">
+															PREFIX uomoprofile: &lt;http://uomodhdk.github.io/Ontology/uomoprofile.owl#&gt;
+															<br><br>
+															SELECT * <br>
+															WHERE{ <br>
+																?profile a uomoprofile:User_Profile. <br>
+																?profile uomoprofile:has_biographical_info ?bio_info. <br>
+																?bio_info a uomoprofile:Actual_Place. <br>
+																?bio_info uomoprofile:value ?val. <br>
+																FILTER regex(?val, "Bologna", "i") <br>
+															}
+														</p>	
+													</div>
+													<div class="panel-footer"  style="vertical-align:bottom; position:absolute; bottom:0; width:92%"><a href="https://github.com/uomodhdk/uomodhdk.github.io/blob/master/Turtles/CQ/CQ2.csv" target="_blank">Show Results</a></div>
+												</div>
+											</div>	
+											<div class="col-md-4" style="display:table-cell">
+												<div class="panel panel-default" style="height:100%">
+													<div class="panel-heading">
+														<h3 class="panel-title">CQ3: <span style="font-size:70%">What is the Category that brings, in average, more views to the Profiles?</h3>
+													</div>
+													<div class="panel-body">
+														<p style="font-size:75%">
+															PREFIX uomoprofile: &lt;http://uomodhdk.github.io/Ontology/uomoprofile.owl#&gt;
+															<br><br>
+															SELECT ?category (ROUND(AVG(?value)) AS ?avg_views)<br>
+																WHERE{<br>
+																	?profile a uomoprofile:User_Profile.<br>
+																	?profile uomoprofile:has_main_media ?stream.<br>
+																	?stream a uomoprofile:Highlighted_Media.<br>
+																	?stream uomoprofile:category ?category.<br>
+																	?profile uomoprofile:has_stats ?stats.<br>
+																	?stats a uomoprofile:Views.<br>
+																	?stats uomoprofile:value ?value<br>
+																} <br>
+															GROUP BY ?category<br>
+															ORDER BY DESC(?avg_views)<br>
+															LIMIT 1
+														</p>
+													</div>
+													<div class="panel-footer"  style="vertical-align:bottom; position:absolute; bottom:0; width:92%"><a href="https://github.com/uomodhdk/uomodhdk.github.io/blob/master/Turtles/CQ/CQ3.csv" target="_blank">Show Results</a></div>
+												</div>
+											</div>
+										</div>	
+										<div class="row"  style="display:-ms-flexbox; display:-webkit-flex; display:flex; padding-bottom:10px">
+											<div class="col-md-4">
+												<div class="panel panel-default" style="height:100%">
+													<div class="panel-heading">
+														<h3 class="panel-title">CQ4: <span style="font-size:70%"> Which Profiles have a Container called "Pets"?</h3>
+													</div>
+													<div class="panel-body">
+														<p style="font-size:75%">
+															PREFIX uomoprofile: &lt;http://uomodhdk.github.io/Ontology/uomoprofile.owl#&gt;
+															<br><br>
+															SELECT * <br>
+																WHERE{ <br>
+																	?profile a uomoprofile:User_Profile.<br>
+																	?profile uomoprofile:has_container ?board.<br>
+																	?board a uomoprofile:Content_Container.<br>
+																	?board uomoprofile:contains ?container.<br>
+																	FILTER regex(str(?container), "pets", "i")<br>
+															}
+														</p>	
+													</div>
+													<div class="panel-footer"  style="vertical-align:bottom; position:absolute; bottom:0; width:92%"><a href="https://github.com/uomodhdk/uomodhdk.github.io/blob/master/Turtles/CQ/CQ4.csv" target="_blank">Show Results</a></div>
+												</div>
+											</div>	
+											<div class="col-md-4">	
+												<div class="panel panel-default" style="height:100%">
+													<div class="panel-heading">
+														<h3 class="panel-title">CQ5: <span style="font-size:70%"> Which Profiles, that have "DOTA 2 Autochess" as their Category of highlighted media, have more than 1500000 "views"?</h3>
+													</div>
+													<div class="panel-body">
+														<p style="font-size:75%">
+															PREFIX uomoprofile: &lt;http://uomodhdk.github.io/Ontology/uomoprofile.owl#&gt;
+															<br><br>
+															SELECT ?profile ?value<br>
+																WHERE{<br>
+																	?profile a uomoprofile:User_Profile.<br>
+																	?profile uomoprofile:has_main_media ?stream.<br>
+																	?stream a uomoprofile:Highlighted_Media.<br>
+																	?stream uomoprofile:category ?category.<br>
+																	?profile uomoprofile:has_stats ?stats.<br>
+																	?stats a uomoprofile:Views.<br>
+																	?stats uomoprofile:value ?value<br>
+																FILTER regex(?category, "DOTA", "i")<br>
+																FILTER (?value > 1500000)<br>
+																} <br>
+															ORDER BY DESC(?value)		
+														</p>
+													</div>
+													<div class="panel-footer"  style="vertical-align:bottom; position:absolute; bottom:0; width:92%"><a href="https://github.com/uomodhdk/uomodhdk.github.io/blob/master/Turtles/CQ/CQ5.csv" target="_blank">Show Results</a></div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="panel panel-default" style="height:100%">
+													<div class="panel-heading">
+														<h3 class="panel-title">CQ6: <span style="font-size:70%"> What is the most common Category chosen in the Highlighted Media of the Profiles?</h3>
+													</div>
+													<div class="panel-body">
+														<p style="font-size:75%">
+															PREFIX uomoprofile:  &lt;http://uomodhdk.github.io/Ontology/uomoprofile.owl#&gt;
+															<br><br>	
+															SELECT ?category (COUNT(?profile) as ?profilecount)<br>
+																WHERE{<br>
+																	?profile a uomoprofile:User_Profile.<br>
+																	?profile uomoprofile:has_main_media ?stream.<br>
+																	?stream a uomoprofile:Highlighted_Media.<br>
+																	?stream uomoprofile:category ?category.<br>
+																}<br>
+															GROUP BY (?category)<br>
+															ORDER BY DESC(?profilecount)<br>
+															LIMIT 1<br>
+														</p>
+													</div>
+													<div class="panel-footer"  style="vertical-align:bottom; position:absolute; bottom:0; width:92%"><a href="https://github.com/uomodhdk/uomodhdk.github.io/blob/master/Turtles/CQ/CQ6.csv" target="_blank">Show Results</a></div>
+												</div>	
+											</div>
+										</div>	
+										<div class="row"  style="display:-ms-flexbox; display:-webkit-flex; display:flex; padding-bottom:10px">
+											<div class="col-md-4">
+												<div class="panel panel-default" style="height:100%">
+													<div class="panel-heading">
+														<h3 class="panel-title">CQ7: <span style="font-size:70%"> Which profiles have a follower/following ratio of 100/1?</h3>
+													</div>
+													<div class="panel-body">
+														<p style="font-size:75%">
+															PREFIX uomoprofile: &lt;http://uomodhdk.github.io/Ontology/uomoprofile.owl#&gt;
+															<br><br>
+															SELECT ?profile ?n_followers ?n_following <br>
+																WHERE{ <br>
+																	?followers uomoprofile:is_a_stat_of ?profile.<br>
+																	?followers a uomoprofile:Number_of_followers.<br>
+																	?followers uomoprofile:value ?n_followers.<br>
+																	?following uomoprofile:is_a_stat_of ?profile.<br>
+																	?following a uomoprofile:Number_of_following.<br>
+																	?following uomoprofile:value ?n_following.<br>
+																FILTER (?n_followers/?n_following > 100)<br>
+																}
+														</p>
+													</div>
+													<div class="panel-footer"  style="vertical-align:bottom; position:absolute; bottom:0; width:92%"><a href="https://github.com/uomodhdk/uomodhdk.github.io/blob/master/Turtles/CQ/CQ7.csv" target="_blank">Show Results</a></div>	
+												</div>	
+											</div>
+											<div class="col-md-4"></div>
+											<div class="col-md-4"></div>
+										</div>
+									</div>			
+							<!-- <div class="row">
 								<div class="col-md-1"></div>
 								<div class="col-md-10">
 									<p> In order to test our ontology we created a dataset of RDF/Turtle. <br> This dataset has been generated with some <a href="https://github.com/uomodhdk/uomodhdk.github.io/tree/master/Turtles/PythonScripts">Python Scripts</a>.</p>
 								</div>
 								<div class="col-md-1"></div>
 							</div>
-						</div>	
+						</div>	-->
 						<div class="modal-footer">
 							<button type="button" class="btn-minimal" data-dismiss="modal">Close</button>
 						</div>
